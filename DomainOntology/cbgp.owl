@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#"
+     xml:base="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Articulo-60 -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Articulo-60">
+        <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#European -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#European">
+        <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#FundingInstitutionTypes -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#FundingInstitutionTypes"/>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Group_Member -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Group_Member">
+        <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ParticipantType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Institution -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Institution"/>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#InternalCodeTypes -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#InternalCodeTypes"/>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#National -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#National">
+        <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ParticipantType -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ParticipantType"/>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Principal_Investigator -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Principal_Investigator">
+        <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ParticipantType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Regional -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Regional">
+        <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#UPM -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#UPM">
+        <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Institution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#CSIC/INIA -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#CSIC/INIA">
+        <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Institution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#UPM/CSIC -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#UPM/CSIC">
+        <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

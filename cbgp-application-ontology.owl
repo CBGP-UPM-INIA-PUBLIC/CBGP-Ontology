@@ -238,16 +238,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#member-orcid -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#member-orcid">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-member-questions"/>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:question-order>
-        <cbgp-local:widget-types>text</cbgp-local:widget-types>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#multichoice -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#multichoice">
@@ -259,6 +249,22 @@
     <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-member-questions -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-member-questions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-project-questions -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-project-questions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-publication-questions -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-publication-questions">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions"/>
     </owl:Class>
     
@@ -293,6 +299,15 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-identifier -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-identifier">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-project-questions"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#text"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-type -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-type">
@@ -302,11 +317,18 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#publication-doi -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#publication-doi">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-publication-questions"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#text"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#answers"/>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions"/>
     
 
 
@@ -337,6 +359,20 @@
     <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#widget-types -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#widget-types"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#text"/>
+    </rdf:Description>
 </rdf:RDF>
 
 

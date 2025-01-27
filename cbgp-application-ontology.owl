@@ -25,7 +25,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Articulo-60">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ProjectType"/>
-        <rdfs:label>Articulo-60</rdfs:label>
+        <rdfs:label xml:lang="es">Articulo-60</rdfs:label>
+        <rdfs:label xml:lang="en">article 60</rdfs:label>
     </owl:Class>
     
 
@@ -34,7 +35,18 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Articulo-83">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ProjectType"/>
-        <rdfs:label>Articulo-83</rdfs:label>
+        <rdfs:label xml:lang="en">Article 83</rdfs:label>
+        <rdfs:label xml:lang="es">Articulo-83</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#CSIC-INIA -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#CSIC-INIA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Institution"/>
+        <rdfs:label xml:lang="en">CSIC/INIA</rdfs:label>
+        <rdfs:label xml:lang="es">CSIC/INIA</rdfs:label>
     </owl:Class>
     
 
@@ -43,14 +55,16 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#European">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ProjectType"/>
-        <rdfs:label>European</rdfs:label>
+        <rdfs:label xml:lang="en">European</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#FundingInstitutionTypes -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#FundingInstitutionTypes"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#FundingInstitutionTypes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#XXXfcbfb683_5897_4faa_ab38_47dda2b4162d"/>
+    </owl:Class>
     
 
 
@@ -58,20 +72,24 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Group_Member">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ParticipantType"/>
-        <rdfs:label>Group Member</rdfs:label>
+        <rdfs:label xml:lang="en">Group Member</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Institution -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Institution"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Institution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#XXXfcbfb683_5897_4faa_ab38_47dda2b4162d"/>
+    </owl:Class>
     
 
 
     <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#InternalCodeTypes -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#InternalCodeTypes"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#InternalCodeTypes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#XXXfcbfb683_5897_4faa_ab38_47dda2b4162d"/>
+    </owl:Class>
     
 
 
@@ -79,14 +97,16 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#National">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ProjectType"/>
-        <rdfs:label>National</rdfs:label>
+        <rdfs:label xml:lang="en">National</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ParticipantType -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ParticipantType"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ParticipantType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#XXXfcbfb683_5897_4faa_ab38_47dda2b4162d"/>
+    </owl:Class>
     
 
 
@@ -94,14 +114,16 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Principal_Investigator">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ParticipantType"/>
-        <rdfs:label>Principal Investigator</rdfs:label>
+        <rdfs:label xml:lang="en">Principal Investigator</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ProjectType -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ProjectType"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ProjectType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#XXXfcbfb683_5897_4faa_ab38_47dda2b4162d"/>
+    </owl:Class>
     
 
 
@@ -109,7 +131,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Regional">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ProjectType"/>
-        <rdfs:label>Regional</rdfs:label>
+        <rdfs:label xml:lang="en">Regional</rdfs:label>
     </owl:Class>
     
 
@@ -118,16 +140,16 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#UPM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Institution"/>
-        <rdfs:label>UPM</rdfs:label>
+        <rdfs:label xml:lang="en">UPM</rdfs:label>
+        <rdfs:label xml:lang="es">UPM</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#CSIC/INIA -->
+    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#XXXfcbfb683_5897_4faa_ab38_47dda2b4162d -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#CSIC/INIA">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Institution"/>
-        <rdfs:label>CSIC/INIA</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#XXXfcbfb683_5897_4faa_ab38_47dda2b4162d">
+        <rdfs:label xml:lang="en">Answers</rdfs:label>
     </owl:Class>
     
 
@@ -136,11 +158,12 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#UPM/CSIC">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#ProjectType"/>
-        <rdfs:label>UPM/CSIC</rdfs:label>
+        <rdfs:label xml:lang="en">UPM/CSIC</rdfs:label>
+        <rdfs:label xml:lang="es">UPM/CSIC</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 

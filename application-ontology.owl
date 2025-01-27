@@ -25,6 +25,16 @@
 
     <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Articulo-60">
         <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+        <rdfs:label>Articulo-60</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Articulo-83 -->
+
+    <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Articulo-83">
+        <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+        <rdfs:label>Articulo-83</rdfs:label>
     </owl:Class>
     
 
@@ -33,6 +43,7 @@
 
     <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#European">
         <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+        <rdfs:label>European</rdfs:label>
     </owl:Class>
     
 
@@ -47,6 +58,7 @@
 
     <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Group_Member">
         <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ParticipantType"/>
+        <rdfs:label>Group Member</rdfs:label>
     </owl:Class>
     
 
@@ -67,6 +79,7 @@
 
     <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#National">
         <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+        <rdfs:label>National</rdfs:label>
     </owl:Class>
     
 
@@ -81,6 +94,7 @@
 
     <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Principal_Investigator">
         <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ParticipantType"/>
+        <rdfs:label>Principal Investigator</rdfs:label>
     </owl:Class>
     
 
@@ -95,6 +109,7 @@
 
     <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Regional">
         <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+        <rdfs:label>Regional</rdfs:label>
     </owl:Class>
     
 
@@ -103,6 +118,7 @@
 
     <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#UPM">
         <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Institution"/>
+        <rdfs:label>UPM</rdfs:label>
     </owl:Class>
     
 
@@ -111,6 +127,7 @@
 
     <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#CSIC/INIA">
         <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#Institution"/>
+        <rdfs:label>CSIC/INIA</rdfs:label>
     </owl:Class>
     
 
@@ -119,6 +136,7 @@
 
     <owl:Class rdf:about="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#UPM/CSIC">
         <rdfs:subClassOf rdf:resource="http://fair.cbgp.upm.es/resources/ontology/application-ontology.owl#ProjectType"/>
+        <rdfs:label>UPM/CSIC</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

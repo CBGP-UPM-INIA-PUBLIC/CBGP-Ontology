@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#"
-     xml:base="https://w3id.org/CBGP-App/cbgp-application-ontology.owl"
+<rdf:RDF xmlns="https://w3id.org/CBGP-App#"
+     xml:base="https://w3id.org/CBGP-App"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:cbgp-local="urn:cbgp-local:">
-    <owl:Ontology rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/CBGP-App"/>
     
 
 
@@ -57,308 +57,308 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Articulo-60 -->
+    <!-- https://w3id.org/CBGP-App#Articulo-60 -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Articulo-60">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-type"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#Articulo-60">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="es">Articulo-60</rdfs:label>
         <rdfs:label xml:lang="en">article 60</rdfs:label>
         <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Articulo-83 -->
+    <!-- https://w3id.org/CBGP-App#Articulo-83 -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Articulo-83">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-type"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#Articulo-83">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="en">Article 83</rdfs:label>
         <rdfs:label xml:lang="es">Articulo-83</rdfs:label>
         <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#CSIC-INIA -->
+    <!-- https://w3id.org/CBGP-App#CSIC-INIA -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#CSIC-INIA">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#institution"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#CSIC-INIA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#institution"/>
         <rdfs:label xml:lang="en">CSIC/INIA</rdfs:label>
         <rdfs:label xml:lang="es">CSIC/INIA</rdfs:label>
         <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#European -->
+    <!-- https://w3id.org/CBGP-App#European -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#European">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-type"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#European">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="en">European</rdfs:label>
         <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</cbgp-local:answer-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Group_Member -->
+    <!-- https://w3id.org/CBGP-App#Group_Member -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Group_Member">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#participant-type"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#Group_Member">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#participant-type"/>
         <rdfs:label xml:lang="en">Group Member</rdfs:label>
         <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#National -->
+    <!-- https://w3id.org/CBGP-App#National -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#National">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-type"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#National">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="en">National</rdfs:label>
         <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</cbgp-local:answer-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Principal_Investigator -->
+    <!-- https://w3id.org/CBGP-App#Principal_Investigator -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Principal_Investigator">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#participant-type"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#Principal_Investigator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#participant-type"/>
         <rdfs:label xml:lang="en">Principal Investigator</rdfs:label>
         <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Regional -->
+    <!-- https://w3id.org/CBGP-App#Regional -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#Regional">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-type"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#Regional">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="en">Regional</rdfs:label>
         <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</cbgp-local:answer-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#UPM -->
+    <!-- https://w3id.org/CBGP-App#UPM -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#UPM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#institution"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#UPM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#institution"/>
         <rdfs:label xml:lang="en">UPM</rdfs:label>
         <rdfs:label xml:lang="es">UPM</rdfs:label>
         <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#UPM-CSIC -->
+    <!-- https://w3id.org/CBGP-App#UPM-CSIC -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#UPM-CSIC">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-type"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#UPM-CSIC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="en">UPM/CSIC</rdfs:label>
         <rdfs:label xml:lang="es">UPM/CSIC</rdfs:label>
         <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</cbgp-local:answer-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#add-member -->
+    <!-- https://w3id.org/CBGP-App#add-member -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#add-member">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#forms"/>
-        <cbgp-local:has-fields rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-member-questions"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#add-member">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <cbgp-local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#add-project -->
+    <!-- https://w3id.org/CBGP-App#add-project -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#add-project">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#forms"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#add-project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#add-publication -->
+    <!-- https://w3id.org/CBGP-App#add-publication -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#add-publication">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#forms"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#add-publication">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#answers -->
+    <!-- https://w3id.org/CBGP-App#answers -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#answers">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#answers">
         <rdfs:label xml:lang="en">Answers</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#forms -->
+    <!-- https://w3id.org/CBGP-App#forms -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#forms">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#forms">
         <rdfs:label xml:lang="en">Forms</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#funding-institution-types -->
+    <!-- https://w3id.org/CBGP-App#funding-institution-types -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#funding-institution-types">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#answers"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#funding-institution-types">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#institution -->
+    <!-- https://w3id.org/CBGP-App#institution -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#institution">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#answers"/>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#institution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#internal-code-types -->
+    <!-- https://w3id.org/CBGP-App#internal-code-types -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#internal-code-types">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#answers"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#internal-code-types">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#multichoice -->
+    <!-- https://w3id.org/CBGP-App#multichoice -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#multichoice">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#widget-types"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#multichoice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-member-questions -->
+    <!-- https://w3id.org/CBGP-App#new-member-questions -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-member-questions">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#new-member-questions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#questions"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-project-questions -->
+    <!-- https://w3id.org/CBGP-App#new-project-questions -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-project-questions">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#new-project-questions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#questions"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-publication-questions -->
+    <!-- https://w3id.org/CBGP-App#new-publication-questions -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-publication-questions">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#new-publication-questions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#questions"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#newmember-name -->
+    <!-- https://w3id.org/CBGP-App#newmember-name -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#newmember-name">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-member-questions"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newmember-name">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
         <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:question-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#text"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#newmember-orcid -->
+    <!-- https://w3id.org/CBGP-App#newmember-orcid -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#newmember-orcid">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-member-questions"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newmember-orcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
         <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:question-order>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#text"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#participant-type -->
+    <!-- https://w3id.org/CBGP-App#participant-type -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#participant-type">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#answers"/>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#participant-type">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-identifier -->
+    <!-- https://w3id.org/CBGP-App#project-identifier -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-identifier">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-project-questions"/>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#text"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project-identifier">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-type -->
+    <!-- https://w3id.org/CBGP-App#project-type -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#project-type">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#answers"/>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project-type">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#publication-doi -->
+    <!-- https://w3id.org/CBGP-App#publication-doi -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#publication-doi">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#new-publication-questions"/>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#text"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication-doi">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions -->
+    <!-- https://w3id.org/CBGP-App#questions -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#questions"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#questions"/>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio -->
+    <!-- https://w3id.org/CBGP-App#radio -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#radio">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#widget-types"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#radio">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#text -->
+    <!-- https://w3id.org/CBGP-App#text -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#text">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#widget-types"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#text">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#textfield -->
+    <!-- https://w3id.org/CBGP-App#textfield -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#textfield">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#widget-types"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#textfield">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App/cbgp-application-ontology.owl#widget-types -->
+    <!-- https://w3id.org/CBGP-App#widget-types -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#widget-types"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#widget-types"/>
     
 
 
@@ -371,7 +371,7 @@
      -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App/cbgp-application-ontology.owl#text"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
     </rdf:Description>
 </rdf:RDF>
 

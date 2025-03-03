@@ -358,7 +358,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Authors</rdfs:label>
         <cbgp-local:widget-cardinality>multi</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#author"/>
     </owl:Class>
     
 

@@ -212,6 +212,15 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#author -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#author">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
+        <rdfs:comment>used for authors who have a name and an orcid</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#form-elements -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#form-elements">

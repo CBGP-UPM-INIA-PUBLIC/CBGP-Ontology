@@ -188,6 +188,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#add-member">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label>Add/Edit Member</rdfs:label>
         <cbgp-local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
     </owl:Class>
     
@@ -197,6 +198,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#add-project">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label>Add/Edit Project</rdfs:label>
     </owl:Class>
     
 
@@ -205,6 +207,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#add-publication">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label>Add/Edit Publication</rdfs:label>
         <cbgp-local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
     </owl:Class>
     
@@ -267,6 +270,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#forms">
         <rdfs:label xml:lang="en">Forms</rdfs:label>
+        <rdfs:label>Data Entry</rdfs:label>
     </owl:Class>
     
 
@@ -308,6 +312,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#new-member-questions">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
+        <rdfs:label>Member Questions</rdfs:label>
     </owl:Class>
     
 
@@ -316,6 +321,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#new-project-questions">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
+        <rdfs:label>Project Questions</rdfs:label>
     </owl:Class>
     
 
@@ -324,6 +330,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#new-publication-questions">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
+        <rdfs:label>Publication Questions</rdfs:label>
     </owl:Class>
     
 

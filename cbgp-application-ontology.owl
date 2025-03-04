@@ -22,6 +22,12 @@
     
 
 
+    <!-- urn:cbgp-local:answer-block -->
+
+    <owl:AnnotationProperty rdf:about="urn:cbgp-local:answer-block"/>
+    
+
+
     <!-- urn:cbgp-local:answer-order -->
 
     <owl:AnnotationProperty rdf:about="urn:cbgp-local:answer-order"/>
@@ -221,10 +227,38 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#form-elements -->
+    <!-- https://w3id.org/CBGP-App#cbgp_corresponding -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#form-elements">
-        <rdfs:label>Form elements</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#cbgp_corresponding">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#cbgpco_no -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#cbgpco_no">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#cbgp_corresponding"/>
+        <rdfs:label>No</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#cbgpco_yes -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#cbgpco_yes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#cbgp_corresponding"/>
+        <rdfs:label>Yes</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#fields -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#fields">
+        <rdfs:label>Fields</rdfs:label>
     </owl:Class>
     
 
@@ -273,7 +307,7 @@
     <!-- https://w3id.org/CBGP-App#new-member-questions -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#new-member-questions">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#form-elements"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
     </owl:Class>
     
 
@@ -281,7 +315,7 @@
     <!-- https://w3id.org/CBGP-App#new-project-questions -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#new-project-questions">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#form-elements"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
     </owl:Class>
     
 
@@ -289,7 +323,7 @@
     <!-- https://w3id.org/CBGP-App#new-publication-questions -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#new-publication-questions">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#form-elements"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
     </owl:Class>
     
 
@@ -310,6 +344,184 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
         <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:question-order>
         <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub1 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>Affiliations</rdfs:label>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>multi</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub10 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub10">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>Scopus Quartile</rdfs:label>
+        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub11 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub11">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>Scopus Decile 1?</rdfs:label>
+        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#scopus_d"/>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub12 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub12">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>SO Acknowledged?</rdfs:label>
+        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#so_acknowledged"/>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub2 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>Authors</rdfs:label>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>multi</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#author"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub3 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>Date</rdfs:label>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub4 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>DOI</rdfs:label>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub5 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub5">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>Title</rdfs:label>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub6 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub6">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>Journal Name</rdfs:label>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub7 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub7">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>CBGP Corresponding Author?</rdfs:label>
+        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#cbgp_corresponding"/>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub8 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub8">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>Publication Type</rdfs:label>
+        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#publication-type"/>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#newpub9 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub9">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label>Open Access?</rdfs:label>
+        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#open_access"/>
+        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</cbgp-local:question-order>
+        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
+        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#oa_no -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#oa_no">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#open_access"/>
+        <rdfs:label>No</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#oa_yes -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#oa_yes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#open_access"/>
+        <rdfs:label>Yes</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#open_access -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#open_access">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
     </owl:Class>
     
 
@@ -341,57 +553,30 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#publication-affiliations -->
+    <!-- https://w3id.org/CBGP-App#ptype1 -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication-affiliations">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label>Affiliations</rdfs:label>
-        <cbgp-local:widget-cardinality>multi</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ptype1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#publication-type"/>
+        <rdfs:label>Article</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App#publication-authors -->
+    <!-- https://w3id.org/CBGP-App#ptype2 -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication-authors">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label>Authors</rdfs:label>
-        <cbgp-local:widget-cardinality>multi</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#author"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ptype2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#publication-type"/>
+        <rdfs:label>Book</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App#publication-date -->
+    <!-- https://w3id.org/CBGP-App#publication-type -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication-date">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label>Date</rdfs:label>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#publication-doi -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication-doi">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label>DOI</rdfs:label>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#publication-title -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication-title">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label>Title</rdfs:label>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-types rdf:resource="https://w3id.org/CBGP-App#text"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication-type">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
     </owl:Class>
     
 
@@ -400,6 +585,110 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#radio">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#scopus_d -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#scopus_d">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#scopus_q -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#scopus_q">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#scopusd1_yes -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#scopusd1_yes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_d"/>
+        <rdfs:label>Yes</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#scopusq1 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#scopusq1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
+        <rdfs:label>Scopus Q1</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#scopusq2 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#scopusq2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
+        <rdfs:label>Scopus Q2</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#scopusq3 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#scopusq3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
+        <rdfs:label>Scopus Q3</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#scopusq4 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#scopusq4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
+        <rdfs:label>Scopus Q4</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#scopysd1no -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#scopysd1no">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_d"/>
+        <rdfs:label>No</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#so_ack_no -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#so_ack_no">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#so_acknowledged"/>
+        <rdfs:label>No</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#so_ack_yes -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#so_ack_yes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#so_acknowledged"/>
+        <rdfs:label>Yes</rdfs:label>
+        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#so_acknowledged -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#so_acknowledged">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
     </owl:Class>
     
 

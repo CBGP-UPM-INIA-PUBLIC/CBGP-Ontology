@@ -356,7 +356,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#new-publication-questions">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
-        <rdfs:label>Publication Questions</rdfs:label>
+        <rdfs:label>Publication Fields</rdfs:label>
     </owl:Class>
     
 
@@ -447,7 +447,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Authors</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-class>CBGP::Publication::Author</local:object-class>
         <local:object-method>authors</local:object-method>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:question-order>
         <local:widget-cardinality>multi</local:widget-cardinality>

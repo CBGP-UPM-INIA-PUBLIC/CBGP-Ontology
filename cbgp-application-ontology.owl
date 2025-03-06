@@ -6,6 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:local="urn:local:"
      xmlns:cbgp-local="urn:cbgp-local:">
     <owl:Ontology rdf:about="https://w3id.org/CBGP-App"/>
     
@@ -22,51 +23,51 @@
     
 
 
-    <!-- urn:cbgp-local:answer-block -->
+    <!-- urn:local:answer-block -->
 
-    <owl:AnnotationProperty rdf:about="urn:cbgp-local:answer-block"/>
+    <owl:AnnotationProperty rdf:about="urn:local:answer-block"/>
     
 
 
-    <!-- urn:cbgp-local:answer-order -->
+    <!-- urn:local:answer-order -->
 
-    <owl:AnnotationProperty rdf:about="urn:cbgp-local:answer-order"/>
+    <owl:AnnotationProperty rdf:about="urn:local:answer-order"/>
     
 
 
-    <!-- urn:cbgp-local:has-fields -->
+    <!-- urn:local:has-fields -->
 
-    <owl:AnnotationProperty rdf:about="urn:cbgp-local:has-fields"/>
+    <owl:AnnotationProperty rdf:about="urn:local:has-fields"/>
     
 
 
-    <!-- urn:cbgp-local:object-class -->
+    <!-- urn:local:object-class -->
 
-    <owl:AnnotationProperty rdf:about="urn:cbgp-local:object-class"/>
+    <owl:AnnotationProperty rdf:about="urn:local:object-class"/>
     
 
 
-    <!-- urn:cbgp-local:object-method -->
+    <!-- urn:local:object-method -->
 
-    <owl:AnnotationProperty rdf:about="urn:cbgp-local:object-method"/>
+    <owl:AnnotationProperty rdf:about="urn:local:object-method"/>
     
 
 
-    <!-- urn:cbgp-local:question-order -->
+    <!-- urn:local:question-order -->
 
-    <owl:AnnotationProperty rdf:about="urn:cbgp-local:question-order"/>
+    <owl:AnnotationProperty rdf:about="urn:local:question-order"/>
     
 
 
-    <!-- urn:cbgp-local:widget-cardinality -->
+    <!-- urn:local:widget-cardinality -->
 
-    <owl:AnnotationProperty rdf:about="urn:cbgp-local:widget-cardinality"/>
+    <owl:AnnotationProperty rdf:about="urn:local:widget-cardinality"/>
     
 
 
-    <!-- urn:cbgp-local:widget-type -->
+    <!-- urn:local:widget-type -->
 
-    <owl:AnnotationProperty rdf:about="urn:cbgp-local:widget-type"/>
+    <owl:AnnotationProperty rdf:about="urn:local:widget-type"/>
     
 
 
@@ -87,8 +88,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="es">Articulo-60</rdfs:label>
         <rdfs:label xml:lang="en">article 60</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -99,8 +100,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="en">Article 83</rdfs:label>
         <rdfs:label xml:lang="es">Articulo-83</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -109,7 +110,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#BIGFREE">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
     </owl:Class>
     
 
@@ -120,7 +121,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#institution"/>
         <rdfs:label xml:lang="en">CSIC/INIA</rdfs:label>
         <rdfs:label xml:lang="es">CSIC/INIA</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
     </owl:Class>
     
 
@@ -130,8 +131,8 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#European">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="en">European</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</cbgp-local:answer-order>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</local:answer-order>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -140,7 +141,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#FREE">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -150,8 +151,8 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#Group_Member">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#participant-type"/>
         <rdfs:label xml:lang="en">Group Member</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -160,7 +161,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#NUM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -170,8 +171,8 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#National">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="en">National</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</cbgp-local:answer-order>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</local:answer-order>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -181,8 +182,8 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#Principal_Investigator">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#participant-type"/>
         <rdfs:label xml:lang="en">Principal Investigator</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -192,8 +193,8 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#Regional">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="en">Regional</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</cbgp-local:answer-order>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</local:answer-order>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -204,7 +205,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#institution"/>
         <rdfs:label xml:lang="en">UPM</rdfs:label>
         <rdfs:label xml:lang="es">UPM</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
     </owl:Class>
     
 
@@ -215,8 +216,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
         <rdfs:label xml:lang="en">UPM/CSIC</rdfs:label>
         <rdfs:label xml:lang="es">UPM/CSIC</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</cbgp-local:answer-order>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</local:answer-order>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -226,7 +227,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#add-member">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
         <rdfs:label>Add/Edit Member</rdfs:label>
-        <cbgp-local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
     </owl:Class>
     
 
@@ -245,7 +246,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#add-publication">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
         <rdfs:label>Add/Edit Publication</rdfs:label>
-        <cbgp-local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
     </owl:Class>
     
 
@@ -271,7 +272,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#cbgp_corresponding">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -281,7 +282,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#cbgpco_no">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#cbgp_corresponding"/>
         <rdfs:label>No</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
     </owl:Class>
     
 
@@ -291,7 +292,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#cbgpco_yes">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#cbgp_corresponding"/>
         <rdfs:label>Yes</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
     </owl:Class>
     
 
@@ -317,7 +318,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#funding-institution-types">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -326,7 +327,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#institution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -335,7 +336,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#internal-code-types">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -379,8 +380,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newmember-name">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:question-order>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:question-order>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -389,8 +390,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newmember-orcid">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:question-order>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:question-order>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -400,12 +401,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Affiliations</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>affiliations</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>multi</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>affiliations</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</local:question-order>
+        <local:widget-cardinality>multi</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -415,12 +416,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub10">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Scopus Quartile</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>scopusq</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>scopusq</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</local:question-order>
+        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -430,12 +431,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub11">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Scopus Decile 1?</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#scopus_d"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>scopusd1</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#scopus_d"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>scopusd1</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</local:question-order>
+        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -445,12 +446,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub12">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>SO Acknowledged?</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#so_acknowledged"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>sochoa</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#so_acknowledged"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>sochoa</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</local:question-order>
+        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -460,12 +461,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Authors</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>authors</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>multi</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#author"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>authors</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:question-order>
+        <local:widget-cardinality>multi</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#author"/>
     </owl:Class>
     
 
@@ -475,12 +476,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub3">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Date</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>date</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>date</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</local:question-order>
+        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -490,12 +491,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub4">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>DOI</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>doi</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>doi</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</local:question-order>
+        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -505,12 +506,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub5">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Title</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>title</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>title</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:question-order>
+        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -520,12 +521,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub6">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Journal Name</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>journal</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>journal</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</local:question-order>
+        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -535,12 +536,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub7">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>CBGP Corresponding Author?</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#cbgp_corresponding"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>cbgp_corresponding</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#cbgp_corresponding"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>cbgp_corresponding</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</local:question-order>
+        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -550,12 +551,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub8">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Publication Type</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#publication-type"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>pubtype</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#publication-type"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>pubtype</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</local:question-order>
+        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -565,12 +566,12 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub9">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
         <rdfs:label>Open Access?</rdfs:label>
-        <cbgp-local:answer-block rdf:resource="https://w3id.org/CBGP-App#open_access"/>
-        <cbgp-local:object-class>CBGP::Publication</cbgp-local:object-class>
-        <cbgp-local:object-method>oa</cbgp-local:object-method>
-        <cbgp-local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</cbgp-local:question-order>
-        <cbgp-local:widget-cardinality>single</cbgp-local:widget-cardinality>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#open_access"/>
+        <local:object-class>CBGP::Publication</local:object-class>
+        <local:object-method>oa</local:object-method>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</local:question-order>
+        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -580,7 +581,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#oa_no">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#open_access"/>
         <rdfs:label>No</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
     </owl:Class>
     
 
@@ -590,7 +591,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#oa_yes">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#open_access"/>
         <rdfs:label>Yes</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
     </owl:Class>
     
 
@@ -599,7 +600,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#open_access">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -608,7 +609,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#participant-type">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -617,7 +618,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project-identifier">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -626,7 +627,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project-type">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -636,7 +637,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#ptype1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#publication-type"/>
         <rdfs:label>Article</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
     </owl:Class>
     
 
@@ -646,7 +647,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#ptype2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#publication-type"/>
         <rdfs:label>Book</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
     </owl:Class>
     
 
@@ -655,7 +656,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#publication-type">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -672,7 +673,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopus_d">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -681,7 +682,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopus_q">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -691,7 +692,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopusd1_yes">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_d"/>
         <rdfs:label>Yes</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
     </owl:Class>
     
 
@@ -701,7 +702,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopusq1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
         <rdfs:label>Scopus Q1</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
     </owl:Class>
     
 
@@ -711,7 +712,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopusq2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
         <rdfs:label>Scopus Q2</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
     </owl:Class>
     
 
@@ -721,7 +722,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopusq3">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
         <rdfs:label>Scopus Q3</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</local:answer-order>
     </owl:Class>
     
 
@@ -731,7 +732,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopusq4">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
         <rdfs:label>Scopus Q4</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</local:answer-order>
     </owl:Class>
     
 
@@ -741,7 +742,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopysd1_no">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#scopus_d"/>
         <rdfs:label>No</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
     </owl:Class>
     
 
@@ -751,7 +752,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#so_ack_no">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#so_acknowledged"/>
         <rdfs:label>No</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
     </owl:Class>
     
 
@@ -761,7 +762,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#so_ack_yes">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#so_acknowledged"/>
         <rdfs:label>Yes</rdfs:label>
-        <cbgp-local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cbgp-local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
     </owl:Class>
     
 
@@ -770,7 +771,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#so_acknowledged">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -806,7 +807,7 @@
      -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <cbgp-local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </rdf:Description>
 </rdf:RDF>
 

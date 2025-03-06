@@ -106,15 +106,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#BIGFREE -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#BIGFREE">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#CSIC-INIA -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#CSIC-INIA">
@@ -141,7 +132,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#FREE">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -161,7 +151,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#NUM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -272,7 +261,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#cbgp_corresponding">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -318,7 +306,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#funding-institution-types">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -327,7 +314,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#institution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -336,7 +322,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#internal-code-types">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -600,7 +585,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#open_access">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -609,7 +593,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#participant-type">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -627,7 +610,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project-type">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -656,7 +638,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#publication-type">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -673,7 +654,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopus_d">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -682,7 +662,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopus_q">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -771,7 +750,6 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#so_acknowledged">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 

@@ -240,6 +240,14 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#affiliations -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#affiliations">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#answers -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#answers">
@@ -248,9 +256,9 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#author -->
+    <!-- https://w3id.org/CBGP-App#authors -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#author">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#authors">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
         <rdfs:comment>used for authors who have a name and an orcid</rdfs:comment>
     </owl:Class>
@@ -391,7 +399,7 @@
         <local:object-method>affiliations</local:object-method>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</local:question-order>
         <local:widget-cardinality>multi</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#affiliations"/>
     </owl:Class>
     
 
@@ -451,7 +459,7 @@
         <local:object-method>authors</local:object-method>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:question-order>
         <local:widget-cardinality>multi</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#author"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#authors"/>
     </owl:Class>
     
 

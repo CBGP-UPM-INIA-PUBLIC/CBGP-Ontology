@@ -648,7 +648,7 @@
         <rdfs:comment>(INIA, UPM)</rdfs:comment>
         <rdfs:label>Ressearch Group Affiliation</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#institution"/>
-        <local:object-method>resesarch_group_affiliation</local:object-method>
+        <local:object-method>research_group_affiliation</local:object-method>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:question-order>
         <local:widget-cardinality>single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>

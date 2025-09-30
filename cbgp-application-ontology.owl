@@ -177,6 +177,14 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#HiddenField -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#HiddenField">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#I3_doctor_professor -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#I3_doctor_professor">
@@ -2345,9 +2353,14 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#mem_primary_id">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">primary identifier</rdfs:label>
+        <rdfs:label xml:lang="es">primary identifier</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#HIDDEN"/>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</local:answer-order>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
+        <local:method>primary_id</local:method>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#HiddenField"/>
     </owl:Class>
     
 
@@ -3870,9 +3883,14 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#proj_primary_id">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">primary identifier</rdfs:label>
+        <rdfs:label xml:lang="es">primary identifier</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#HIDDEN"/>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</local:answer-order>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
+        <local:method>primary_id</local:method>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#HiddenField"/>
     </owl:Class>
     
 

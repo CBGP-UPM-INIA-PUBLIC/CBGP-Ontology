@@ -2266,7 +2266,7 @@
         <rdfs:label xml:lang="en">Thesis year</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:method>thesis_date</local:method>
-        <local:object-class>Date</local:object-class>
+        <local:object-class>Integer</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>

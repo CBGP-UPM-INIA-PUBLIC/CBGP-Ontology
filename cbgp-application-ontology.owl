@@ -260,6 +260,14 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#TreeSelector -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#TreeSelector">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#UPM -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#UPM">
@@ -2221,7 +2229,7 @@
         <local:method>category</local:method>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#TreeSelector"/>
     </owl:Class>
     
 

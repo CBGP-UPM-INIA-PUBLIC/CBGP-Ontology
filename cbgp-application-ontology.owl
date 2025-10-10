@@ -334,39 +334,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#add-member -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#add-member">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
-        <rdfs:label xml:lang="en">Add/Edit member</rdfs:label>
-        <rdfs:label xml:lang="es">Añadir/Editar miembro</rdfs:label>
-        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#add-project -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#add-project">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
-        <rdfs:label xml:lang="en">Add/Edit project</rdfs:label>
-        <rdfs:label xml:lang="es">Añadir/Editar proyecto</rdfs:label>
-        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#add-publication -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#add-publication">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
-        <rdfs:label xml:lang="en">Add/Edit publication</rdfs:label>
-        <rdfs:label xml:lang="es">Añadir/Editar publicación</rdfs:label>
-        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#administration_management -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#administration_management">
@@ -2373,6 +2340,17 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#member -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label xml:lang="en">Member</rdfs:label>
+        <rdfs:label xml:lang="es">Miembro</rdfs:label>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#member_gender -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#member_gender">
@@ -3903,6 +3881,17 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#project -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label xml:lang="en">Project</rdfs:label>
+        <rdfs:label xml:lang="es">Proyecto</rdfs:label>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#project-type -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project-type">
@@ -3942,6 +3931,17 @@
         <rdfs:label xml:lang="en">Book</rdfs:label>
         <rdfs:label xml:lang="es">Libro</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label xml:lang="es">Publicación</rdfs:label>
+        <rdfs:label xml:lang="en">Publication</rdfs:label>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
     </owl:Class>
     
 

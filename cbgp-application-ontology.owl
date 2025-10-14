@@ -941,7 +941,7 @@
     <!-- https://w3id.org/CBGP-App#comp_systems_biology_genetics -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#comp_systems_biology_genetics">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research-areas_groups"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
         <rdfs:label xml:lang="es">Biología de sistemas y Genómica computacional</rdfs:label>
         <rdfs:label xml:lang="en">Computational systems biology and genomics</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdfs:label>
@@ -3183,7 +3183,7 @@
     <!-- https://w3id.org/CBGP-App#plant-environment -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research-areas_groups"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
         <rdfs:label xml:lang="es">Interación de las plantas con el medio</rdfs:label>
         <rdfs:label xml:lang="en">Plan-environment interactions</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
@@ -3410,7 +3410,7 @@
     <!-- https://w3id.org/CBGP-App#plant_development -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research-areas_groups"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
         <rdfs:label xml:lang="es">Desarrollo de plantas</rdfs:label>
         <rdfs:label xml:lang="en">Plant development</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
@@ -3988,9 +3988,9 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#research-area_group -->
+    <!-- https://w3id.org/CBGP-App#research_area_group -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#research-area_group">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#research_area_group">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
         <rdfs:label xml:lang="en">Research area - Group</rdfs:label>
         <rdfs:label xml:lang="es">Área de investigación - Grupo</rdfs:label>
@@ -4004,9 +4004,9 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#research-areas_groups -->
+    <!-- https://w3id.org/CBGP-App#research_areas_groups -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#research-areas_groups">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#research_areas_groups">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="en">Research areas - Groups</rdfs:label>
         <rdfs:label xml:lang="es">Áreas de investigación - Grupos</rdfs:label>
@@ -4540,7 +4540,7 @@
     <!-- https://w3id.org/CBGP-App#synthetic-biology_bioengineering -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research-areas_groups"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
         <rdfs:label xml:lang="es">Sintética y Bioingeniería</rdfs:label>
         <rdfs:label xml:lang="en">Synthetic biology and Bioengineering</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>

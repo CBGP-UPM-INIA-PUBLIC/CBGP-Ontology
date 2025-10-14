@@ -3994,7 +3994,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
         <rdfs:label xml:lang="en">Research area - Group</rdfs:label>
         <rdfs:label xml:lang="es">Área de investigación - Grupo</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#research-areas_groups"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
         <local:method>research_area</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</local:question-order>

@@ -3601,7 +3601,7 @@
         <local:method>external_identifier</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:question-order>
-        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-cardinality>multi</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     

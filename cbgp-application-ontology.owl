@@ -35,6 +35,12 @@
     
 
 
+    <!-- urn:local:form-category -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:form-category"/>
+    
+
+
     <!-- urn:local:group-pi -->
 
     <owl:AnnotationProperty rdf:about="urn:local:group-pi"/>
@@ -319,6 +325,16 @@
         <rdfs:label xml:lang="en">Technician UPM general foundation</rdfs:label>
         <rdfs:label xml:lang="es">Técnico fundación general UPM</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#UserProject -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#UserProject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label xml:lang="en">UserProject</rdfs:label>
+        <local:form-category xml:lang="en">UserFacing</local:form-category>
     </owl:Class>
     
 
@@ -2411,6 +2427,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
         <rdfs:label xml:lang="en">Member</rdfs:label>
         <rdfs:label xml:lang="es">Miembro</rdfs:label>
+        <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
     </owl:Class>
     
@@ -2783,7 +2800,7 @@
         <rdfs:label xml:lang="es">Autores</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:method>authors</local:method>
-        <local:object-class rdf:resource="String"/>
+        <local:object-class rdf:resource="https://w3id.org/String"/>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:question-order>
         <local:widget-cardinality>Multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
@@ -3709,6 +3726,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#proj14">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:label xml:lang="es">Financiación total</rdfs:label>
         <rdfs:label xml:lang="en">Total funding</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
@@ -3837,6 +3855,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#proj21">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:label xml:lang="en">Call for proposal</rdfs:label>
         <rdfs:label xml:lang="es">Convocatoria</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
@@ -3853,6 +3872,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#proj22">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:label xml:lang="en">Application reference</rdfs:label>
         <rdfs:label xml:lang="es">Referencia de la solicitud</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
@@ -3900,6 +3920,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#proj3">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:label xml:lang="en">IP ORCiD</rdfs:label>
         <rdfs:label xml:lang="es">ORCiD del PI</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
@@ -3916,6 +3937,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#proj4">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:label xml:lang="en">Title</rdfs:label>
         <rdfs:label xml:lang="es">Título</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
@@ -3996,6 +4018,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#proj9">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:comment>(European, National, Regional, art60, UPM/CSIC)</rdfs:comment>
         <rdfs:label xml:lang="en">Project type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de proyecto</rdfs:label>
@@ -4031,6 +4054,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
         <rdfs:label xml:lang="en">Project</rdfs:label>
         <rdfs:label xml:lang="es">Proyecto</rdfs:label>
+        <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
     </owl:Class>
     
@@ -4085,6 +4109,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
         <rdfs:label xml:lang="es">Publicación</rdfs:label>
         <rdfs:label xml:lang="en">Publication</rdfs:label>
+        <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
     </owl:Class>
     
@@ -5074,6 +5099,16 @@
         <rdfs:label xml:lang="es">Estados Unidos de América</rdfs:label>
         <rdfs:label xml:lang="en">United States of America</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#user-project-fields -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#user-project-fields">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
+        <rdfs:label xml:lang="es">Campos de Proyecto (Miembro)</rdfs:label>
+        <rdfs:label xml:lang="en">User Project Fields</rdfs:label>
     </owl:Class>
     
 

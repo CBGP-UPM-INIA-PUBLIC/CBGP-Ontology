@@ -35,6 +35,12 @@
     
 
 
+    <!-- urn:local:dbname -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:dbname"/>
+    
+
+
     <!-- urn:local:form-category -->
 
     <owl:AnnotationProperty rdf:about="urn:local:form-category"/>
@@ -333,8 +339,11 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#UserProject">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
-        <rdfs:label xml:lang="en">UserProject</rdfs:label>
+        <rdfs:label xml:lang="en">User Project</rdfs:label>
+        <rdfs:label xml:lang="es">User Project</rdfs:label>
+        <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">UserFacing</local:form-category>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
     </owl:Class>
     
 
@@ -2427,6 +2436,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
         <rdfs:label xml:lang="en">Member</rdfs:label>
         <rdfs:label xml:lang="es">Miembro</rdfs:label>
+        <local:dbname xml:lang="en">member</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
     </owl:Class>
@@ -4054,6 +4064,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
         <rdfs:label xml:lang="en">Project</rdfs:label>
         <rdfs:label xml:lang="es">Proyecto</rdfs:label>
+        <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
     </owl:Class>
@@ -4109,6 +4120,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
         <rdfs:label xml:lang="es">Publicación</rdfs:label>
         <rdfs:label xml:lang="en">Publication</rdfs:label>
+        <local:dbname xml:lang="en">pubication</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
     </owl:Class>

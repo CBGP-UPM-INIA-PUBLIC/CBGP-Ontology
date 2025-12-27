@@ -335,19 +335,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#UserProject -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#UserProject">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
-        <rdfs:label xml:lang="en">User Project</rdfs:label>
-        <rdfs:label xml:lang="es">User Project</rdfs:label>
-        <local:dbname xml:lang="en">project</local:dbname>
-        <local:form-category xml:lang="en">UserFacing</local:form-category>
-        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#YEI_lab_technician -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#YEI_lab_technician">
@@ -5121,6 +5108,19 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
         <rdfs:label xml:lang="es">Campos de Proyecto (Miembro)</rdfs:label>
         <rdfs:label xml:lang="en">User Project Fields</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#userproject -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#userproject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label xml:lang="en">User Project</rdfs:label>
+        <rdfs:label xml:lang="es">User Project</rdfs:label>
+        <local:dbname xml:lang="en">project</local:dbname>
+        <local:form-category xml:lang="en">UserFacing</local:form-category>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
     </owl:Class>
     
 

@@ -2166,11 +2166,28 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
         <rdfs:label xml:lang="en">Projects</rdfs:label>
         <rdfs:label xml:lang="es">Proyectos</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>projects</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</local:question-order>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#mem031 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem031">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="es">Publicaciones</rdfs:label>
+        <rdfs:label xml:lang="en">Publications</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>publications</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</local:question-order>
         <local:widget-cardinality>Multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
@@ -2236,8 +2253,8 @@
         <rdfs:label xml:lang="es">Teléfono personal</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:object-class>phone_number</local:object-class>
         <local:object-class>String</local:object-class>
+        <local:object-class>phone_number</local:object-class>
         <local:question-order xml:lang="en">12</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
@@ -2423,8 +2440,8 @@
         <rdfs:label xml:lang="es">Oficina</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:object-class>office</local:object-class>
         <local:object-class>String</local:object-class>
+        <local:object-class>office</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>

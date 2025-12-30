@@ -797,7 +797,7 @@
     <!-- https://w3id.org/CBGP-App#call_reference -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#call_reference">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="en">Project call reference</rdfs:label>
         <rdfs:label xml:lang="es">Referencia de la convocatoria</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
@@ -1288,7 +1288,7 @@
     <!-- https://w3id.org/CBGP-App#ext_project_reference -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#ext_project_reference">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="en">External/Project reference</rdfs:label>
         <rdfs:label xml:lang="es">Referencia proyecto/externo</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
@@ -1685,7 +1685,7 @@
     <!-- https://w3id.org/CBGP-App#int_project_code -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#int_project_code">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="es">Código interno del proyecto</rdfs:label>
         <rdfs:label xml:lang="en">Internal project code</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
@@ -4103,7 +4103,6 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#proj9">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:comment>(European, National, Regional, art60, UPM/CSIC)</rdfs:comment>
         <rdfs:label xml:lang="en">Project type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de proyecto</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#project-type"/>

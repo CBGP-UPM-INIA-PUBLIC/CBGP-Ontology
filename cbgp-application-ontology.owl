@@ -2236,7 +2236,7 @@
         <rdfs:label xml:lang="es">Teléfono del laboratorio</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>phone_number</local:method>
+        <local:method>lab_phone_number</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
@@ -2287,7 +2287,7 @@
         <rdfs:label xml:lang="es">Fecha estimada de baja</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>end_date</local:method>
+        <local:method>estimated_end_date</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
@@ -2457,7 +2457,7 @@
         <rdfs:label xml:lang="es">Teléfono de la oficina</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>phone_number</local:method>
+        <local:method>office_phone_number</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>

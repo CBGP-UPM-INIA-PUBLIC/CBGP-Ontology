@@ -3326,7 +3326,7 @@
 
     <!-- https://w3id.org/CBGP-App#plant-environment -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_environment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
         <rdfs:label xml:lang="es">Interación de las plantas con el medio</rdfs:label>
         <rdfs:label xml:lang="en">Plan-environment interactions</rdfs:label>

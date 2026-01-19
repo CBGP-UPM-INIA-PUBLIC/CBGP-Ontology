@@ -3375,8 +3375,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_12">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="en">Jesús Vicente-Carbajosa</rdfs:label>
-        <rdfs:label xml:lang="es">Jesús Vicente-Carbajosa</rdfs:label>
+        <rdfs:label xml:lang="en">Regulatory networks in seeds: integration of development, metabolism, and environmental conditions</rdfs:label>
+        <rdfs:label xml:lang="es">Redes reguladoras en semillas: integración de desarrollo, metabolismo y condiciones ambientales</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</local:answer-order>
         <local:group-pi>Jesús Vicente-Carbajosa</local:group-pi>
     </owl:Class>

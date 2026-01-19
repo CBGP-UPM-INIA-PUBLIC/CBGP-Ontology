@@ -3399,8 +3399,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_14">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Mecanismos moleculares de virulencia de hongos patógenos de plantas</rdfs:label>
-        <rdfs:label xml:lang="en">Molecular mechanisms of virulence in plant pathogenic fungi</rdfs:label>
+        <rdfs:label xml:lang="es">Adaptación al huésped en hongos patógenos de plantas</rdfs:label>
+        <rdfs:label xml:lang="en">Host adaptation in plant pathogenic fungi</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:answer-order>
         <local:group-pi>Andrea Sánchez Vallet</local:group-pi>
     </owl:Class>

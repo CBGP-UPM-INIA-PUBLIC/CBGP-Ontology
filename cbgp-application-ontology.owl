@@ -4852,7 +4852,7 @@
 
     <!-- https://w3id.org/CBGP-App#synthetic-biology_bioengineering_4 -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering_4">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development_11">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
         <rdfs:label xml:lang="en">Gene silencing in the reprogramming of development under abiotic stress</rdfs:label>
         <rdfs:label xml:lang="es">Silenciamiento génico en la reprogramación del desarrollo bajo estrés abiótico</rdfs:label>

@@ -3411,8 +3411,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_15">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="en">Ecological and molecular factors involved in fungal endophytism and pathogenesis</rdfs:label>
-        <rdfs:label xml:lang="es">Factores ecológicos y moleculares implicados en el endofitismo y la patogénesis de hongos</rdfs:label>
+        <rdfs:label xml:lang="en">Molecular and environmental determinants of endophytism in fungi</rdfs:label>
+        <rdfs:label xml:lang="es">Determinantes moleculares y ambientales del endofitismo en hongos</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:answer-order>
         <local:group-pi>Soledad Sacristán</local:group-pi>
     </owl:Class>

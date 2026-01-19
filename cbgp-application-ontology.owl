@@ -3423,8 +3423,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_16">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Estudio del compromiso defensa-crecimiento establecido en las plantas durante la infestación con plagas</rdfs:label>
-        <rdfs:label xml:lang="en">Study of the defense–growth trade-off in plants during pest infestation</rdfs:label>
+        <rdfs:label xml:lang="es">Dinámicas moleculares planta-plaga para una protección sostenible</rdfs:label>
+        <rdfs:label xml:lang="en">Molecular dynamics of plant–pest interactions for sustainable protection</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:answer-order>
         <local:group-pi>Estrella Santamaría</local:group-pi>
     </owl:Class>

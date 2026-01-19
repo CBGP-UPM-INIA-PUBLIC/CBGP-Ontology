@@ -3471,8 +3471,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_3">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Inmunidad innata en plantas y resistencia a hongos necrótrofos</rdfs:label>
-        <rdfs:label xml:lang="en">Innate immunity in plants and resistance to necrotrophic fungi</rdfs:label>
+        <rdfs:label xml:lang="es">Inmunidad de plantas mediada por glicanos derivados de la pared celular</rdfs:label>
+        <rdfs:label xml:lang="en">Plant immunity mediated by cell wall–derived glycans</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
         <local:group-pi>Antonio Molina</local:group-pi>
     </owl:Class>

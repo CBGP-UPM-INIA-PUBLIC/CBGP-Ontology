@@ -3662,8 +3662,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development_8">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant_development"/>
-        <rdfs:label xml:lang="en">Crecimiento secundario de plantas y plasticidad frente a estreses abióticos</rdfs:label>
-        <rdfs:label xml:lang="es">Crecimiento secundario de plantas y plasticidad frente a estreses abióticos</rdfs:label>
+        <rdfs:label xml:lang="en">Secondary </rdfs:label>
+        <rdfs:label xml:lang="es">Secondary growth in plants and plasticity in response to abiotic stresses</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
         <local:group-pi>Daniel Conde Rodríguez</local:group-pi>
     </owl:Class>

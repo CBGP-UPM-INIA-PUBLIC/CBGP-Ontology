@@ -3889,7 +3889,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
         <rdfs:label xml:lang="en">Gene silencing in the reprogramming of development under abiotic stress</rdfs:label>
         <rdfs:label xml:lang="es">Silenciamiento génico en la reprogramación del desarrollo bajo estrés abiótico</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:answer-order>
         <local:group-pi>Elena Caro</local:group-pi>
     </owl:Class>
     

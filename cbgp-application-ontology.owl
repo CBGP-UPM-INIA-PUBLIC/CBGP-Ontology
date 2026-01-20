@@ -1086,6 +1086,32 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#comp_systems_biology_genetics_6 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#comp_systems_biology_genetics_6">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#comp_systems_biology_genetics"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="es">Dinámica evolutiva de genomas, virus y poblaciones microbianaś</rdfs:label>
+        <rdfs:label xml:lang="en">Evolutionary dynamics of genomes, viruses, and microbial populations</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
+        <local:group-pi>Jaime Iranzo</local:group-pi>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#comp_systems_biology_genetics_7 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#comp_systems_biology_genetics_7">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#comp_systems_biology_genetics"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="es">Diversidad genética y bases moleculares de la tolerancia a sequía en legumbres</rdfs:label>
+        <rdfs:label xml:lang="en">Genetic diversity and molecular bases of drought tolerance in legumes</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
+        <local:group-pi>Elena Ramírez</local:group-pi>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#congo -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#congo">
@@ -3705,8 +3731,8 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_20">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
         <rdfs:comment>(Deprecated)</rdfs:comment>
-        <rdfs:label xml:lang="en">MIguel Ángel Torres</rdfs:label>
-        <rdfs:label xml:lang="es">MIguel Ángel Torres</rdfs:label>
+        <rdfs:label xml:lang="en">Miguel Ángel Torres</rdfs:label>
+        <rdfs:label xml:lang="es">Miguel Ángel Torres</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</local:answer-order>
         <local:group-pi>MIguel Ángel Torres</local:group-pi>
     </owl:Class>
@@ -3886,11 +3912,63 @@
     <!-- https://w3id.org/CBGP-App#plant_development_11 -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development_11">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant_development"/>
         <rdfs:label xml:lang="en">Gene silencing in the reprogramming of development under abiotic stress</rdfs:label>
         <rdfs:label xml:lang="es">Silenciamiento génico en la reprogramación del desarrollo bajo estrés abiótico</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:answer-order>
         <local:group-pi>Elena Caro</local:group-pi>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#plant_development_12 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development_12">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant_development"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="en">Pilar Carbonero</rdfs:label>
+        <rdfs:label xml:lang="es">Pilar Carbonero</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</local:answer-order>
+        <local:group-pi>Pilar Carbonero</local:group-pi>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#plant_development_13 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development_13">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant_development"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="en">Analysis of natural variations in grape</rdfs:label>
+        <rdfs:label xml:lang="es">Análisis de variaciones naturales en uva</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:answer-order>
+        <local:group-pi>Rosa Arroyo</local:group-pi>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#plant_development_14 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development_14">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant_development"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="es">Homeostasis de K+ y Na+ en hongos y plantas</rdfs:label>
+        <rdfs:label xml:lang="en">K+ and Na+ homeostasis in fungi and plants</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:answer-order>
+        <local:group-pi>Begoña Benito</local:group-pi>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#plant_development_15 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development_15">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant_development"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="en">Cross-cutting approaches to unravel novel mechanisms of crop adaptation to climate change</rdfs:label>
+        <rdfs:label xml:lang="es">Enfoques transversales para desentrañar nuevos mecanismos de adaptación de los cultivos al cambio climático</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:answer-order>
+        <local:group-pi>Jose Antonio Abelenda</local:group-pi>
     </owl:Class>
     
 
@@ -3971,8 +4049,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development_8">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant_development"/>
-        <rdfs:label xml:lang="en">Secondary </rdfs:label>
-        <rdfs:label xml:lang="es">Secondary growth in plants and plasticity in response to abiotic stresses</rdfs:label>
+        <rdfs:label xml:lang="es">Crecimiento secundario de plantas y plasticidad frente a estreses abióticos</rdfs:label>
+        <rdfs:label xml:lang="en">Secondary growth in plants and plasticity in response to abiotic stresses</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
         <local:group-pi>Daniel Conde Rodríguez</local:group-pi>
     </owl:Class>
@@ -5142,6 +5220,19 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#synthetic-biology_bioengineering_4 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering_4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="es">Biotecnología forestal: mejora de la tolerancia al estrés y del rendimiento metabólico de la fitorremediación en especies arbóreas de alto valor</rdfs:label>
+        <rdfs:label xml:lang="en">Forest biotechnology: improving stress tolerance and metabolic performance phytoremediation in high-value tree species</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
+        <local:group-pi>Luis Gómez</local:group-pi>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#synthetic-biology_bioengineering_5 -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering_5">
@@ -5162,6 +5253,19 @@
         <rdfs:label xml:lang="en">Evolution of effectors and transcriptional regulators</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
         <local:group-pi>Jorge Hernández García</local:group-pi>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#synthetic-biology_bioengineering_7 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering_7">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="en">BIocomputing with synthetic biological systems</rdfs:label>
+        <rdfs:label xml:lang="es">Biocomputación con sistemas biológicos sintéticos</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
+        <local:group-pi>Ángel Goñi</local:group-pi>
     </owl:Class>
     
 

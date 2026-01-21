@@ -3597,10 +3597,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_10">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Bacterias fitopatógenas</rdfs:label>
-        <rdfs:label xml:lang="en">Phytopathogenic bacteria</rdfs:label>
+        <rdfs:label xml:lang="en">Phytohormonal regulatory networks</rdfs:label>
+        <rdfs:label xml:lang="es">Redes reguladoras fitohormonales</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</local:answer-order>
-        <local:group-pi>Emilia López Solanilla</local:group-pi>
+        <local:group-pi>Stephan Pollmann</local:group-pi>
     </owl:Class>
     
 
@@ -3609,10 +3609,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_11">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="en">Phytohormonal regulatory networks</rdfs:label>
-        <rdfs:label xml:lang="es">Redes reguladoras fitohormonales</rdfs:label>
+        <rdfs:label xml:lang="es">Redes reguladoras en semillas: integración de desarrollo, metabolismo y condiciones ambientales</rdfs:label>
+        <rdfs:label xml:lang="en">Regulatory networks in seeds: integration of development, metabolism, and environmental conditions</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:answer-order>
-        <local:group-pi>Stephan Pollmann</local:group-pi>
+        <local:group-pi>Jesús Vicente-Carbajosa</local:group-pi>
     </owl:Class>
     
 
@@ -3621,10 +3621,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_12">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Redes reguladoras en semillas: integración de desarrollo, metabolismo y condiciones ambientales</rdfs:label>
-        <rdfs:label xml:lang="en">Regulatory networks in seeds: integration of development, metabolism, and environmental conditions</rdfs:label>
+        <rdfs:label xml:lang="es">Interacción virus-hongo-planta</rdfs:label>
+        <rdfs:label xml:lang="en">Virus–fungus–plant interactions</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</local:answer-order>
-        <local:group-pi>Jesús Vicente-Carbajosa</local:group-pi>
+        <local:group-pi>María Ángeles Ayllón</local:group-pi>
     </owl:Class>
     
 
@@ -3633,10 +3633,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_13">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Interacción virus-hongo-planta</rdfs:label>
-        <rdfs:label xml:lang="en">Virus–fungus–plant interactions</rdfs:label>
+        <rdfs:label xml:lang="es">Adaptación al huésped en hongos patógenos de plantas</rdfs:label>
+        <rdfs:label xml:lang="en">Host adaptation in plant pathogenic fungi</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:answer-order>
-        <local:group-pi>María Ángeles Ayllón</local:group-pi>
+        <local:group-pi>Andrea Sánchez Vallet</local:group-pi>
     </owl:Class>
     
 
@@ -3645,10 +3645,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_14">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Adaptación al huésped en hongos patógenos de plantas</rdfs:label>
-        <rdfs:label xml:lang="en">Host adaptation in plant pathogenic fungi</rdfs:label>
+        <rdfs:label xml:lang="es">Determinantes moleculares y ambientales del endofitismo en hongos</rdfs:label>
+        <rdfs:label xml:lang="en">Molecular and environmental determinants of endophytism in fungi</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:answer-order>
-        <local:group-pi>Andrea Sánchez Vallet</local:group-pi>
+        <local:group-pi>Soledad Sacristán</local:group-pi>
     </owl:Class>
     
 
@@ -3657,10 +3657,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_15">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Determinantes moleculares y ambientales del endofitismo en hongos</rdfs:label>
-        <rdfs:label xml:lang="en">Molecular and environmental determinants of endophytism in fungi</rdfs:label>
+        <rdfs:label xml:lang="es">Dinámicas moleculares planta-plaga para una protección sostenible</rdfs:label>
+        <rdfs:label xml:lang="en">Molecular dynamics of plant–pest interactions for sustainable protection</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:answer-order>
-        <local:group-pi>Soledad Sacristán</local:group-pi>
+        <local:group-pi>Estrella Santamaría</local:group-pi>
     </owl:Class>
     
 
@@ -3669,10 +3669,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_16">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Dinámicas moleculares planta-plaga para una protección sostenible</rdfs:label>
-        <rdfs:label xml:lang="en">Molecular dynamics of plant–pest interactions for sustainable protection</rdfs:label>
+        <rdfs:label xml:lang="es">Redes reguladoras en la respuesta a limitación de nitrógeno y azufre en plantas</rdfs:label>
+        <rdfs:label xml:lang="en">Regulatory networks in plant responses to nitrogen and sulfur limitation</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:answer-order>
-        <local:group-pi>Estrella Santamaría</local:group-pi>
+        <local:group-pi>Joaquín Medina</local:group-pi>
     </owl:Class>
     
 
@@ -3681,10 +3681,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_17">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Redes reguladoras en la respuesta a limitación de nitrógeno y azufre en plantas</rdfs:label>
-        <rdfs:label xml:lang="en">Regulatory networks in plant responses to nitrogen and sulfur limitation</rdfs:label>
+        <rdfs:label xml:lang="es">Percepción y adaptación de las semillas a las fluctuaciones ambientales: control de la expresión génica y mecanismos autofágicos</rdfs:label>
+        <rdfs:label xml:lang="en">Perception and adaptation of seeds to environmental fluctuations: gene expression control and autophagic mechanisms</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</local:answer-order>
-        <local:group-pi>Joaquín Medina</local:group-pi>
+        <local:group-pi>Raquel Iglesias Fernández</local:group-pi>
     </owl:Class>
     
 
@@ -3693,10 +3693,11 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_18">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Percepción y adaptación de las semillas a las fluctuaciones ambientales: control de la expresión génica y mecanismos autofágicos</rdfs:label>
-        <rdfs:label xml:lang="en">Perception and adaptation of seeds to environmental fluctuations: gene expression control and autophagic mechanisms</rdfs:label>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="es">Interacciones moleculares planta-parásito</rdfs:label>
+        <rdfs:label xml:lang="en">Molecular plant-pest interactions</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</local:answer-order>
-        <local:group-pi>Raquel Iglesias Fernández</local:group-pi>
+        <local:group-pi>Isabel Díaz</local:group-pi>
     </owl:Class>
     
 
@@ -3706,10 +3707,10 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_19">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
         <rdfs:comment>(Deprecated)</rdfs:comment>
-        <rdfs:label xml:lang="es">Interacciones moleculares planta-parásito</rdfs:label>
-        <rdfs:label xml:lang="en">Molecular plant-pest interactions</rdfs:label>
+        <rdfs:label xml:lang="en">Miguel Ángel Torres</rdfs:label>
+        <rdfs:label xml:lang="es">Miguel Ángel Torres</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</local:answer-order>
-        <local:group-pi>Isabel Díaz</local:group-pi>
+        <local:group-pi>Miguel Ángel Torres</local:group-pi>
     </owl:Class>
     
 
@@ -3731,22 +3732,23 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_20">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
         <rdfs:comment>(Deprecated)</rdfs:comment>
-        <rdfs:label xml:lang="en">Miguel Ángel Torres</rdfs:label>
-        <rdfs:label xml:lang="es">Miguel Ángel Torres</rdfs:label>
+        <rdfs:label xml:lang="es">Regulación de la expresión génica por la ruta TOR del hongo patógeno de arroz</rdfs:label>
+        <rdfs:label xml:lang="en">Regulation of gene expression by the TOR pathway in rice pathogenic fungus</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</local:answer-order>
-        <local:group-pi>Miguel Ángel Torres</local:group-pi>
+        <local:group-pi>Julio Rodríguez</local:group-pi>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App#synthetic-biology_bioengineering_8 -->
+    <!-- https://w3id.org/CBGP-App#plant-environment_21 -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering_8">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
-        <rdfs:label xml:lang="es">Biotecnología de virus de plantas</rdfs:label>
-        <rdfs:label xml:lang="en">Plant virus biotechnology</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_21">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="es">Mecanismos regulatorios de la patogénesis fúngica durante Magnaporthe</rdfs:label>
+        <rdfs:label xml:lang="en">Mechanisms regulating fungal pathogenesis during Magnaporthe</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</local:answer-order>
-        <local:group-pi>Fernando Ponz</local:group-pi>
+        <local:group-pi>Ane Sesma</local:group-pi>
     </owl:Class>
     
 
@@ -3756,35 +3758,9 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_22">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
         <rdfs:comment>(Deprecated)</rdfs:comment>
-        <rdfs:label xml:lang="es">Regulación de la expresión génica por la ruta TOR del hongo patógeno de arroz</rdfs:label>
-        <rdfs:label xml:lang="en">Regulation of gene expression by the TOR pathway in rice pathogenic fungus</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</local:answer-order>
-        <local:group-pi>Julio Rodríguez</local:group-pi>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#plant-environment_23 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_23">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:comment>(Deprecated)</rdfs:comment>
-        <rdfs:label xml:lang="es">Mecanismos regulatorios de la patogénesis fúngica durante Magnaporthe</rdfs:label>
-        <rdfs:label xml:lang="en">Mechanisms regulating fungal pathogenesis during Magnaporthe</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</local:answer-order>
-        <local:group-pi>Ane Sesma</local:group-pi>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#plant-environment_24 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_24">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:comment>(Deprecated)</rdfs:comment>
         <rdfs:label xml:lang="en">New symbiotic systems Rhizobium-legume</rdfs:label>
         <rdfs:label xml:lang="es">Nuevos sistemas simbióticos Rhizobium-leguminosa</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</local:answer-order>
         <local:group-pi>Tomás Ruiz</local:group-pi>
     </owl:Class>
     
@@ -3818,10 +3794,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_5">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Interacciones moleculares planta-fitófago</rdfs:label>
-        <rdfs:label xml:lang="en">Molecular interactions between plants and phytophagous organisms</rdfs:label>
+        <rdfs:label xml:lang="en">Genomics and biotechnology of diazotrophic bacteria associated with plants</rdfs:label>
+        <rdfs:label xml:lang="es">Genómica y biotecnología de bacterias diazotróficas asociadas con plantas</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
-        <local:group-pi>Araceli Díaz</local:group-pi>
+        <local:group-pi>Juan Imperial Ródenas</local:group-pi>
     </owl:Class>
     
 
@@ -3830,10 +3806,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_6">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="en">Genomics and biotechnology of diazotrophic bacteria associated with plants</rdfs:label>
-        <rdfs:label xml:lang="es">Genómica y biotecnología de bacterias diazotróficas asociadas con plantas</rdfs:label>
+        <rdfs:label xml:lang="es">Asociaciones de bacterias simbióticas con plantas</rdfs:label>
+        <rdfs:label xml:lang="en">Associations of symbiotic bacteria with plants</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
-        <local:group-pi>Juan Imperial Ródenas</local:group-pi>
+        <local:group-pi>José Manuel Palacios</local:group-pi>
     </owl:Class>
     
 
@@ -3842,10 +3818,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_7">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Asociaciones de bacterias simbióticas con plantas</rdfs:label>
-        <rdfs:label xml:lang="en">Associations of symbiotic bacteria with plants</rdfs:label>
+        <rdfs:label xml:lang="es">Biología celular de la resiliencia vegetal</rdfs:label>
+        <rdfs:label xml:lang="en">Cell biology of plant resilience</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
-        <local:group-pi>José Manuel Palacios</local:group-pi>
+        <local:group-pi>Clara Sánchez-Rodríguez</local:group-pi>
     </owl:Class>
     
 
@@ -3854,10 +3830,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_8">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Biología celular de la resiliencia vegetal</rdfs:label>
-        <rdfs:label xml:lang="en">Cell biology of plant resilience</rdfs:label>
+        <rdfs:label xml:lang="es">Interacción y coevolución planta-virus</rdfs:label>
+        <rdfs:label xml:lang="en">Plant–virus interaction and co-evolution</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
-        <local:group-pi>Clara Sánchez-Rodríguez</local:group-pi>
+        <local:group-pi>Fernando García-Arenal</local:group-pi>
     </owl:Class>
     
 
@@ -3866,10 +3842,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_9">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
-        <rdfs:label xml:lang="es">Interacción y coevolución planta-virus</rdfs:label>
-        <rdfs:label xml:lang="en">Plant–virus interaction and co-evolution</rdfs:label>
+        <rdfs:label xml:lang="es">Bacterias fitopatógenas</rdfs:label>
+        <rdfs:label xml:lang="en">Phytopathogenic bacteria</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:answer-order>
-        <local:group-pi>Fernando García-Arenal</local:group-pi>
+        <local:group-pi>Emilia López Solanilla</local:group-pi>
     </owl:Class>
     
 
@@ -5224,11 +5200,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering_4">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
-        <rdfs:comment>(Deprecated)</rdfs:comment>
-        <rdfs:label xml:lang="es">Biotecnología forestal: mejora de la tolerancia al estrés y del rendimiento metabólico de la fitorremediación en especies arbóreas de alto valor</rdfs:label>
-        <rdfs:label xml:lang="en">Forest biotechnology: improving stress tolerance and metabolic performance phytoremediation in high-value tree species</rdfs:label>
+        <rdfs:label xml:lang="es">Generación de organoides vegetales usando circuitos optogenéticos</rdfs:label>
+        <rdfs:label xml:lang="en">Generation of plant organoids using optogenetic circuits</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
-        <local:group-pi>Luis Gómez</local:group-pi>
+        <local:group-pi>Pablo Pérez García</local:group-pi>
     </owl:Class>
     
 
@@ -5237,10 +5212,10 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering_5">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
-        <rdfs:label xml:lang="es">Generación de organoides vegetales usando circuitos optogenéticos</rdfs:label>
-        <rdfs:label xml:lang="en">Generation of plant organoids using optogenetic circuits</rdfs:label>
+        <rdfs:label xml:lang="es">Evolución de efectores y reguladores transcripcionales</rdfs:label>
+        <rdfs:label xml:lang="en">Evolution of effectors and transcriptional regulators</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
-        <local:group-pi>Pablo Pérez García</local:group-pi>
+        <local:group-pi>Jorge Hernández García</local:group-pi>
     </owl:Class>
     
 
@@ -5249,10 +5224,11 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering_6">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
-        <rdfs:label xml:lang="es">Evolución de efectores y reguladores transcripcionales</rdfs:label>
-        <rdfs:label xml:lang="en">Evolution of effectors and transcriptional regulators</rdfs:label>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="es">Biotecnología forestal: mejora de la tolerancia al estrés y del rendimiento metabólico de fitorremediación en especies arbóreas de alto valor</rdfs:label>
+        <rdfs:label xml:lang="en">Forest biotechnology: improving stress tolerance and metabolic performance phytoremediation in high-value tree species</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
-        <local:group-pi>Jorge Hernández García</local:group-pi>
+        <local:group-pi>Luis Gómez</local:group-pi>
     </owl:Class>
     
 
@@ -5266,6 +5242,19 @@
         <rdfs:label xml:lang="es">Biocomputación con sistemas biológicos sintéticos</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
         <local:group-pi>Ángel Goñi</local:group-pi>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#synthetic-biology_bioengineering_8 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering_8">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="es">Biotecnología de virus de plantas</rdfs:label>
+        <rdfs:label xml:lang="en">Plant virus biotechnology</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
+        <local:group-pi>Fernando Ponz</local:group-pi>
     </owl:Class>
     
 

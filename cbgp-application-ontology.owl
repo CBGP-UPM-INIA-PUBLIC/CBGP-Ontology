@@ -3949,6 +3949,19 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#plant_development_16 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development_16">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant_development"/>
+        <rdfs:comment>(Deprecated)</rdfs:comment>
+        <rdfs:label xml:lang="es">Control medioambiental del desarrollo en plantas</rdfs:label>
+        <rdfs:label xml:lang="en">Environmental control of plant development</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:answer-order>
+        <local:group-pi>Mariano Perales</local:group-pi>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#plant_development_2 -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant_development_2">

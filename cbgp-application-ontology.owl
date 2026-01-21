@@ -3734,7 +3734,7 @@
         <rdfs:label xml:lang="en">Miguel Ángel Torres</rdfs:label>
         <rdfs:label xml:lang="es">Miguel Ángel Torres</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</local:answer-order>
-        <local:group-pi>MIguel Ángel Torres</local:group-pi>
+        <local:group-pi>Miguel Ángel Torres</local:group-pi>
     </owl:Class>
     
 

@@ -3739,10 +3739,10 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#plant-environment_21 -->
+    <!-- https://w3id.org/CBGP-App#synthetic-biology_bioengineering_8 -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment_21">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#plant-environment"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#synthetic-biology_bioengineering_8">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#synthetic-biology_bioengineering"/>
         <rdfs:label xml:lang="es">Biotecnología de virus de plantas</rdfs:label>
         <rdfs:label xml:lang="en">Plant virus biotechnology</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</local:answer-order>

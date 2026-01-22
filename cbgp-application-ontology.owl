@@ -318,7 +318,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#UPM_sti">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
         <rdfs:label xml:lang="es">Doctores para el acceso al Sistema Espanol de Ciencia, Tecnologia e Innovacion (programa propio UPM)</rdfs:label>
-        <local:answer-order xml:lang="en">PhD holders for access to the Spanish Science, Technology and Innovation System (UPM program)</local:answer-order>
+        <rdfs:label xml:lang="en">PhD holders for access to the Spanish Science, Technology and Innovation System (UPM program)</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
     </owl:Class>
     
@@ -3868,7 +3868,8 @@
         <rdfs:label xml:lang="es">Control medioambiental del desarrollo en chopo</rdfs:label>
         <rdfs:label xml:lang="en">Environmental control of development in Poplar</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
-        <local:group-pi>Isabel Allona/Mariano Perales</local:group-pi>
+        <local:group-pi>Isabel Allona</local:group-pi>
+        <local:group-pi>Mariano Perales</local:group-pi>
     </owl:Class>
     
 
@@ -4017,7 +4018,8 @@
         <rdfs:label xml:lang="es">Bases moleculares de la transición de fases en el desarrollo vegetal</rdfs:label>
         <rdfs:label xml:lang="en">Molecular basis of phase transitions in plant development</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
-        <local:group-pi>José A. Jarillo/Manuel Piñeiro Galvín</local:group-pi>
+        <local:group-pi>José A. Jarillo</local:group-pi>
+        <local:group-pi>Manuel Piñeiro Galvín</local:group-pi>
     </owl:Class>
     
 

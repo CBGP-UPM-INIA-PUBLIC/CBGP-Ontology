@@ -1021,7 +1021,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
         <rdfs:label xml:lang="es">Biología de sistemas y Genómica computacional</rdfs:label>
         <rdfs:label xml:lang="en">Computational systems biology and genomics</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</local:answer-order>
     </owl:Class>
     
 
@@ -4583,6 +4583,17 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#ra-ninguno -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ra-ninguno">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
+        <rdfs:label xml:lang="es">Ninguno</rdfs:label>
+        <rdfs:label xml:lang="en">None</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#radio -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#radio">
@@ -4616,7 +4627,7 @@
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#TreeSelector"/>
     </owl:Class>
     
 

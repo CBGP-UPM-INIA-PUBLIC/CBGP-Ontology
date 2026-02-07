@@ -4555,7 +4555,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
         <rdfs:label xml:lang="es">Publicación</rdfs:label>
         <rdfs:label xml:lang="en">Publication</rdfs:label>
-        <local:dbname xml:lang="en">pubication</local:dbname>
+        <local:dbname xml:lang="en">publication</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
     </owl:Class>

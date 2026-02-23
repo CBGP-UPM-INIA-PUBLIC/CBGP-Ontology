@@ -3592,7 +3592,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#plant-environment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
         <rdfs:label xml:lang="es">Interación de las plantas con el medio</rdfs:label>
-        <rdfs:label xml:lang="en">Plan-environment interactions</rdfs:label>
+        <rdfs:label xml:lang="en">Plant-environment interactions</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
     </owl:Class>
     

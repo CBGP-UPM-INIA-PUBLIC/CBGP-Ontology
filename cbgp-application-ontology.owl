@@ -2560,6 +2560,23 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#mem22 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem22">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:comment xml:lang="en">These IDs are the ones that are currently being used by the CBGP team, NOT the automatically generated ones.</rdfs:comment>
+        <rdfs:label xml:lang="en">CBGP ID</rdfs:label>
+        <rdfs:label xml:lang="es">ID CBGP</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:method>cbgp_id</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#mem3 -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#mem3">

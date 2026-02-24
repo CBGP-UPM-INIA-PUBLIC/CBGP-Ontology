@@ -805,7 +805,7 @@
         <local:method>call_reference</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-cardinality>multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
@@ -1417,7 +1417,7 @@
         <local:method>ext_project_reference</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-cardinality>multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
@@ -1814,7 +1814,7 @@
         <local:method>int_project_code</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-cardinality>multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
@@ -2303,7 +2303,7 @@
         <local:method>projects</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-cardinality>multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
@@ -2320,7 +2320,7 @@
         <local:method>publications</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-cardinality>multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
@@ -3029,7 +3029,7 @@
         <local:method>affiliations</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-cardinality>multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
@@ -3097,7 +3097,7 @@
         <local:method>authors</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-cardinality>multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
@@ -4350,7 +4350,7 @@
         <local:method>partner_institutions</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-cardinality>multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
     </owl:Class>
     
@@ -4378,14 +4378,14 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#proj3">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:label xml:lang="en">IP ORCiD</rdfs:label>
-        <rdfs:label xml:lang="es">ORCiD del PI</rdfs:label>
+        <rdfs:label xml:lang="en">PI ORCiD</rdfs:label>
+        <rdfs:label xml:lang="es">ORCiD del IP</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>ip_orcid</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:question-order>
-        <local:widget-cardinality>single</local:widget-cardinality>
+        <local:widget-cardinality>multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
@@ -4562,7 +4562,7 @@
         <local:method>otherid</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-cardinality>multiple</local:widget-cardinality>
     </owl:Class>
     
 

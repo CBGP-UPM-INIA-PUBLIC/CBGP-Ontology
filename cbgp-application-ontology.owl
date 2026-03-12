@@ -524,7 +524,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#attraction_of_talent_2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
-        <rdfs:label xml:lang="es">Atracción de Talento Comunidad de Madrid – modalidad 2</rdfs:label>
+        <rdfs:label xml:lang="es">Atracción de Talento Comunidad de Madrid – Modalidad 2</rdfs:label>
         <rdfs:label xml:lang="en">Community of Madrid “Attraction of Talent” program – Modality 2</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</local:answer-order>
     </owl:Class>

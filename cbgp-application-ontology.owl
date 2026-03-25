@@ -806,23 +806,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#call_reference -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#call_reference">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">Project call reference</rdfs:label>
-        <rdfs:label xml:lang="es">Referencia de la convocatoria</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>call_reference</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#cambodia -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#cambodia">
@@ -1418,27 +1401,10 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#ext_project_reference -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#ext_project_reference">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">External/Project reference</rdfs:label>
-        <rdfs:label xml:lang="es">Referencia proyecto/externo</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>ext_project_reference</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#female -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#female">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#member_gender"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#gender"/>
         <rdfs:label xml:lang="en">Female</rdfs:label>
         <rdfs:label xml:lang="es">Mujer</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
@@ -1576,16 +1542,9 @@
     <!-- https://w3id.org/CBGP-App#gender -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#gender">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="en">Gender</rdfs:label>
         <rdfs:label xml:lang="es">Género</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#member_gender"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>gender</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -1641,23 +1600,6 @@
         <rdfs:label xml:lang="es">Granada</rdfs:label>
         <rdfs:label xml:lang="en">Grenada</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#group_institution -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#group_institution">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Group institution</rdfs:label>
-        <rdfs:label xml:lang="es">Institución del grupo</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#institution"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>institution</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -1811,23 +1753,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="es">Institución</rdfs:label>
         <rdfs:label xml:lang="en">Institution</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#int_project_code -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#int_project_code">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="es">Código interno del proyecto</rdfs:label>
-        <rdfs:label xml:lang="en">Internal project code</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>int_project_code</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -2197,7 +2122,7 @@
     <!-- https://w3id.org/CBGP-App#male -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#male">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#member_gender"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#gender"/>
         <rdfs:label xml:lang="es">Hombre</rdfs:label>
         <rdfs:label xml:lang="en">Male</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
@@ -2304,328 +2229,22 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#mem030 -->
+    <!-- https://w3id.org/CBGP-App#member -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem030">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Projects</rdfs:label>
-        <rdfs:label xml:lang="es">Proyectos</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>projects</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label xml:lang="en">Member</rdfs:label>
+        <rdfs:label xml:lang="es">Miembro</rdfs:label>
+        <local:dbname xml:lang="en">member</local:dbname>
+        <local:form-category xml:lang="en">Core</local:form-category>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App#mem031 -->
+    <!-- https://w3id.org/CBGP-App#member_birth_date -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem031">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="es">Publicaciones</rdfs:label>
-        <rdfs:label xml:lang="en">Publications</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>publications</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem1 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem1">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Name</rdfs:label>
-        <rdfs:label xml:lang="es">Nombre</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method xml:lang="en">name</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem10 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem10">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="es">Laboratorio</rdfs:label>
-        <rdfs:label xml:lang="en">Laboratory</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>lab</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem11 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem11">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Laboratory phone number</rdfs:label>
-        <rdfs:label xml:lang="es">Teléfono del laboratorio</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>lab_phone_number</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem12 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem12">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label>Personal phone number</rdfs:label>
-        <rdfs:label xml:lang="es">Teléfono personal</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:object-class>String</local:object-class>
-        <local:object-class>phone_number</local:object-class>
-        <local:question-order xml:lang="en">12</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem13 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem13">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="es">Fecha de alta</rdfs:label>
-        <rdfs:label xml:lang="en">Start date</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>start_date</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem14 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem14">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Estimated end date</rdfs:label>
-        <rdfs:label xml:lang="es">Fecha estimada de baja</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>estimated_end_date</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem15 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem15">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">End date</rdfs:label>
-        <rdfs:label xml:lang="es">Fecha de baja</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>end_date</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem16 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem16">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Category</rdfs:label>
-        <rdfs:label xml:lang="es">Categoría</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#categories"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>category</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#TreeSelector"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem17 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem17">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Status</rdfs:label>
-        <rdfs:label xml:lang="es">¿Situación?</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#status"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>status</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem18 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem18">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Code 5</rdfs:label>
-        <rdfs:label xml:lang="es">Código 5</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#code_5"/>
-        <local:method>code_5</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem19 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem19">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Code 10</rdfs:label>
-        <rdfs:label xml:lang="es">Código 10</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#code_10"/>
-        <local:method>code_10</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem2 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="es">Apellido(s)</rdfs:label>
-        <rdfs:label xml:lang="en">Surname(s)</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>surname</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem20 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem20">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">CBGP Center Board?</rdfs:label>
-        <rdfs:label xml:lang="es">¿Consejo de Centro?</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#consejo"/>
-        <local:method>consejo</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem21 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem21">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Cluster?</rdfs:label>
-        <rdfs:label xml:lang="es">¿Cluster?</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#cluster"/>
-        <local:method>cluster</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem22 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem22">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:comment xml:lang="en">These IDs are the ones that are currently being used by the CBGP team, NOT the automatically generated ones.</rdfs:comment>
-        <rdfs:label xml:lang="en">CBGP ID</rdfs:label>
-        <rdfs:label xml:lang="es">ID CBGP</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:method>cbgp_id</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem3 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem3">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">DNI/NIE/PAS</rdfs:label>
-        <rdfs:label xml:lang="es">DNI/NIE/PAS</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
-        <local:method>dni_nie_pas</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem4 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem4">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="es">Año de tesis</rdfs:label>
-        <rdfs:label xml:lang="en">Thesis year</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>thesis_date</local:method>
-        <local:object-class>Integer</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#mem5 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem5">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_birth_date">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
         <rdfs:label xml:lang="en">Birth date</rdfs:label>
         <rdfs:label xml:lang="es">Fecha de nacimiento</rdfs:label>
@@ -2640,83 +2259,151 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#mem6 -->
+    <!-- https://w3id.org/CBGP-App#member_category -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem6">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_category">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="es">Correo electrónico personal</rdfs:label>
-        <rdfs:label xml:lang="en">Personal mail address</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <rdfs:label xml:lang="en">Category</rdfs:label>
+        <rdfs:label xml:lang="es">Categoría</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#categories"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>personal_mail</local:method>
+        <local:method>category</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#TreeSelector"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_cbgp_center_board -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_cbgp_center_board">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">CBGP Center Board?</rdfs:label>
+        <rdfs:label xml:lang="es">¿Consejo de Centro?</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#consejo"/>
+        <local:method>consejo</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_cbgp_id -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_cbgp_id">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:comment xml:lang="en">These IDs are the ones that are currently being used by the CBGP team, NOT the automatically generated ones.</rdfs:comment>
+        <rdfs:label xml:lang="en">CBGP ID</rdfs:label>
+        <rdfs:label xml:lang="es">ID CBGP</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:method>cbgp_id</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App#mem7 -->
+    <!-- https://w3id.org/CBGP-App#member_cluster -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem7">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_cluster">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="es">Correo electrónico institucional</rdfs:label>
-        <rdfs:label xml:lang="en">Institutional mail address</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>institutional_mail</local:method>
+        <rdfs:label xml:lang="en">Cluster?</rdfs:label>
+        <rdfs:label xml:lang="es">¿Cluster?</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#cluster"/>
+        <local:method>cluster</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_code10 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_code10">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Code 10</rdfs:label>
+        <rdfs:label xml:lang="es">Código 10</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#code_10"/>
+        <local:method>code_10</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_code5 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_code5">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Code 5</rdfs:label>
+        <rdfs:label xml:lang="es">Código 5</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#code_5"/>
+        <local:method>code_5</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_dni_nie_pas -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_dni_nie_pas">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">DNI/NIE/PAS</rdfs:label>
+        <rdfs:label xml:lang="es">DNI/NIE/PAS</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
+        <local:method>dni_nie_pas</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App#mem8 -->
+    <!-- https://w3id.org/CBGP-App#member_end_date -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem8">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_end_date">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Office</rdfs:label>
-        <rdfs:label xml:lang="es">Oficina</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <rdfs:label xml:lang="en">End date</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha de baja</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>office</local:method>
+        <local:method>end_date</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App#mem9 -->
+    <!-- https://w3id.org/CBGP-App#member_estimated_end_date -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#mem9">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_estimated_end_date">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Office phone number</rdfs:label>
-        <rdfs:label xml:lang="es">Teléfono de la oficina</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <rdfs:label xml:lang="en">Estimated end date</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha estimada de baja</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>office_phone_number</local:method>
+        <local:method>estimated_end_date</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#member -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#member">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
-        <rdfs:label xml:lang="en">Member</rdfs:label>
-        <rdfs:label xml:lang="es">Miembro</rdfs:label>
-        <local:dbname xml:lang="en">member</local:dbname>
-        <local:form-category xml:lang="en">Core</local:form-category>
-        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
     </owl:Class>
     
 
@@ -2724,9 +2411,33 @@
     <!-- https://w3id.org/CBGP-App#member_gender -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#member_gender">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
         <rdfs:label xml:lang="en">Gender</rdfs:label>
         <rdfs:label xml:lang="es">Género</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#member_gender"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>gender</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_group_institution -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_group_institution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Group institution</rdfs:label>
+        <rdfs:label xml:lang="es">Institución del grupo</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#institution"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>institution</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -2758,6 +2469,295 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#member_institutional_mail_address -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_institutional_mail_address">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="es">Correo electrónico institucional</rdfs:label>
+        <rdfs:label xml:lang="en">Institutional mail address</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>institutional_mail</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_laboratory -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_laboratory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="es">Laboratorio</rdfs:label>
+        <rdfs:label xml:lang="en">Laboratory</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>lab</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_laboratory_phone_number -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_laboratory_phone_number">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Laboratory phone number</rdfs:label>
+        <rdfs:label xml:lang="es">Teléfono del laboratorio</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>lab_phone_number</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_name -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_name">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Name</rdfs:label>
+        <rdfs:label xml:lang="es">Nombre</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method xml:lang="en">name</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_nationality -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_nationality">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="es">Nacionalidad</rdfs:label>
+        <rdfs:label xml:lang="en">Nationality</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#country"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>nationality</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_office -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_office">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Office</rdfs:label>
+        <rdfs:label xml:lang="es">Oficina</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>office</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_office_phone_number -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_office_phone_number">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Office phone number</rdfs:label>
+        <rdfs:label xml:lang="es">Teléfono de la oficina</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>office_phone_number</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_orcid -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_orcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">ORCiD</rdfs:label>
+        <rdfs:label xml:lang="es">ORCiD</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
+        <local:method>orcid</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_permanent_position -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_permanent_position">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Permanent position?</rdfs:label>
+        <rdfs:label xml:lang="es">¿Plaza permanente?</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#permanent_position"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>permanence</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_personal_mail_address -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_personal_mail_address">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="es">Correo electrónico personal</rdfs:label>
+        <rdfs:label xml:lang="en">Personal mail address</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>personal_mail</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_personal_phone_number -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_personal_phone_number">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label>Personal phone number</rdfs:label>
+        <rdfs:label xml:lang="es">Teléfono personal</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:object-class>String</local:object-class>
+        <local:object-class>phone_number</local:object-class>
+        <local:question-order xml:lang="en">12</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_projects -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_projects">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Projects</rdfs:label>
+        <rdfs:label xml:lang="es">Proyectos</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>projects</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</local:question-order>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_publications -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_publications">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="es">Publicaciones</rdfs:label>
+        <rdfs:label xml:lang="en">Publications</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>publications</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</local:question-order>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_research_area_group -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_research_area_group">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Research area - Group</rdfs:label>
+        <rdfs:label xml:lang="es">Área de investigación - Grupo</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>research_area</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#TreeSelector"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_start_date -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_start_date">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="es">Fecha de alta</rdfs:label>
+        <rdfs:label xml:lang="en">Start date</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>start_date</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_status -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_status">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Status</rdfs:label>
+        <rdfs:label xml:lang="es">¿Situación?</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#status"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>status</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_surnames -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_surnames">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="es">Apellido(s)</rdfs:label>
+        <rdfs:label xml:lang="en">Surname(s)</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>surname</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#member_team_leader -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#member_team_leader">
@@ -2771,6 +2771,23 @@
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_thesis_year -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_thesis_year">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="es">Año de tesis</rdfs:label>
+        <rdfs:label xml:lang="en">Thesis year</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>thesis_date</local:method>
+        <local:object-class>Integer</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -2950,23 +2967,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#nationality -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#nationality">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="es">Nacionalidad</rdfs:label>
-        <rdfs:label xml:lang="en">Nationality</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#country"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>nationality</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#nauru -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#nauru">
@@ -3026,210 +3026,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
         <rdfs:label xml:lang="es">Campos de publicación</rdfs:label>
         <rdfs:label xml:lang="en">Publication fields</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub1 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub1">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">Affiliations</rdfs:label>
-        <rdfs:label xml:lang="es">Afiliaciones</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>affiliations</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub10 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub10">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="es">Scopus cuartil</rdfs:label>
-        <rdfs:label xml:lang="en">Scopus quartile</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>scopusq</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub11 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub11">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">Scopus decile 1?</rdfs:label>
-        <rdfs:label xml:lang="es">¿Scopus decil 1?</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#scopus_d"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>scopusd1</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub12 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub12">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">SO acknowledged?</rdfs:label>
-        <rdfs:label xml:lang="es">¿Acreditado como SO?</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#so_acknowledged"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>sochoa</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub2 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">Authors</rdfs:label>
-        <rdfs:label xml:lang="es">Autores</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>authors</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub3 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub3">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">Date</rdfs:label>
-        <rdfs:label xml:lang="es">Fecha</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>date</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub4 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub4">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">DOI</rdfs:label>
-        <rdfs:label xml:lang="es">DOI</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
-        <local:method>doi</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub5 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub5">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">Title</rdfs:label>
-        <rdfs:label xml:lang="es">Título</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>title</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub6 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub6">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">Journal name</rdfs:label>
-        <rdfs:label xml:lang="es">Nombre de la revista</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>journal</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub7 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub7">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">CBGP corresponding author?</rdfs:label>
-        <rdfs:label xml:lang="es">¿Autor correspondiente al CBGP?</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#cbgp_corresponding"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>cbgp_corresponding</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub8 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub8">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">Publication type</rdfs:label>
-        <rdfs:label xml:lang="es">TIpo de publicación</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#publication-type"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>pubtype</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#newpub9 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#newpub9">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">Open access?</rdfs:label>
-        <rdfs:label xml:lang="es">¿Acceso abierto?</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#open_access"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>oa</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -3354,23 +3150,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#orcid -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#orcid">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">ORCiD</rdfs:label>
-        <rdfs:label xml:lang="es">ORCiD</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
-        <local:method>orcid</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#other_official_postdocs -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#other_official_postdocs">
@@ -3476,23 +3255,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="en">Participant type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de participante</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#permanence -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#permanence">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Permanent position?</rdfs:label>
-        <rdfs:label xml:lang="es">¿Plaza permanente?</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#permanent_position"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>permanence</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -4159,373 +3921,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#proj1 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj1">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">External identifier</rdfs:label>
-        <rdfs:label xml:lang="es">Identificador externo</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
-        <local:method>external_identifier</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj12 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj12">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="es">Grupo de investigación</rdfs:label>
-        <rdfs:label xml:lang="en">Research group</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>research_group</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj13 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj13">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:comment>(INIA, UPM)</rdfs:comment>
-        <rdfs:label xml:lang="es">Afiliación del grupo de investigación</rdfs:label>
-        <rdfs:label xml:lang="en">Ressearch group affiliation</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#institution"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>research_group_affiliation</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj14 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj14">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:label xml:lang="es">Financiación total</rdfs:label>
-        <rdfs:label xml:lang="en">Total funding</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>total_funding</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj15 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj15">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="es">Gastos</rdfs:label>
-        <rdfs:label xml:lang="en">Overheads</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>overheads</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj16 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj16">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">CBGP overheads</rdfs:label>
-        <rdfs:label xml:lang="es">Gastos CBGP</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>cbgp_overheads</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj17 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj17">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">Annual income</rdfs:label>
-        <rdfs:label xml:lang="es">Ingreso anual</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>annual_income</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj18 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj18">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">Annual overheads</rdfs:label>
-        <rdfs:label xml:lang="es">Gastos anuales</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>annual_overheads</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj19 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj19">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">Annual CBGP overheads</rdfs:label>
-        <rdfs:label xml:lang="es">Gastos CBGP anuales</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>annual_cbgp_overheads</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj2 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="es">Identificador interno</rdfs:label>
-        <rdfs:label xml:lang="en">Internal identifier</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
-        <local:method>internal_identifier</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj21 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj21">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:label xml:lang="en">Call for proposal</rdfs:label>
-        <rdfs:label xml:lang="es">Convocatoria</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>call_for_proposal</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj22 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj22">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:label xml:lang="en">Application reference</rdfs:label>
-        <rdfs:label xml:lang="es">Referencia de la solicitud</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>application_reference</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj23 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj23">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="es">Otras entidades participantes (acrónimo y país)</rdfs:label>
-        <rdfs:label xml:lang="en">Partner institutions (acronym and country)</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>partner_institutions</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj24 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj24">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">FPI grant? (only State Plan calls)</rdfs:label>
-        <rdfs:label xml:lang="es">¿FPI asignada? (solo convocatoria Plan Estatal)</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#fpi_grant"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>fpi</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj3 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj3">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:label xml:lang="es">ORCiD del IP</rdfs:label>
-        <rdfs:label xml:lang="en">PI ORCiD</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>pi_orcid</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:question-order>
-        <local:references rdf:resource="https://w3id.org/CBGP-App#member"/>
-        <local:references-via rdf:resource="https://w3id.org/CBGP-App#orcid"/>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj4 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj4">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:label xml:lang="en">Title</rdfs:label>
-        <rdfs:label xml:lang="es">Título</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>title</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj5 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj5">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="es">Fecha de inicio</rdfs:label>
-        <rdfs:label xml:lang="en">Start date</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>start_date</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj6 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj6">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">End date</rdfs:label>
-        <rdfs:label xml:lang="es">Fecha de fin</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>end_date</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj7 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj7">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">End date extension</rdfs:label>
-        <rdfs:label xml:lang="es">Extensión de la fecha de fin</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>end_date_extension</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj8 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj8">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">Funding institution</rdfs:label>
-        <rdfs:label xml:lang="es">Institución financiadora</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>funding_institution</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#proj9 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#proj9">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:label xml:lang="en">Project type</rdfs:label>
-        <rdfs:label xml:lang="es">Tipo de proyecto</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#project-type"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>project_type</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#project -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project">
@@ -4545,6 +3940,424 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="en">Project type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de proyecto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_annual_cbgp_overheads -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_annual_cbgp_overheads">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">Annual CBGP overheads</rdfs:label>
+        <rdfs:label xml:lang="es">Gastos CBGP anuales</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>annual_cbgp_overheads</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_annual_income -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_annual_income">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">Annual income</rdfs:label>
+        <rdfs:label xml:lang="es">Ingreso anual</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>annual_income</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_annual_overheads -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_annual_overheads">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">Annual overheads</rdfs:label>
+        <rdfs:label xml:lang="es">Gastos anuales</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>annual_overheads</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_application_reference -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_application_reference">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
+        <rdfs:label xml:lang="en">Application reference</rdfs:label>
+        <rdfs:label xml:lang="es">Referencia de la solicitud</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>application_reference</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_call_for_proposal -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_call_for_proposal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
+        <rdfs:label xml:lang="en">Call for proposal</rdfs:label>
+        <rdfs:label xml:lang="es">Convocatoria</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>call_for_proposal</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_call_reference -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_call_reference">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">Project call reference</rdfs:label>
+        <rdfs:label xml:lang="es">Referencia de la convocatoria</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>call_reference</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</local:question-order>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_cbgp_overheads -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_cbgp_overheads">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">CBGP overheads</rdfs:label>
+        <rdfs:label xml:lang="es">Gastos CBGP</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>cbgp_overheads</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_end_date -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_end_date">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">End date</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha de fin</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>end_date</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_end_date_extension -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_end_date_extension">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">End date extension</rdfs:label>
+        <rdfs:label xml:lang="es">Extensión de la fecha de fin</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>end_date_extension</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_external_identifier -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_external_identifier">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">External identifier</rdfs:label>
+        <rdfs:label xml:lang="es">Identificador externo</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
+        <local:method>external_identifier</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_external_project_reference -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_external_project_reference">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">External/Project reference</rdfs:label>
+        <rdfs:label xml:lang="es">Referencia proyecto/externo</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>ext_project_reference</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</local:question-order>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_fpi_grant -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_fpi_grant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">FPI grant? (only State Plan calls)</rdfs:label>
+        <rdfs:label xml:lang="es">¿FPI asignada? (solo convocatoria Plan Estatal)</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#fpi_grant"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>fpi</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_funding_institution -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_funding_institution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">Funding institution</rdfs:label>
+        <rdfs:label xml:lang="es">Institución financiadora</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>funding_institution</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_internal_identifier -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_internal_identifier">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Identificador interno</rdfs:label>
+        <rdfs:label xml:lang="en">Internal identifier</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
+        <local:method>internal_identifier</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_internal_project_code -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_internal_project_code">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Código interno del proyecto</rdfs:label>
+        <rdfs:label xml:lang="en">Internal project code</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>int_project_code</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</local:question-order>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_overheads -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_overheads">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Gastos</rdfs:label>
+        <rdfs:label xml:lang="en">Overheads</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>overheads</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_partner_institutions -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_partner_institutions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Otras entidades participantes (acrónimo y país)</rdfs:label>
+        <rdfs:label xml:lang="en">Partner institutions (acronym and country)</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>partner_institutions</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</local:question-order>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_pi_orcid -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_pi_orcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
+        <rdfs:label xml:lang="es">ORCiD del IP</rdfs:label>
+        <rdfs:label xml:lang="en">PI ORCiD</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>pi_orcid</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:question-order>
+        <local:references rdf:resource="https://w3id.org/CBGP-App#member"/>
+        <local:references-via rdf:resource="https://w3id.org/CBGP-App#orcid"/>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_research_group -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_research_group">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Grupo de investigación</rdfs:label>
+        <rdfs:label xml:lang="en">Research group</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>research_group</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_research_group_affiliation -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_research_group_affiliation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:comment>(INIA, UPM)</rdfs:comment>
+        <rdfs:label xml:lang="es">Afiliación del grupo de investigación</rdfs:label>
+        <rdfs:label xml:lang="en">Research group affiliation</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#institution"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>research_group_affiliation</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_start_date -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_start_date">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Fecha de inicio</rdfs:label>
+        <rdfs:label xml:lang="en">Start date</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>start_date</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_title -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_title">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <rdfs:label xml:lang="es">Título</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>title</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_total_funding -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_total_funding">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
+        <rdfs:label xml:lang="es">Financiación total</rdfs:label>
+        <rdfs:label xml:lang="en">Total funding</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>total_funding</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_type -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_type">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
+        <rdfs:label xml:lang="en">Project type</rdfs:label>
+        <rdfs:label xml:lang="es">Tipo de proyecto</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#project-type"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>project_type</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -4582,22 +4395,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#pub020 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#pub020">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">Other Identifier</rdfs:label>
-        <rdfs:label xml:lang="es">Other Identifier</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
-        <local:method>otherid</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#publication -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#publication">
@@ -4617,6 +4414,226 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="en">Publication type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de publicación</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_affiliations -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_affiliations">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">Affiliations</rdfs:label>
+        <rdfs:label xml:lang="es">Afiliaciones</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>affiliations</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</local:question-order>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_authors -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_authors">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">Authors</rdfs:label>
+        <rdfs:label xml:lang="es">Autores</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>authors</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:question-order>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_cbgp_corresponding_author -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_cbgp_corresponding_author">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">CBGP corresponding author?</rdfs:label>
+        <rdfs:label xml:lang="es">¿Autor correspondiente al CBGP?</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#cbgp_corresponding"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>cbgp_corresponding</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_date -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_date">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>date</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_decile1 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_decile1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">Scopus decile 1?</rdfs:label>
+        <rdfs:label xml:lang="es">¿Scopus decil 1?</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#scopus_d"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>scopusd1</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_doi -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_doi">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">DOI</rdfs:label>
+        <rdfs:label xml:lang="es">DOI</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
+        <local:method>doi</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_journal_name -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_journal_name">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">Journal name</rdfs:label>
+        <rdfs:label xml:lang="es">Nombre de la revista</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>journal</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_open_access -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_open_access">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">Open access?</rdfs:label>
+        <rdfs:label xml:lang="es">¿Acceso abierto?</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#open_access"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>oa</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_other_identifier -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_other_identifier">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">Other Identifier</rdfs:label>
+        <rdfs:label xml:lang="es">Other Identifier</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
+        <local:method>otherid</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</local:question-order>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_scopus_quartile -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_scopus_quartile">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="es">Scopus cuartil</rdfs:label>
+        <rdfs:label xml:lang="en">Scopus quartile</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#scopus_q"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>scopusq</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_so_acknowledged -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_so_acknowledged">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">SO acknowledged?</rdfs:label>
+        <rdfs:label xml:lang="es">¿Acreditado como SO?</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#so_acknowledged"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>sochoa</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_title -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_title">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <rdfs:label xml:lang="es">Título</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>title</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#publication_type -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_type">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">Publication type</rdfs:label>
+        <rdfs:label xml:lang="es">TIpo de publicación</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#publication-type"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>pubtype</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -4660,23 +4677,6 @@
         <rdfs:label xml:lang="es">Investigador Ramón y Cajal</rdfs:label>
         <rdfs:label xml:lang="en">Researcher Ramón y Cajal</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#research_area_group -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#research_area_group">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Research area - Group</rdfs:label>
-        <rdfs:label xml:lang="es">Área de investigación - Grupo</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>research_area</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#TreeSelector"/>
     </owl:Class>
     
 

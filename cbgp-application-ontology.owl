@@ -2653,7 +2653,7 @@
         <rdfs:label xml:lang="es">Teléfono personal</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>phone_number</local:method>
+        <local:method>personal_phone_number</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order xml:lang="en">12</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>

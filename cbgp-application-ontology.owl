@@ -2649,7 +2649,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#member_personal_phone_number">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label>Personal phone number</rdfs:label>
+        <rdfs:label xml:lang="en">Personal phone number</rdfs:label>
         <rdfs:label xml:lang="es">Teléfono personal</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>

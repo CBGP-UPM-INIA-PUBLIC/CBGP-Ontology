@@ -4256,7 +4256,7 @@
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:question-order>
         <local:references rdf:resource="https://w3id.org/CBGP-App#member"/>
         <local:references-label rdf:resource="https://w3id.org/CBGP-App#member_surnames"/>
-        <local:references-via rdf:resource="https://w3id.org/CBGP-App#orcid"/>
+        <local:references-via rdf:resource="https://w3id.org/CBGP-App#member_orcid"/>
         <local:widget-cardinality>Multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>

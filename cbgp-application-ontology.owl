@@ -3053,7 +3053,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Nicaragua</rdfs:label>
         <rdfs:label xml:lang="es">Nicaragua</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</local:answer-order>
     </owl:Class>
     
 
@@ -3064,7 +3064,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Niger</rdfs:label>
         <rdfs:label xml:lang="es">Níger</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</local:answer-order>
     </owl:Class>
     
 
@@ -3075,7 +3075,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Nigeria</rdfs:label>
         <rdfs:label xml:lang="es">Nigeria</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">261</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">127</local:answer-order>
     </owl:Class>
     
 
@@ -3086,7 +3086,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Corea del Norte</rdfs:label>
         <rdfs:label xml:lang="en">North Korea</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">221</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</local:answer-order>
     </owl:Class>
     
 
@@ -3097,7 +3097,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Macedonia del Norte</rdfs:label>
         <rdfs:label xml:lang="en">North Macedonia</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</local:answer-order>
     </owl:Class>
     
 
@@ -3108,7 +3108,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Noruega</rdfs:label>
         <rdfs:label xml:lang="en">Norway</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</local:answer-order>
     </owl:Class>
     
 
@@ -3141,7 +3141,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Oman</rdfs:label>
         <rdfs:label xml:lang="es">Omán</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">131</local:answer-order>
     </owl:Class>
     
 
@@ -3195,7 +3195,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Pakistan</rdfs:label>
         <rdfs:label xml:lang="es">Pakistán</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">331</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">132</local:answer-order>
     </owl:Class>
     
 
@@ -3206,7 +3206,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Palaos</rdfs:label>
         <rdfs:label xml:lang="en">Palau</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">133</local:answer-order>
     </owl:Class>
     
 
@@ -3217,7 +3217,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Estado de Palestina</rdfs:label>
         <rdfs:label xml:lang="en">Palestine State</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">929</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">134</local:answer-order>
     </owl:Class>
     
 
@@ -3228,7 +3228,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Panama</rdfs:label>
         <rdfs:label xml:lang="es">Panamá</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</local:answer-order>
     </owl:Class>
     
 
@@ -3239,7 +3239,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Papua New Guinea</rdfs:label>
         <rdfs:label xml:lang="es">Papúa Nueva Guinea</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</local:answer-order>
     </owl:Class>
     
 
@@ -3250,7 +3250,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Paraguay</rdfs:label>
         <rdfs:label xml:lang="es">Paraguay</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">137</local:answer-order>
     </owl:Class>
     
 
@@ -3313,7 +3313,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Peru</rdfs:label>
         <rdfs:label xml:lang="es">Perú</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">138</local:answer-order>
     </owl:Class>
     
 
@@ -3368,7 +3368,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Filipinas</rdfs:label>
         <rdfs:label xml:lang="en">Philippines</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">392</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">139</local:answer-order>
     </owl:Class>
     
 
@@ -3880,7 +3880,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Poland</rdfs:label>
         <rdfs:label xml:lang="es">Polonia</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</local:answer-order>
     </owl:Class>
     
 
@@ -3891,7 +3891,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Portugal</rdfs:label>
         <rdfs:label xml:lang="es">Portugal</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">141</local:answer-order>
     </owl:Class>
     
 
@@ -4651,7 +4651,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Catar</rdfs:label>
         <rdfs:label xml:lang="en">Qatar</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">268</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">142</local:answer-order>
     </owl:Class>
     
 
@@ -4748,7 +4748,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Romania</rdfs:label>
         <rdfs:label xml:lang="es">Rumanía</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">143</local:answer-order>
     </owl:Class>
     
 
@@ -4759,7 +4759,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Rusia</rdfs:label>
         <rdfs:label xml:lang="en">Russia</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</local:answer-order>
     </owl:Class>
     
 
@@ -4770,7 +4770,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Ruanda</rdfs:label>
         <rdfs:label xml:lang="en">Rwanda</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">591</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">145</local:answer-order>
     </owl:Class>
     
 
@@ -4781,7 +4781,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Saint Kitts and Nevis</rdfs:label>
         <rdfs:label xml:lang="es">San Cristóbal y Nieves</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">146</local:answer-order>
     </owl:Class>
     
 
@@ -4792,7 +4792,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Saint Lucia</rdfs:label>
         <rdfs:label xml:lang="es">Santa Lucía</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">295</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">147</local:answer-order>
     </owl:Class>
     
 
@@ -4803,7 +4803,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Saint Vincent and the Grenadines</rdfs:label>
         <rdfs:label xml:lang="es">San Vicente y las Granadinas</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">148</local:answer-order>
     </owl:Class>
     
 
@@ -4814,7 +4814,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Samoa</rdfs:label>
         <rdfs:label xml:lang="es">Samoa</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">149</local:answer-order>
     </owl:Class>
     
 
@@ -4825,7 +4825,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">San Marino</rdfs:label>
         <rdfs:label xml:lang="es">San Marino</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">560</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</local:answer-order>
     </owl:Class>
     
 
@@ -4836,7 +4836,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Santo Tomé y Príncipe</rdfs:label>
         <rdfs:label xml:lang="en">Sao Tome and Principe</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">151</local:answer-order>
     </owl:Class>
     
 
@@ -4847,7 +4847,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Arabia Saudita</rdfs:label>
         <rdfs:label xml:lang="en">Saudi Arabia</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">152</local:answer-order>
     </owl:Class>
     
 
@@ -4955,7 +4955,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Senegal</rdfs:label>
         <rdfs:label xml:lang="es">Senegal</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">153</local:answer-order>
     </owl:Class>
     
 
@@ -4988,7 +4988,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Serbia</rdfs:label>
         <rdfs:label xml:lang="es">Serbia</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">154</local:answer-order>
     </owl:Class>
     
 
@@ -5009,7 +5009,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Seychelles</rdfs:label>
         <rdfs:label xml:lang="es">Seychelles</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">289</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</local:answer-order>
     </owl:Class>
     
 
@@ -5020,7 +5020,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Sierra Leona</rdfs:label>
         <rdfs:label xml:lang="en">Sierra Leone</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">156</local:answer-order>
     </owl:Class>
     
 
@@ -5031,7 +5031,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Singapore</rdfs:label>
         <rdfs:label xml:lang="es">Singapur</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8387</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">157</local:answer-order>
     </owl:Class>
     
 
@@ -5042,7 +5042,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Eslovaquia</rdfs:label>
         <rdfs:label xml:lang="en">Slovakia</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">158</local:answer-order>
     </owl:Class>
     
 
@@ -5053,7 +5053,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Eslovenia</rdfs:label>
         <rdfs:label xml:lang="en">Slovenia</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">105</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">159</local:answer-order>
     </owl:Class>
     
 
@@ -5096,7 +5096,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Islas Salomón</rdfs:label>
         <rdfs:label xml:lang="en">Solomon Islands</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">160</local:answer-order>
     </owl:Class>
     
 
@@ -5107,7 +5107,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Somalia</rdfs:label>
         <rdfs:label xml:lang="es">Somalia</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">161</local:answer-order>
     </owl:Class>
     
 
@@ -5118,7 +5118,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">South Africa</rdfs:label>
         <rdfs:label xml:lang="es">Sudáfrica</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">162</local:answer-order>
     </owl:Class>
     
 
@@ -5129,7 +5129,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Corea del Sur</rdfs:label>
         <rdfs:label xml:lang="en">South Korea</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">531</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">163</local:answer-order>
     </owl:Class>
     
 
@@ -5140,7 +5140,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">South Sudan</rdfs:label>
         <rdfs:label xml:lang="es">Sudán del Sur</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">174</local:answer-order>
     </owl:Class>
     
 
@@ -5151,7 +5151,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">España</rdfs:label>
         <rdfs:label xml:lang="en">Spain</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">175</local:answer-order>
     </owl:Class>
     
 
@@ -5162,7 +5162,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Sri Lanka</rdfs:label>
         <rdfs:label xml:lang="es">Sri Lanka</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">370</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">176</local:answer-order>
     </owl:Class>
     
 
@@ -5193,7 +5193,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Sudan</rdfs:label>
         <rdfs:label xml:lang="es">Sudán</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">177</local:answer-order>
     </owl:Class>
     
 
@@ -5204,7 +5204,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Surinam</rdfs:label>
         <rdfs:label xml:lang="en">Suriname</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">178</local:answer-order>
     </owl:Class>
     
 
@@ -5215,7 +5215,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Suecia</rdfs:label>
         <rdfs:label xml:lang="en">Sweden</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">179</local:answer-order>
     </owl:Class>
     
 
@@ -5226,7 +5226,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Suiza</rdfs:label>
         <rdfs:label xml:lang="en">Switzerland</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">227</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</local:answer-order>
     </owl:Class>
     
 
@@ -5347,7 +5347,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Siria</rdfs:label>
         <rdfs:label xml:lang="en">Syria</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">181</local:answer-order>
     </owl:Class>
     
 
@@ -5358,7 +5358,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Tajikistan</rdfs:label>
         <rdfs:label xml:lang="es">Tayikistán</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">182</local:answer-order>
     </owl:Class>
     
 
@@ -5369,7 +5369,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Tanzania</rdfs:label>
         <rdfs:label xml:lang="es">Tanzania</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">183</local:answer-order>
     </owl:Class>
     
 
@@ -5486,7 +5486,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Tailandia</rdfs:label>
         <rdfs:label xml:lang="en">Thailand</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">184</local:answer-order>
     </owl:Class>
     
 
@@ -5497,7 +5497,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Timor Oriental</rdfs:label>
         <rdfs:label xml:lang="en">Timor-Leste</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">185</local:answer-order>
     </owl:Class>
     
 
@@ -5508,7 +5508,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Togo</rdfs:label>
         <rdfs:label xml:lang="es">Togo</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">179</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</local:answer-order>
     </owl:Class>
     
 
@@ -5519,7 +5519,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Tonga</rdfs:label>
         <rdfs:label xml:lang="es">Tonga</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</local:answer-order>
     </owl:Class>
     
 
@@ -5530,7 +5530,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Trinidad and Tobago</rdfs:label>
         <rdfs:label xml:lang="es">Trinidad y Tobago</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">295</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">188</local:answer-order>
     </owl:Class>
     
 
@@ -5541,7 +5541,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Tunisia</rdfs:label>
         <rdfs:label xml:lang="es">Túnez</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">189</local:answer-order>
     </owl:Class>
     
 
@@ -5552,7 +5552,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Turkey</rdfs:label>
         <rdfs:label xml:lang="es">Turquía</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</local:answer-order>
     </owl:Class>
     
 
@@ -5563,7 +5563,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Turkmenistan</rdfs:label>
         <rdfs:label xml:lang="es">Turkmenistán</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">191</local:answer-order>
     </owl:Class>
     
 
@@ -5574,7 +5574,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Tuvalu</rdfs:label>
         <rdfs:label xml:lang="es">Tuvalu</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">316</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">192</local:answer-order>
     </owl:Class>
     
 
@@ -5585,7 +5585,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Uganda</rdfs:label>
         <rdfs:label xml:lang="es">Uganda</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">257</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">193</local:answer-order>
     </owl:Class>
     
 
@@ -5596,7 +5596,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Reino Unido</rdfs:label>
         <rdfs:label xml:lang="en">United Kingdom</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">287</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">196</local:answer-order>
     </owl:Class>
     
 
@@ -5607,7 +5607,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Ucrania</rdfs:label>
         <rdfs:label xml:lang="en">Ukraine</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">194</local:answer-order>
     </owl:Class>
     
 
@@ -5629,7 +5629,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Emiratos Árabes Unidos</rdfs:label>
         <rdfs:label xml:lang="en">United Arab Emirates</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">195</local:answer-order>
     </owl:Class>
     
 
@@ -5640,7 +5640,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Uruguay</rdfs:label>
         <rdfs:label xml:lang="es">Uruguay</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">198</local:answer-order>
     </owl:Class>
     
 
@@ -5651,7 +5651,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Estados Unidos de América</rdfs:label>
         <rdfs:label xml:lang="en">United States of America</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">197</local:answer-order>
     </owl:Class>
     
 
@@ -5685,7 +5685,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Uzbekistan</rdfs:label>
         <rdfs:label xml:lang="es">Uzbekistán</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">199</local:answer-order>
     </owl:Class>
     
 
@@ -5696,7 +5696,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Vanuatu</rdfs:label>
         <rdfs:label xml:lang="es">Vanuatu</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</local:answer-order>
     </owl:Class>
     
 
@@ -5707,7 +5707,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Venezuela</rdfs:label>
         <rdfs:label xml:lang="es">Venezuela</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">201</local:answer-order>
     </owl:Class>
     
 
@@ -5718,7 +5718,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Vietnam</rdfs:label>
         <rdfs:label xml:lang="es">Vietnam</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">328</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">202</local:answer-order>
     </owl:Class>
     
 
@@ -5814,7 +5814,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Yemen</rdfs:label>
         <rdfs:label xml:lang="es">Yemen</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">203</local:answer-order>
     </owl:Class>
     
 
@@ -5825,7 +5825,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="en">Zambia</rdfs:label>
         <rdfs:label xml:lang="es">Zambia</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">204</local:answer-order>
     </owl:Class>
     
 
@@ -5836,7 +5836,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#country"/>
         <rdfs:label xml:lang="es">Zimbabue</rdfs:label>
         <rdfs:label xml:lang="en">Zimbabwe</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">205</local:answer-order>
     </owl:Class>
     
 

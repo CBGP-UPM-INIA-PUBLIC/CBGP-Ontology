@@ -4019,6 +4019,22 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#project_beneficiary -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_beneficiary">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Beneficiario</rdfs:label>
+        <rdfs:label xml:lang="en">Beneficiary</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>beneficiary_orcid</local:method>
+        <local:object-class>String</local:object-class>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#project_call_for_proposal -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_call_for_proposal">
@@ -4065,6 +4081,24 @@
         <local:method>cbgp_overheads</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_co_pi -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_co_pi">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:comment>New update from Laura. 
+RESEARCH projects</rdfs:comment>
+        <rdfs:label xml:lang="en">Main co-PI ORCiD</rdfs:label>
+        <rdfs:label xml:lang="es">ORCiD del principal co-IP</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>copi_orcid</local:method>
+        <local:object-class>String</local:object-class>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
@@ -4153,6 +4187,24 @@
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_funding_entity -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_funding_entity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:comment>New update from Laura. 
+PERSONNEL projects</rdfs:comment>
+        <rdfs:label xml:lang="es">Entidad financiadora</rdfs:label>
+        <rdfs:label xml:lang="en">Funding entity</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>funding_entity</local:method>
+        <local:object-class>String</local:object-class>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -4263,6 +4315,24 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#project_research_fellowship -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_research_fellowship">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:comment>New update from Laura. 
+PERSONNEL projects</rdfs:comment>
+        <rdfs:label xml:lang="es">Bolsa de investigación</rdfs:label>
+        <rdfs:label xml:lang="en">Research fellowship</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>research_fellowship</local:method>
+        <local:object-class>String</local:object-class>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#project_research_group -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_research_group">
@@ -4294,6 +4364,24 @@
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_responsible_pi -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_responsible_pi">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:comment>New update from Laura,
+PERSONNEL projects</rdfs:comment>
+        <rdfs:label xml:lang="es">IP responsable</rdfs:label>
+        <rdfs:label xml:lang="en">Responsible PI</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>responsible_pi_orcid</local:method>
+        <local:object-class>String</local:object-class>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 

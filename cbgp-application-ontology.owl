@@ -1210,6 +1210,18 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#currency -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#currency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#widget-types"/>
+        <rdfs:comment xml:lang="es">Importe monetario simple, sin símbolo de moneda. Se almacena en formato decimal canónico; se muestra y se introduce en el formato numérico correspondiente al idioma actual de la interfaz (p. ej. 1.234,56 en español, 1,234.56 en inglés).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Plain monetary amount, no currency symbol. Stored as a canonical decimal; displayed and typed in the number format matching the current UI language (e.g. 1,234.56 in English, 1.234,56 in Spanish).</rdfs:comment>
+        <rdfs:label xml:lang="en">Currency</rdfs:label>
+        <rdfs:label xml:lang="es">Moneda</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#cyprus -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#cyprus">
@@ -3959,10 +3971,10 @@
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>annual_cbgp_overheads</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Currency</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
     </owl:Class>
     
 
@@ -3976,10 +3988,10 @@
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>annual_income</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Currency</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
     </owl:Class>
     
 
@@ -3993,10 +4005,10 @@
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>annual_overheads</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Currency</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
     </owl:Class>
     
 
@@ -4006,6 +4018,8 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_application_reference">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
+        <rdfs:comment xml:lang="en">Number assigned after submission (e.g. by FECYT or by UPM)</rdfs:comment>
+        <rdfs:comment xml:lang="es">Número asignado tras la presentación (p. ej. por FECYT o por UPM)</rdfs:comment>
         <rdfs:label xml:lang="en">Application reference</rdfs:label>
         <rdfs:label xml:lang="es">Referencia de la solicitud</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
@@ -4059,6 +4073,7 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_call_reference">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:comment xml:lang="es">El numero especifico del convocatoria (e.g. HORIZON-EIE-2027-01-CONNECT-02)</rdfs:comment>
         <rdfs:comment xml:lang="en">The indentifier of the competition (e.g. HORIZON-EIE-2027-01-CONNECT-02)</rdfs:comment>
         <rdfs:label xml:lang="en">Project call reference</rdfs:label>
@@ -4083,10 +4098,10 @@
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>cbgp_overheads</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Currency</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
     </owl:Class>
     
 
@@ -4435,10 +4450,10 @@ PERSONNEL projects</rdfs:comment>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>total_funding</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Currency</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
     </owl:Class>
     
 

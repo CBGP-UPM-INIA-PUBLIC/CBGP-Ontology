@@ -4040,6 +4040,8 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_call_for_proposal">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
+        <rdfs:comment xml:lang="es">El nombre del convocatoria (e.g. European Innovation Ecosystems (EIE))</rdfs:comment>
+        <rdfs:comment xml:lang="en">The overall name of the Call for Proposals (e.g. European Innovation Ecosystems (EIE))</rdfs:comment>
         <rdfs:label xml:lang="en">Call for proposal</rdfs:label>
         <rdfs:label xml:lang="es">Convocatoria</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
@@ -4057,6 +4059,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_call_reference">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:comment xml:lang="es">El numero especifico del convocatoria (e.g. HORIZON-EIE-2027-01-CONNECT-02)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The indentifier of the competition (e.g. HORIZON-EIE-2027-01-CONNECT-02)</rdfs:comment>
         <rdfs:label xml:lang="en">Project call reference</rdfs:label>
         <rdfs:label xml:lang="es">Referencia de la convocatoria</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>

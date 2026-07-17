@@ -215,6 +215,28 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#I3_doctor_professor -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#I3_doctor_professor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
+        <rdfs:label xml:lang="en">Contracted doctor professor I3</rdfs:label>
+        <rdfs:label xml:lang="es">Profesor contratado doctor I3</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#INIA_staff_technician -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#INIA_staff_technician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#technician"/>
+        <rdfs:label xml:lang="en">Permanent staff technician INIA</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico plantilla INIA</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#NUM -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#NUM">
@@ -298,6 +320,50 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#UPM_staff_technician -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#UPM_staff_technician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#technician"/>
+        <rdfs:label xml:lang="en">Permanent staff technician UPM</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico plantilla UPM</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#UPM_sti -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#UPM_sti">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">Doctores para el acceso al Sistema Espanol de Ciencia, Tecnologia e Innovacion (programa propio UPM)</rdfs:label>
+        <rdfs:label xml:lang="en">PhD holders for access to the Spanish Science, Technology and Innovation System (UPM program)</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#UPMgeneralfoun_technician -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#UPMgeneralfoun_technician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#technician"/>
+        <rdfs:label xml:lang="en">Technician UPM general foundation</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico fundación general UPM</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#YEI_lab_technician -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#YEI_lab_technician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#technician"/>
+        <rdfs:label xml:lang="en">Laboratory technician – Youth Employment Operational Program and Youth Employment Initiative (YEI)</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico de laboratorio – Programa Operativo de Empleo Juvenil y la Iniciativa de Empleo Juvenil (YEI)</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#active -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#active">
@@ -309,13 +375,13 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#ad_honorem_researcher -->
+    <!-- https://w3id.org/CBGP-App#administration_management -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#ad_honorem_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_categories"/>
-        <rdfs:label xml:lang="en">Ad Honorem researcher</rdfs:label>
-        <rdfs:label xml:lang="es">Investigador Ad Honorem</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#administration_management">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#service_units"/>
+        <rdfs:label xml:lang="es">Administración y Gestión</rdfs:label>
+        <rdfs:label xml:lang="en">Administration and Management</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
     </owl:Class>
     
 
@@ -427,24 +493,13 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#assistant -->
+    <!-- https://w3id.org/CBGP-App#assistant_professor -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#assistant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_civil_servant"/>
-        <rdfs:label xml:lang="en">Assistant (C1)</rdfs:label>
-        <rdfs:label xml:lang="es">Ayudante (C1)</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#assistant_professor_doctor -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#assistant_professor_doctor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_postdocs_without_commitment"/>
-        <rdfs:label xml:lang="en">Assisstant professor (doctor)</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#assistant_professor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="en">Assistant professor</rdfs:label>
         <rdfs:label xml:lang="es">Profesor ayudante doctor</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
     </owl:Class>
     
 
@@ -452,7 +507,7 @@
     <!-- https://w3id.org/CBGP-App#associate_professor -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#associate_professor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_researcher_with_permanent_position"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
         <rdfs:label xml:lang="en">Associate professor</rdfs:label>
         <rdfs:label xml:lang="es">Profesor titular de universidad</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
@@ -460,12 +515,24 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#atrae -->
+    <!-- https://w3id.org/CBGP-App#attraction_of_talent_1 -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#atrae">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_distinguished_researcher"/>
-        <rdfs:label xml:lang="en">ATRAE</rdfs:label>
-        <rdfs:label xml:lang="es">ATRAE</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#attraction_of_talent_1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">Atracción de Talento Comunidad de Madrid – Modalidad 1</rdfs:label>
+        <rdfs:label xml:lang="en">Community of Madrid “Attraction of Talent” program – Modality 1</rdfs:label>
+        <local:answer-order xml:lang="es">9</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#attraction_of_talent_2 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#attraction_of_talent_2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">Atracción de Talento Comunidad de Madrid – Modalidad 2</rdfs:label>
+        <rdfs:label xml:lang="en">Community of Madrid “Attraction of Talent” program – Modality 2</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</local:answer-order>
     </owl:Class>
     
 
@@ -517,10 +584,9 @@
     <!-- https://w3id.org/CBGP-App#bachelors -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#bachelors">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_students"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_students"/>
-        <rdfs:label xml:lang="en">Bachelor&apos;s</rdfs:label>
-        <rdfs:label xml:lang="es">Fin de Grado</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#student"/>
+        <rdfs:label xml:lang="en">Bachelor&apos;s student</rdfs:label>
+        <rdfs:label xml:lang="es">Estudiante de fin de grado</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
     </owl:Class>
     
@@ -570,14 +636,13 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#beatriz_galindo_senior_researcher -->
+    <!-- https://w3id.org/CBGP-App#beatrizgalindo_senior -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#beatriz_galindo_senior_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_postdocs_with_commitment"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_postdocs_with_commitment"/>
-        <rdfs:label xml:lang="en">Beatriz Galindo senior researcher</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#beatrizgalindo_senior">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
         <rdfs:label xml:lang="es">Investigador senior Beatriz Galindo</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
+        <rdfs:label xml:lang="en">Senior researcher Beatriz Galindo</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</local:answer-order>
     </owl:Class>
     
 
@@ -736,6 +801,17 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#caixa_junior_leader -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#caixa_junior_leader">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="en">Junior leader La Caixa</rdfs:label>
+        <rdfs:label xml:lang="es">Junior líder La Caixa</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#cambodia -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#cambodia">
@@ -822,18 +898,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#cesar_nombela_researcher -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#cesar_nombela_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_postdocs_with_commitment"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_postdocs_with_commitment"/>
-        <rdfs:label xml:lang="en">César Nombela researcher</rdfs:label>
-        <rdfs:label xml:lang="es">Investigador César Nombela</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#chad -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#chad">
@@ -863,18 +927,6 @@
         <rdfs:label xml:lang="en">China</rdfs:label>
         <rdfs:label xml:lang="es">China</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#civil_servant -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#civil_servant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_ptgas_groups"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ptgas_general_services"/>
-        <rdfs:label xml:lang="en">Civil servant</rdfs:label>
-        <rdfs:label xml:lang="es">Funcionario</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
     </owl:Class>
     
 
@@ -931,17 +983,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#collaboration -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#collaboration">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_students"/>
-        <rdfs:label xml:lang="es">Colaboración</rdfs:label>
-        <rdfs:label xml:lang="en">Collaboration</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#colombia -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#colombia">
@@ -953,13 +994,13 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#community_of_madrid -->
+    <!-- https://w3id.org/CBGP-App#communications -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#community_of_madrid">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_predoctoral_researcher_official_programme"/>
-        <rdfs:label xml:lang="en">Community of Madrid</rdfs:label>
-        <rdfs:label xml:lang="es">Comunidad de Madrid</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#communications">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#service_units"/>
+        <rdfs:label xml:lang="en">Communications</rdfs:label>
+        <rdfs:label xml:lang="es">Comunicación</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
     </owl:Class>
     
 
@@ -1115,17 +1156,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#contracted_doctor_professor -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#contracted_doctor_professor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_researcher_with_permanent_position"/>
-        <rdfs:label xml:lang="en">Contracted doctor professor / Permanent Lecturer</rdfs:label>
-        <rdfs:label xml:lang="es">Profesor contratado doctor / Profesor Permanente Laboral</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#costarica -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#costarica">
@@ -1165,91 +1195,6 @@
         <rdfs:label xml:lang="es">Croacia</rdfs:label>
         <rdfs:label xml:lang="en">Croatia</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#csic_categories -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#csic_categories">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
-        <rdfs:label xml:lang="en">CSIC Categories</rdfs:label>
-        <rdfs:label xml:lang="es">Categorías CSIC</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#csic_phd_students -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#csic_phd_students">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_categories"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#csic_postdocs_with_commitment -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#csic_postdocs_with_commitment">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_categories"/>
-        <rdfs:label xml:lang="es">Investigador con compromiso de estabilización</rdfs:label>
-        <rdfs:label xml:lang="en">Researcher with tenure-track commitment</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#csic_postdocs_without_commitment -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#csic_postdocs_without_commitment">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_categories"/>
-        <rdfs:label xml:lang="es">Personal de Investigación Doctor sin compromiso de estabilización</rdfs:label>
-        <rdfs:label xml:lang="en">PhD reasearch Staff (non-tenure-track)</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#csic_ptgas_groups -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#csic_ptgas_groups">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_categories"/>
-        <rdfs:label xml:lang="en">PTGAS groups</rdfs:label>
-        <rdfs:label xml:lang="es">PTGAS grupos</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#csic_researcher_with_permanent_position -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#csic_researcher_with_permanent_position">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_categories"/>
-        <rdfs:label xml:lang="es">Investigador con plaza permanente</rdfs:label>
-        <rdfs:label xml:lang="en">Researcher with permanent position</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#csic_students -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#csic_students">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_categories"/>
-        <rdfs:label xml:lang="es">Estudiante</rdfs:label>
-        <rdfs:label>Student</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#csic_visiting_researchers -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#csic_visiting_researchers">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_categories"/>
-        <rdfs:label xml:lang="es">Investigadores visitantes</rdfs:label>
-        <rdfs:label xml:lang="en">Visiting researchers</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
     </owl:Class>
     
 
@@ -1334,10 +1279,10 @@
     <!-- https://w3id.org/CBGP-App#distinguished_researcher -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#distinguished_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_researcher_with_permanent_position"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
         <rdfs:label xml:lang="en">Distinguished researcher</rdfs:label>
-        <rdfs:label xml:lang="es">Investigador Distinguido</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
+        <rdfs:label xml:lang="es">Investigador distinguido</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</local:answer-order>
     </owl:Class>
     
 
@@ -1349,6 +1294,17 @@
         <rdfs:label xml:lang="en">Djibouti</rdfs:label>
         <rdfs:label xml:lang="es">Yibuti</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#doctor_professor -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#doctor_professor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
+        <rdfs:label xml:lang="en">Contracted doctor professor</rdfs:label>
+        <rdfs:label xml:lang="es">Profesor contratado doctor</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:answer-order>
     </owl:Class>
     
 
@@ -1515,17 +1471,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#fpi -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#fpi">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_predoctoral_researcher_official_programme"/>
-        <rdfs:label xml:lang="en">FPI</rdfs:label>
-        <rdfs:label xml:lang="es">FPI</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#fpi_grant -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#fpi_grant">
@@ -1558,17 +1503,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#fpu -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#fpu">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_predoctoral_researcher_official_programme"/>
-        <rdfs:label xml:lang="en">FPU</rdfs:label>
-        <rdfs:label xml:lang="es">FPU</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#france -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#france">
@@ -1583,7 +1517,7 @@
     <!-- https://w3id.org/CBGP-App#full_professor -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#full_professor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_researcher_with_permanent_position"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
         <rdfs:label xml:lang="es">Catedrático de universidad</rdfs:label>
         <rdfs:label xml:lang="en">Full professor</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
@@ -1776,23 +1710,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#honorific_title -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#honorific_title">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Honorific title</rdfs:label>
-        <rdfs:label xml:lang="es">Título de honor</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>honor_title</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#hungary -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#hungary">
@@ -1848,17 +1765,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#inphinit -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#inphinit">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_predoctoral_researcher_official_programme"/>
-        <rdfs:label xml:lang="en">Inphinit</rdfs:label>
-        <rdfs:label xml:lang="es">Inphinit</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#institution -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#institution">
@@ -1869,24 +1775,23 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#intern -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#intern">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#student"/>
+        <rdfs:label xml:lang="es">Estudiante de prácticas</rdfs:label>
+        <rdfs:label xml:lang="en">Internship student</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#internal-code-types -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#internal-code-types">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="en">Internal code types</rdfs:label>
         <rdfs:label xml:lang="es">Tipos de código interno</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#internship -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#internship">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_students"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_students"/>
-        <rdfs:label xml:lang="en">Internship</rdfs:label>
-        <rdfs:label xml:lang="es">Prácticas</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
     </owl:Class>
     
 
@@ -1924,12 +1829,24 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#isaac_peral -->
+    <!-- https://w3id.org/CBGP-App#isaacperal_postdoc -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#isaac_peral">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_senior_researcher"/>
-        <rdfs:label xml:lang="en">Isaac Peral</rdfs:label>
-        <rdfs:label xml:lang="es">Isaac Peral</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#isaacperal_postdoc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">Postdoctoral  Isaac Peral</rdfs:label>
+        <rdfs:label xml:lang="en">Postdoctoral fellow Isaac Peral</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#isaacperal_senior_researcher -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#isaacperal_senior_researcher">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
+        <rdfs:label xml:lang="es">Investigador senior Isaac Peral</rdfs:label>
+        <rdfs:label xml:lang="en">Senior researcher Isaac Peral</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
     </owl:Class>
     
 
@@ -1945,6 +1862,17 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#it -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#it">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#service_units"/>
+        <rdfs:label xml:lang="en">IT (Information Technology)</rdfs:label>
+        <rdfs:label xml:lang="es">Informática</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#italy -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#italy">
@@ -1952,28 +1880,6 @@
         <rdfs:label xml:lang="es">Italia</rdfs:label>
         <rdfs:label xml:lang="en">Italy</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#jae_intro -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#jae_intro">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_students"/>
-        <rdfs:label xml:lang="en">JAE Intro</rdfs:label>
-        <rdfs:label xml:lang="es">JAE Intro</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#jae_pre -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#jae_pre">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_predoctoral_researcher_official_programme"/>
-        <rdfs:label xml:lang="en">JAE Pre</rdfs:label>
-        <rdfs:label xml:lang="es">JAE Pre</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
     </owl:Class>
     
 
@@ -2011,14 +1917,24 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#juan_de_la_cierva_researcher -->
+    <!-- https://w3id.org/CBGP-App#juancierva_researcher -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#juan_de_la_cierva_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_postdocs_without_commitment"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_postdocs_without_commitment"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#juancierva_researcher">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
         <rdfs:label xml:lang="es">Investigador Juan de la Cierva</rdfs:label>
-        <rdfs:label xml:lang="en">Juan de la Cierva researcher</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+        <rdfs:label xml:lang="en">Researcher Juan de la Cierva</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#juanciervalike_postdoc -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#juanciervalike_postdoc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">Postdoctoral del programa UPM equiparable al Juan de la Cierva</rdfs:label>
+        <rdfs:label xml:lang="en">Postdoctoral researcher in the UPM program, equivalent to a Juan de la Cierva fellowship</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</local:answer-order>
     </owl:Class>
     
 
@@ -2074,18 +1990,6 @@
         <rdfs:label xml:lang="es">Kirguistán</rdfs:label>
         <rdfs:label xml:lang="en">Kyrgyzstan</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#laCaixa_junior_leader_researcher -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#laCaixa_junior_leader_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_postdocs_with_commitment"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_postdocs_with_commitment"/>
-        <rdfs:label xml:lang="es">Investigador junior líder la Caixa</rdfs:label>
-        <rdfs:label xml:lang="en">La Caixa junior leader researcher</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
     </owl:Class>
     
 
@@ -2189,39 +2093,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#m1 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#m1">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_permanent_employee"/>
-        <rdfs:label xml:lang="en">M1</rdfs:label>
-        <rdfs:label xml:lang="es">M1</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#m2 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#m2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_permanent_employee"/>
-        <rdfs:label xml:lang="en">M2</rdfs:label>
-        <rdfs:label xml:lang="es">M2</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#m3 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#m3">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_permanent_employee"/>
-        <rdfs:label xml:lang="en">M3</rdfs:label>
-        <rdfs:label xml:lang="es">M3</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#madagascar -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#madagascar">
@@ -2299,6 +2170,39 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#margaritasalas_postdoc -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#margaritasalas_postdoc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">Postdoctoral Margarita Salas</rdfs:label>
+        <rdfs:label xml:lang="en">Postdoctoral fellow Margarita Salas</rdfs:label>
+        <local:answer-order xml:lang="es">14</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#mariazambrano_postdoc -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#mariazambrano_postdoc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">Postdoctoral María Zambrano</rdfs:label>
+        <rdfs:label xml:lang="en">Postdoctoral fellow María Zambrano</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#mariecurie_postdoc -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#mariecurie_postdoc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">Postdoctoral Marie Curie</rdfs:label>
+        <rdfs:label xml:lang="en">Postdoctoral fellow Marie Curie</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#marshallislands -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#marshallislands">
@@ -2313,10 +2217,9 @@
     <!-- https://w3id.org/CBGP-App#masters -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#masters">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_students"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_students"/>
-        <rdfs:label xml:lang="en">Master&apos;s</rdfs:label>
-        <rdfs:label xml:lang="es">Máster</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#student"/>
+        <rdfs:label xml:lang="es">Estudiante de máster</rdfs:label>
+        <rdfs:label xml:lang="en">Master&apos;s student</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
     </owl:Class>
     
@@ -2400,7 +2303,7 @@
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#consejo"/>
         <local:method>consejo</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
@@ -2417,7 +2320,7 @@
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:method>cbgp_id</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
@@ -2433,7 +2336,7 @@
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#cluster"/>
         <local:method>cluster</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
@@ -2449,7 +2352,7 @@
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#code_10"/>
         <local:method>code_10</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
@@ -2465,7 +2368,7 @@
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#code_5"/>
         <local:method>code_5</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
@@ -2577,7 +2480,7 @@
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>institution</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
@@ -2713,7 +2616,7 @@
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</local:is-primary-id>
         <local:method>orcid</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
@@ -2771,22 +2674,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#member_programme -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_programme">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="es">Programa</rdfs:label>
-        <rdfs:label xml:lang="en">Programme</rdfs:label>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>programme</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#member_projects -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#member_projects">
@@ -2797,7 +2684,7 @@
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>projects</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</local:question-order>
         <local:widget-cardinality>Multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
@@ -2814,7 +2701,7 @@
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>publications</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</local:question-order>
         <local:widget-cardinality>Multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
@@ -2916,7 +2803,7 @@
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>thesis_date</local:method>
         <local:object-class>Integer</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
@@ -3062,29 +2949,6 @@
         <rdfs:label xml:lang="en">Mozambique</rdfs:label>
         <rdfs:label xml:lang="es">Mozambique</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#msca -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#msca">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_predoctoral_researcher_official_programme"/>
-        <rdfs:label xml:lang="en">MSCA</rdfs:label>
-        <rdfs:label xml:lang="es">MSCA</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#msca_researcher -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#msca_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_postdocs_without_commitment"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_postdocs_without_commitment"/>
-        <rdfs:label xml:lang="es">Investigador MSCA</rdfs:label>
-        <rdfs:label xml:lang="en">MSCA researcher</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
     </owl:Class>
     
 
@@ -3304,6 +3168,39 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#other_official_postdocs -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#other_official_postdocs">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="en">Other Postdoctoral Researchers from Official Programs</rdfs:label>
+        <rdfs:label xml:lang="es">Otros postdoctorales de programas oficiales</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#other_phd_candidates -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#other_phd_candidates">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#predoc"/>
+        <rdfs:label xml:lang="en">Other PhD candidates (unfunded or funded from other sources)</rdfs:label>
+        <rdfs:label xml:lang="es">Otros predoctorales (sin financiación u otras fuentes de financiación)</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#other_postdocs -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#other_postdocs">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="en">Other postdoctoral researchers (unfunded or funded from other sources)</rdfs:label>
+        <rdfs:label xml:lang="es">Otros postdoctorales (sin financiacion u otras fuentes de financiacion)</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#pakistan -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#pakistan">
@@ -3380,18 +3277,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#permanent_employee -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#permanent_employee">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_ptgas_groups"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ptgas_general_services"/>
-        <rdfs:label xml:lang="es">Laboral fijo</rdfs:label>
-        <rdfs:label xml:lang="en">Permanent employee</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#permanent_no -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#permanent_no">
@@ -3409,6 +3294,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="en">Permanent position</rdfs:label>
         <rdfs:label xml:lang="es">Plaza permanente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#permanent_researcher -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#permanent_researcher">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
+        <rdfs:label xml:lang="es">Investigador con plaza permanente</rdfs:label>
+        <rdfs:label xml:lang="en">Permanent researcher</rdfs:label>
     </owl:Class>
     
 
@@ -3435,6 +3330,50 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#phd -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#phd">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#student"/>
+        <rdfs:label xml:lang="es">Estudiante de doctorado</rdfs:label>
+        <rdfs:label xml:lang="en">PhD student</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#phd_candidate -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#phd_candidate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#predoc"/>
+        <rdfs:label xml:lang="en">PhD candidate with contract or scholarship from official program</rdfs:label>
+        <rdfs:label xml:lang="es">Predoctoral con contrato o beca de programa oficial</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#phd_candidate_agreement -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#phd_candidate_agreement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#predoc"/>
+        <rdfs:label xml:lang="en">PhD candidate affiliated through agreement</rdfs:label>
+        <rdfs:label xml:lang="es">Predoctoral adscrito mediante convenio</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#phd_candidate_project -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#phd_candidate_project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#predoc"/>
+        <rdfs:label xml:lang="en">PhD candidate hired under research project funding</rdfs:label>
+        <rdfs:label xml:lang="es">Predoctoral contratado con cargo a proyectos de investigación</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#philippines -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#philippines">
@@ -3442,6 +3381,17 @@
         <rdfs:label xml:lang="es">Filipinas</rdfs:label>
         <rdfs:label xml:lang="en">Philippines</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">139</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#pi_idi -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#pi_idi">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">IP de Proyectos de I+D+i Orientada a los Retos de la Sociedad, modalidad Jovenes Investigadores</rdfs:label>
+        <rdfs:label xml:lang="en">Principal Investigator of R&amp;D&amp;I Projects Oriented to Societal Challenges Young Researchers Scheme</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</local:answer-order>
     </owl:Class>
     
 
@@ -3958,91 +3908,33 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#predoctoral_researcher_official_programme -->
+    <!-- https://w3id.org/CBGP-App#postdoc -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#predoctoral_researcher_official_programme">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_phd_students"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_phd_students"/>
-        <rdfs:label xml:lang="es">Investigador predoctoral con contrato de programa oficial</rdfs:label>
-        <rdfs:label xml:lang="en">Predoctoral researcher (official programme contract)</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#postdoc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
+        <rdfs:label xml:lang="en">Postdoctoral</rdfs:label>
+        <rdfs:label xml:lang="es">Postdoctoral</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App#predoctoral_researcher_project_funded -->
+    <!-- https://w3id.org/CBGP-App#predoc -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#predoctoral_researcher_project_funded">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_phd_students"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_phd_students"/>
-        <rdfs:label xml:lang="es">Investigador predoctoral contratado con cargo a proyectos de investigación</rdfs:label>
-        <rdfs:label xml:lang="en">Predoctoral researcher (project-funded contract)</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#predoc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
+        <rdfs:label xml:lang="en">Predoctoral</rdfs:label>
+        <rdfs:label xml:lang="es">Predoctoral</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App#programmes -->
+    <!-- https://w3id.org/CBGP-App#professor_emeritus -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#programmes">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <rdfs:label xml:lang="es">Programas</rdfs:label>
-        <rdfs:label xml:lang="en">Programmes</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#programmes_civil_servant -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#programmes_civil_servant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes"/>
-        <rdfs:label xml:lang="es">Programas de funcionarios</rdfs:label>
-        <rdfs:label xml:lang="en">Programmes for civil servants</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#programmes_distinguished_researcher -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#programmes_distinguished_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes"/>
-        <rdfs:label xml:lang="es">Programas de investigadores Distinguidos</rdfs:label>
-        <rdfs:label xml:lang="en">Programmes for Distinguished researchers</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#programmes_permanent_employee -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#programmes_permanent_employee">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes"/>
-        <rdfs:label xml:lang="es">Programas de laborales fijos</rdfs:label>
-        <rdfs:label xml:lang="en">Programmes for permanent employees</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#programmes_predoctoral_researcher_official_programme -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#programmes_predoctoral_researcher_official_programme">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes"/>
-        <rdfs:label xml:lang="es">Programas de investigadores predoctorales con contrato de programa oficial</rdfs:label>
-        <rdfs:label xml:lang="en">Programmes for predoctoral researchers (offical programme contract)</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#programmes_senior_researcher -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#programmes_senior_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes"/>
-        <rdfs:label xml:lang="es">Programas de investigadores senior</rdfs:label>
-        <rdfs:label xml:lang="en">Programmes for senior researchers</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#professor_emeritus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
+        <rdfs:label xml:lang="es">Profesor emérito</rdfs:label>
+        <rdfs:label xml:lang="en">Professor emeritus</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
     </owl:Class>
     
 
@@ -4318,32 +4210,6 @@ RESEARCH projects</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/CBGP-App#project_funded_contracted_researcher -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_funded_contracted_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_postdocs_without_commitment"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_postdocs_without_commitment"/>
-        <rdfs:label xml:lang="es">Investigador contratado a cargo de proyectos de investigación</rdfs:label>
-        <rdfs:label xml:lang="en">Project-funded contracted researcher</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#project_funded_ptgas -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_funded_ptgas">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_ptgas_groups"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ptgas_general_services"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_ptgas_general_services"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_ptgas_groups"/>
-        <rdfs:label xml:lang="es">Con cargo a proyecto</rdfs:label>
-        <rdfs:label xml:lang="en">Project-funded</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#project_funding_entity -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_funding_entity">
@@ -4372,7 +4238,7 @@ PERSONNEL projects</rdfs:comment>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>funding_institution</local:method>
         <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</local:question-order>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
@@ -4610,27 +4476,13 @@ PERSONNEL projects</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/CBGP-App#pta_official_programme_ptgas -->
+    <!-- https://w3id.org/CBGP-App#pta_technician -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#pta_official_programme_ptgas">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_ptgas_groups"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ptgas_general_services"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_ptgas_general_services"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_ptgas_groups"/>
-        <rdfs:label xml:lang="en">Official programme PTA</rdfs:label>
-        <rdfs:label xml:lang="es">Programa oficial PTA</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#ptgas_general_services -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#ptgas_general_services">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_categories"/>
-        <rdfs:label xml:lang="en">PTGAS general services</rdfs:label>
-        <rdfs:label xml:lang="es">PTGAS servicios generales</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#pta_technician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#technician"/>
+        <rdfs:label xml:lang="en">Technician – official PTA program</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico – programa oficial PTA</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
     </owl:Class>
     
 
@@ -4932,13 +4784,12 @@ PERSONNEL projects</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/CBGP-App#ramon_y_cajal_researcher -->
+    <!-- https://w3id.org/CBGP-App#ramoncajal_researcher -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#ramon_y_cajal_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_postdocs_with_commitment"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_postdocs_with_commitment"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ramoncajal_researcher">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
         <rdfs:label xml:lang="es">Investigador Ramón y Cajal</rdfs:label>
-        <rdfs:label xml:lang="en">Ramón y Cajal researcher</rdfs:label>
+        <rdfs:label xml:lang="en">Researcher Ramón y Cajal</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
     </owl:Class>
     
@@ -4954,13 +4805,46 @@ PERSONNEL projects</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/CBGP-App#research_professor -->
+    <!-- https://w3id.org/CBGP-App#research_professor_INIA -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#research_professor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_researcher_with_permanent_position"/>
-        <rdfs:label xml:lang="es">Profesor de investigación</rdfs:label>
-        <rdfs:label xml:lang="en">Research professor</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#research_professor_INIA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
+        <rdfs:label xml:lang="es">Profesor de investigación INIA</rdfs:label>
+        <rdfs:label xml:lang="en">Research professor INIA</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#research_scientist_INIA -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#research_scientist_INIA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
+        <rdfs:label xml:lang="es">Investigador científico INIA</rdfs:label>
+        <rdfs:label xml:lang="en">Research scientist INIA</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#researcher_from_other_CSIC -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#researcher_from_other_CSIC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
+        <rdfs:label xml:lang="es">Investigador de otras instituciones - CSIC</rdfs:label>
+        <rdfs:label xml:lang="en">Researcher from Other Institutions - CSIC</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#researchprojects_postdoc_researcher -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#researchprojects_postdoc_researcher">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">Postdoctoral contratado a cargo de proyectos de investigación</rdfs:label>
+        <rdfs:label xml:lang="en">Postdoctoral researcher funded by research projects</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
     </owl:Class>
     
 
@@ -5075,17 +4959,6 @@ PERSONNEL projects</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/CBGP-App#scientific_researcher -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#scientific_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_researcher_with_permanent_position"/>
-        <rdfs:label xml:lang="es">Investigador científico</rdfs:label>
-        <rdfs:label xml:lang="en">Scientific researcher</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#scopus_d -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#scopus_d">
@@ -5172,6 +5045,17 @@ PERSONNEL projects</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/CBGP-App#secretary -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#secretary">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#service_units"/>
+        <rdfs:label xml:lang="en">Executive secretary</rdfs:label>
+        <rdfs:label xml:lang="es">Secretaría de Dirección</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#senegal -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#senegal">
@@ -5183,13 +5067,24 @@ PERSONNEL projects</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/CBGP-App#senior_postdoc -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#senior_postdoc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#postdoc"/>
+        <rdfs:label xml:lang="es">Investigador senior</rdfs:label>
+        <rdfs:label xml:lang="en">Senior researcher</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#senior_researcher -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#senior_researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_researcher_with_permanent_position"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
         <rdfs:label xml:lang="es">Investigador senior</rdfs:label>
         <rdfs:label xml:lang="en">Senior researcher</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</local:answer-order>
     </owl:Class>
     
 
@@ -5201,6 +5096,16 @@ PERSONNEL projects</rdfs:comment>
         <rdfs:label xml:lang="en">Serbia</rdfs:label>
         <rdfs:label xml:lang="es">Serbia</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">154</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#service_units -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#service_units">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
+        <rdfs:label xml:lang="en">Service units</rdfs:label>
+        <rdfs:label xml:lang="es">Unidades de servicio</rdfs:label>
     </owl:Class>
     
 
@@ -5358,28 +5263,6 @@ PERSONNEL projects</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/CBGP-App#specialized_senior_technicians -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#specialized_senior_technicians">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_civil_servant"/>
-        <rdfs:label xml:lang="en">Specialized Senior Technicians (TISU, A1)</rdfs:label>
-        <rdfs:label xml:lang="es">Técnicos Superiores Especializados (TISU, A1)</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#specialized_technicians -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#specialized_technicians">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_civil_servant"/>
-        <rdfs:label xml:lang="en">Specialized Technicians (TITE, A2)</rdfs:label>
-        <rdfs:label xml:lang="es">Técnicos Especializados (TITE, A2)</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#srilanka -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#srilanka">
@@ -5397,6 +5280,16 @@ PERSONNEL projects</rdfs:comment>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="es">Situación</rdfs:label>
         <rdfs:label xml:lang="en">Status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#student -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#student">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
+        <rdfs:label xml:lang="es">Estudiante</rdfs:label>
+        <rdfs:label xml:lang="en">Student</rdfs:label>
     </owl:Class>
     
 
@@ -5620,23 +5513,55 @@ PERSONNEL projects</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/CBGP-App#technologist -->
+    <!-- https://w3id.org/CBGP-App#technical -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#technologist">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_civil_servant"/>
-        <rdfs:label xml:lang="en">Technologists (A1)</rdfs:label>
-        <rdfs:label xml:lang="es">Tecnólogos (A1)</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#technical">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#service_units"/>
+        <rdfs:label xml:lang="en">Technical</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/CBGP-App#tenured_scientist -->
+    <!-- https://w3id.org/CBGP-App#technician -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#tenured_scientist">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_researcher_with_permanent_position"/>
-        <rdfs:label xml:lang="es">Científico titular</rdfs:label>
-        <rdfs:label xml:lang="en">Tenured scientist</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#technician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
+        <rdfs:label xml:lang="en">Technician</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#technician_finnova -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#technician_finnova">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#technician"/>
+        <rdfs:label xml:lang="en">FINNOVA UPM Technician</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico FINNOVA UPM</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#technician_project -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#technician_project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#technician"/>
+        <rdfs:label xml:lang="en">Technician funded by research project</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico con cargo a proyecto</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#tenured_scientist_INIA -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#tenured_scientist_INIA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#permanent_researcher"/>
+        <rdfs:label xml:lang="es">Científico titular INIA</rdfs:label>
+        <rdfs:label xml:lang="en">Tenured scientist INIA</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
     </owl:Class>
     
@@ -5794,6 +5719,17 @@ PERSONNEL projects</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/CBGP-App#unfunded_other_technician -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#unfunded_other_technician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#technician"/>
+        <rdfs:label xml:lang="en">Technician (unfunded or funded from other sources)</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico (sin financiación u otras fuentes de financiación)</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#unitedarabemirates -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#unitedarabemirates">
@@ -5801,151 +5737,6 @@ PERSONNEL projects</rdfs:comment>
         <rdfs:label xml:lang="es">Emiratos Árabes Unidos</rdfs:label>
         <rdfs:label xml:lang="en">United Arab Emirates</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">195</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_categories -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_categories">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
-        <rdfs:label xml:lang="es">Categorías UPM</rdfs:label>
-        <rdfs:label xml:lang="en">UPM Categories</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_emeritus_professor -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_emeritus_professor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_categories"/>
-        <rdfs:label xml:lang="en">Emeritus professor</rdfs:label>
-        <rdfs:label xml:lang="es">Profesor emérito</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_general_foundation_ptgas -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_general_foundation_ptgas">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_ptgas_general_services"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_ptgas_groups"/>
-        <rdfs:label xml:lang="es">Fundación General UPM</rdfs:label>
-        <rdfs:label xml:lang="en">UPM General Foundation</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_own_programme -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_own_programme">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_predoctoral_researcher_official_programme"/>
-        <rdfs:label xml:lang="es">Programa Propio UPM</rdfs:label>
-        <rdfs:label xml:lang="en">UPM Own Programme</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_phd_students -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_phd_students">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_categories"/>
-        <rdfs:label xml:lang="es">Personal de investigación en formación</rdfs:label>
-        <rdfs:label xml:lang="en">Research staff in training</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_postdocs_with_commitment -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_postdocs_with_commitment">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_categories"/>
-        <rdfs:label xml:lang="es">Investigador con compromiso de estabilización</rdfs:label>
-        <rdfs:label xml:lang="en">Researcher with tenure-track commitment</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_postdocs_without_commitment -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_postdocs_without_commitment">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_categories"/>
-        <rdfs:label xml:lang="es">Personal de Investigación Doctor sin compromiso de estabilización</rdfs:label>
-        <rdfs:label xml:lang="en">PhD reasearch Staff (non-tenure-track)</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_ptgas_general_services -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_ptgas_general_services">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_categories"/>
-        <rdfs:label xml:lang="en">PTGAS general services</rdfs:label>
-        <rdfs:label xml:lang="es">PTGAS servicios general</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_ptgas_groups -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_ptgas_groups">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_categories"/>
-        <rdfs:label xml:lang="en">PTGAS groups</rdfs:label>
-        <rdfs:label xml:lang="es">PTGAS grupos</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_researcher_with_permanent_position -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_researcher_with_permanent_position">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_categories"/>
-        <rdfs:label xml:lang="es">Investigador con plaza permanente</rdfs:label>
-        <rdfs:label xml:lang="en">Researcher with permanent position</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_staff_ptgas -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_staff_ptgas">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_ptgas_general_services"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_ptgas_groups"/>
-        <rdfs:label xml:lang="es">Plantilla UPM</rdfs:label>
-        <rdfs:label xml:lang="en">UPM staff</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_students -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_students">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_categories"/>
-        <rdfs:label xml:lang="es">Estudiante</rdfs:label>
-        <rdfs:label xml:lang="en">Student</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#upm_visiting_researchers -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#upm_visiting_researchers">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_categories"/>
-        <rdfs:label xml:lang="es">Investigadores visitantes</rdfs:label>
-        <rdfs:label xml:lang="en">Visiting researchers</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:answer-order>
     </owl:Class>
     
 
@@ -6039,26 +5830,13 @@ PERSONNEL projects</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/CBGP-App#visiting -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#visiting">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_students"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_students"/>
-        <rdfs:label xml:lang="es">Visitante</rdfs:label>
-        <rdfs:label xml:lang="en">Visiting</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#visiting_medical_doctor -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#visiting_medical_doctor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_visiting_researchers"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_visiting_researchers"/>
-        <rdfs:label xml:lang="en">Medical doctor</rdfs:label>
-        <rdfs:label xml:lang="es">Médico</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#visiting_researchers"/>
+        <rdfs:label xml:lang="es">Médico visitante</rdfs:label>
+        <rdfs:label xml:lang="en">Visiting medical doctor</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
     </owl:Class>
     
 
@@ -6066,11 +5844,10 @@ PERSONNEL projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#visiting_phd_candidate -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#visiting_phd_candidate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_visiting_researchers"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_visiting_researchers"/>
-        <rdfs:label xml:lang="en">PhD student</rdfs:label>
-        <rdfs:label xml:lang="es">Predoctoral</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#visiting_researchers"/>
+        <rdfs:label xml:lang="es">Visitante predoctoral</rdfs:label>
+        <rdfs:label xml:lang="en">Visiting PhD candidate</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
     </owl:Class>
     
 
@@ -6078,10 +5855,9 @@ PERSONNEL projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#visiting_postdoc -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#visiting_postdoc">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_visiting_researchers"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_visiting_researchers"/>
-        <rdfs:label xml:lang="es">Postdoctoral</rdfs:label>
-        <rdfs:label xml:lang="en">Postdoctoral researcher</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#visiting_researchers"/>
+        <rdfs:label xml:lang="es">Investigador postdoctoral visitante</rdfs:label>
+        <rdfs:label xml:lang="en">Visiting postdoctoral researcher</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
     </owl:Class>
     
@@ -6090,11 +5866,31 @@ PERSONNEL projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#visiting_professor -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#visiting_professor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_visiting_researchers"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_visiting_researchers"/>
-        <rdfs:label xml:lang="es">Profesor</rdfs:label>
-        <rdfs:label xml:lang="en">Professor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#visiting_researchers"/>
+        <rdfs:label xml:lang="es">Profesor visitante</rdfs:label>
+        <rdfs:label xml:lang="en">Visiting professor</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#visiting_researchers -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#visiting_researchers">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
+        <rdfs:label xml:lang="es">Investigadores visitantes</rdfs:label>
+        <rdfs:label xml:lang="en">Visiting researchers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#visiting_student -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#visiting_student">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#student"/>
+        <rdfs:label xml:lang="es">Estudiante visitante</rdfs:label>
+        <rdfs:label xml:lang="en">Visiting student</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
     </owl:Class>
     
 
@@ -6102,10 +5898,9 @@ PERSONNEL projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#visiting_technician -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#visiting_technician">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_visiting_researchers"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_visiting_researchers"/>
-        <rdfs:label xml:lang="en">Technician</rdfs:label>
-        <rdfs:label xml:lang="es">Técnico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#visiting_researchers"/>
+        <rdfs:label xml:lang="es">Técnico visitante</rdfs:label>
+        <rdfs:label xml:lang="en">Visiting technician</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
     </owl:Class>
     
@@ -6127,20 +5922,6 @@ PERSONNEL projects</rdfs:comment>
         <rdfs:label xml:lang="en">Yemen</rdfs:label>
         <rdfs:label xml:lang="es">Yemen</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">203</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#youth_guarantee_ptgas -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#youth_guarantee_ptgas">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#csic_ptgas_groups"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ptgas_general_services"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_ptgas_general_services"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#upm_ptgas_groups"/>
-        <rdfs:label xml:lang="es">Garantía Juvenil</rdfs:label>
-        <rdfs:label xml:lang="en">Youth Guarantee</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
     </owl:Class>
     
 
@@ -6323,4 +6104,3 @@ PERSONNEL projects</rdfs:comment>
 
 
 <!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
-

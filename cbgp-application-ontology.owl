@@ -38,7 +38,19 @@
     <!-- urn:local:dbname -->
 
     <owl:AnnotationProperty rdf:about="urn:local:dbname"/>
-    
+
+
+
+    <!-- urn:local:default-for-field -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:default-for-field"/>
+
+
+
+    <!-- urn:local:default-value -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:default-value"/>
+
 
 
     <!-- urn:local:form-category -->
@@ -51,6 +63,12 @@
 
     <owl:AnnotationProperty rdf:about="urn:local:group-pi"/>
     
+
+
+    <!-- urn:local:has-defaults -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:has-defaults"/>
+
 
 
     <!-- urn:local:has-fields -->
@@ -98,7 +116,34 @@
     <!-- urn:local:references-via -->
 
     <owl:AnnotationProperty rdf:about="urn:local:references-via"/>
-    
+
+
+
+    <!-- urn:local:requires-field -->
+    <!--
+      Marks one of a FORM's fields as mandatory - added directly to the form
+      class, e.g.:
+
+        cbgp:personnel_project local:requires-field cbgp:project_annual_income .
+
+      This is deliberately simpler than local:has-defaults/pre-populated-
+      answer: a default needs TWO pieces of information per (form, field)
+      pair (which field, AND what value), so it needs an intermediate node to
+      hold both. "Required" only needs ONE piece of information (which
+      field) - it's a plain yes/no - so a direct, repeatable property
+      straight from the form to the question class is enough. No
+      intermediate node, no reification.
+
+      Same underlying reason for existing at all: the same question class
+      (e.g. a funding field) can be reused by several forms, and whether
+      it's mandatory can differ per form - a field required on the Personnel
+      form might be optional (or absent) on the Research form. Putting
+      "required" on the shared question class itself couldn't express that;
+      putting it on the FORM, once per field it cares about, can.
+    -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:requires-field"/>
+
 
 
     <!-- urn:local:widget-cardinality -->
@@ -1512,7 +1557,17 @@
         <rdfs:label xml:lang="es">Entrada de datos</rdfs:label>
         <rdfs:label xml:lang="en">Forms</rdfs:label>
     </owl:Class>
-    
+
+
+
+    <!-- https://w3id.org/CBGP-App#pre-populated-answer -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#pre-populated-answer">
+        <rdfs:label xml:lang="en">Pre-populated answer</rdfs:label>
+        <rdfs:label xml:lang="es">Respuesta prellenada</rdfs:label>
+        <rdfs:comment xml:lang="en">A default value a form assigns to one of its fields via local:has-defaults, using local:default-for-field (the question class) and local:default-value (the answer). Each instance belongs to exactly one form, so the same shared question class can default differently per form.</rdfs:comment>
+    </owl:Class>
+
 
 
     <!-- https://w3id.org/CBGP-App#fpi -->
@@ -3164,6 +3219,16 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#new-personnel-project-questions -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#new-personnel-project-questions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
+        <rdfs:label xml:lang="es">Campos de Proyecto Personal</rdfs:label>
+        <rdfs:label xml:lang="en">Personnel Project Fields</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#new-project-questions -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#new-project-questions">
@@ -3420,6 +3485,28 @@
         <rdfs:label xml:lang="es">Sí</rdfs:label>
         <rdfs:label xml:lang="en">Yes</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#personnel_project -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#personnel_project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label xml:lang="en">Personnel Project</rdfs:label>
+        <rdfs:label xml:lang="es">Proyecto Personal</rdfs:label>
+        <local:dbname xml:lang="en">project</local:dbname>
+        <local:form-category xml:lang="en">Core</local:form-category>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#project_category_personnel_default"/>
+        <!-- Annual income is required on the Personnel form - project_title
+             is NOT, because (unlike Research) Personnel Project has no title
+             field at all (it isn't in new-personnel-project-questions), so
+             there's nothing to require it on. This is the demonstration
+             case for "required" varying per form: cbgp:project below
+             requires project_title (a field it does have); this form
+             requires a completely different field instead. -->
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_annual_income"/>
     </owl:Class>
     
 
@@ -4051,13 +4138,17 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
-        <rdfs:label xml:lang="en">Project</rdfs:label>
-        <rdfs:label xml:lang="es">Proyecto</rdfs:label>
+        <rdfs:label xml:lang="es">Proyecto de Investigacion</rdfs:label>
+        <rdfs:label xml:lang="en">Research Project</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#project_category_research_default"/>
+        <!-- Title required here too (shared requirement with Personnel) -
+             but note Annual income is NOT required here, unlike Personnel. -->
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_title"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/CBGP-App#project-type -->
@@ -4067,12 +4158,89 @@
         <rdfs:label xml:lang="en">Project type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de proyecto</rdfs:label>
     </owl:Class>
-    
+
+
+
+    <!-- https://w3id.org/CBGP-App#project-category -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project-category">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
+        <rdfs:label xml:lang="en">Project category</rdfs:label>
+        <rdfs:label xml:lang="es">Categoría de proyecto</rdfs:label>
+        <rdfs:comment xml:lang="en">Which of the two project forms (Research / Personnel) a record was created through. Hidden field, set automatically from a per-form default - not user-editable.</rdfs:comment>
+        <rdfs:comment xml:lang="es">A través de cuál de los dos formularios de proyecto (Investigación / Personal) se creó el registro. Campo oculto, establecido automáticamente mediante un valor predeterminado por formulario; no es editable por el usuario.</rdfs:comment>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#research-project -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#research-project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-category"/>
+        <rdfs:label xml:lang="en">Research Project</rdfs:label>
+        <rdfs:label xml:lang="es">Proyecto de Investigación</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#personnel-project -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#personnel-project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-category"/>
+        <rdfs:label xml:lang="en">Personnel Project</rdfs:label>
+        <rdfs:label xml:lang="es">Proyecto Personal</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_category -->
+    <!-- Shared by both project forms (see rdfs:subClassOf below) so it's one
+         queryable predicate regardless of which form created the record; the
+         per-form default value is what actually differs, via
+         local:has-defaults on cbgp:project / cbgp:personnel_project. -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_category">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:label xml:lang="en">Project category</rdfs:label>
+        <rdfs:label xml:lang="es">Categoría de proyecto</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#project-category"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>category</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#HiddenField"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_category_research_default -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_category_research_default">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
+        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_category"/>
+        <local:default-value>research-project</local:default-value>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_category_personnel_default -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_category_personnel_default">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
+        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_category"/>
+        <local:default-value>personnel-project</local:default-value>
+    </owl:Class>
+
 
 
     <!-- https://w3id.org/CBGP-App#project_annual_cbgp_overheads -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_annual_cbgp_overheads">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="en">Annual CBGP overheads</rdfs:label>
         <rdfs:label xml:lang="es">Gastos CBGP anuales</rdfs:label>
@@ -4090,6 +4258,7 @@
     <!-- https://w3id.org/CBGP-App#project_annual_income -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_annual_income">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="en">Annual income</rdfs:label>
         <rdfs:label xml:lang="es">Ingreso anual</rdfs:label>
@@ -4200,6 +4369,7 @@
     <!-- https://w3id.org/CBGP-App#project_cbgp_overheads -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_cbgp_overheads">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="en">CBGP overheads</rdfs:label>
         <rdfs:label xml:lang="es">Gastos CBGP</rdfs:label>
@@ -4347,6 +4517,7 @@ RESEARCH projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#project_funding_entity -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_funding_entity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:comment>New update from Laura. 
 PERSONNEL projects</rdfs:comment>

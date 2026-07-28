@@ -56,13 +56,37 @@
     <!-- urn:local:form-category -->
 
     <owl:AnnotationProperty rdf:about="urn:local:form-category"/>
-    
+
+
+
+    <!-- urn:local:formula-expression -->
+    <!--
+      The formula text itself, e.g. "project_total_funding * 0.13" - a
+      Dentaku expression (see the Ruby "dentaku" gem: safe, sandboxed
+      arithmetic, no general-purpose eval). Variables are bare questionclass
+      fragments, exactly the ontology term IDs an ontology editor already
+      works with elsewhere (no separate ID scheme to learn). Lives on a
+      cbgp:formula-definition node, parallel in every way to
+      local:default-value living on a cbgp:pre-populated-answer node - see
+      local:has-formulas below for why.
+    -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:formula-expression"/>
+
+
+
+    <!-- urn:local:formula-for-field -->
+    <!-- The question class this formula computes the value of. Parallel to
+         local:default-for-field. -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:formula-for-field"/>
+
 
 
     <!-- urn:local:group-pi -->
 
     <owl:AnnotationProperty rdf:about="urn:local:group-pi"/>
-    
+
 
 
     <!-- urn:local:has-defaults -->
@@ -74,7 +98,52 @@
     <!-- urn:local:has-fields -->
 
     <owl:AnnotationProperty rdf:about="urn:local:has-fields"/>
-    
+
+
+
+    <!-- urn:local:has-formulas -->
+    <!--
+      Attached directly to a FORM (not the shared question class), exactly
+      like local:has-defaults:
+
+        cbgp:project local:has-formulas cbgp:project_cbgp_overheads_research_formula .
+        cbgp:project_cbgp_overheads_research_formula
+            rdfs:subClassOf cbgp:formula-definition ;
+            local:formula-for-field  cbgp:project_cbgp_overheads ;
+            local:formula-expression "project_total_funding * 0.13" .
+
+      WHY THIS IS FORM-SCOPED, NOT ON THE QUESTION CLASS DIRECTLY: the same
+      shared question class (e.g. an "overheads" field reused by Research
+      and Personnel Project) may need a genuinely different calculation per
+      form - different overhead percentages, different source fields
+      entirely. Putting the formula on the question class itself couldn't
+      express that; putting it on the FORM, once per calculated field it
+      declares, can - identical reasoning to local:has-defaults and
+      local:requires-field. A calculated field that only ever appears on one
+      form still needs this same indirection, for consistency: one pattern
+      to learn, not three.
+
+      NOTE FOR THE ADMINISTRATOR / ONTOLOGY EDITOR: unlike a default value
+      (harmless if forgotten - the field is just blank) or a required-field
+      marker (a missing one only makes a field less strict), a calculated
+      field with NO local:has-formulas entry on a given form simply never
+      computes a value on that form - it will always save blank. If a
+      calculated question class is reused on a new form, that form's
+      local:has-formulas entry must be added too, every time. See the
+      Administrator Guide's "Calculated Fields" section for a checklist of
+      what to declare when adding a new calculated field.
+
+      Evaluation is server-side and authoritative (see
+      CBGP::Dataset.load_from_params_and_write in the app), using Dentaku
+      (not Ruby eval) with the form's other already-submitted field values
+      as variables - never the value in the calculated field's own visible
+      widget, which is display-only. See the widget's own template
+      (app/views/_calculated.erb) for the client-side live-preview half of
+      this (also Dentaku-syntax, purely cosmetic).
+    -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:has-formulas"/>
+
 
 
     <!-- urn:local:is-primary-id -->
@@ -1566,6 +1635,16 @@
         <rdfs:label xml:lang="en">Pre-populated answer</rdfs:label>
         <rdfs:label xml:lang="es">Respuesta prellenada</rdfs:label>
         <rdfs:comment xml:lang="en">A default value a form assigns to one of its fields via local:has-defaults, using local:default-for-field (the question class) and local:default-value (the answer). Each instance belongs to exactly one form, so the same shared question class can default differently per form.</rdfs:comment>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#formula-definition -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#formula-definition">
+        <rdfs:label xml:lang="en">Formula definition</rdfs:label>
+        <rdfs:label xml:lang="es">Definición de fórmula</rdfs:label>
+        <rdfs:comment xml:lang="en">A calculation a form assigns to one of its fields via local:has-formulas, using local:formula-for-field (the question class the result is stored on) and local:formula-expression (a Dentaku expression referencing sibling questionclasses as bare variable names, e.g. "project_total_funding * 0.13"). Each instance belongs to exactly one form, so the same shared question class can be calculated differently per form. The value written to the calculated field is always the server-recomputed result, never anything the user could type or tamper with in the browser.</rdfs:comment>
     </owl:Class>
 
 
@@ -3507,6 +3586,15 @@
              requires project_title (a field it does have); this form
              requires a completely different field instead. -->
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_annual_income"/>
+        <!-- CBGP overheads is calculated from Annual income here (8%, demo
+             rate) - different source field AND different percentage than
+             the Research form below, since Personnel Project has no
+             project_total_funding field at all. -->
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads_personnel_formula"/>
+        <!-- SANDBOX / TEST chain (15% then 30% of that) - see the
+             project_test_* question/formula-definition classes' comments. -->
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_percentage_personnel_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_subpercentage_personnel_formula"/>
     </owl:Class>
     
 
@@ -4144,9 +4232,22 @@
         <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#project_category_research_default"/>
-        <!-- Title required here too (shared requirement with Personnel) -
-             but note Annual income is NOT required here, unlike Personnel. -->
+        <!-- Title is required here; Personnel Project requires a different
+             field instead (Annual income - see cbgp:personnel_project),
+             since it has no title field at all. -->
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_title"/>
+        <!-- Two-step calculation chain (both demo rates, pending Admin
+             confirmation - see each formula node's own comment):
+               Overheads ("UPM overheads")     = Total funding * 25%
+               CBGP overheads                  = Overheads       *  5%
+             i.e. CBGP overheads is calculated FROM Overheads' result, not
+             from Total funding directly. -->
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_overheads_research_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads_research_formula"/>
+        <!-- SANDBOX / TEST chain (10% then 20% of that) - see the
+             project_test_* question/formula-definition classes' comments. -->
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_percentage_research_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_subpercentage_research_formula"/>
     </owl:Class>
 
 
@@ -4233,6 +4334,117 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
         <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_category"/>
         <local:default-value>personnel-project</local:default-value>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_overheads_research_formula -->
+    <!-- DEMO / PLACEHOLDER percentage (25%) - "UPM overheads": how much of
+         Total funding UPM takes as institutional overhead. This is the
+         FIRST link of a two-step CHAIN (see
+         project_cbgp_overheads_research_formula below, which is calculated
+         from THIS field's result, not from Total funding directly) -
+         proves the calculated-field mechanism supports one calculated
+         field depending on another. Not a confirmed rate - pending
+         Admin/UPM confirmation. -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_overheads_research_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_overheads"/>
+        <local:formula-expression>project_total_funding * 0.25</local:formula-expression>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_cbgp_overheads_research_formula -->
+    <!-- DEMO / PLACEHOLDER percentage (5%) - "CBGP overheads": deliberately
+         calculated from project_overheads (UPM overheads, see above), NOT
+         from Total funding - a genuine two-step dependency chain, per the
+         real institutional structure (CBGP's share comes out of UPM's
+         share, not out of the grant directly).
+
+         STILL UNRESOLVED as of 2026-07-28: is CBGP's 5% taken FROM UPM's
+         25% (i.e. CBGP gets 5% of that 25%, leaving UPM with 20% of the
+         total and CBGP with 5% of the total - this formula, "overheads *
+         0.05", computes exactly that reading), OR is "5%" actually meant
+         as 5% of the ORIGINAL total funding (a different, larger number,
+         and UPM would keep the full 25%)? Mark Wilkinson needs to confirm
+         the real split with CBGP/UPM administration before this is
+         anything more than a demonstration that the mechanism CAN express
+         a dependency chain - the exact formula below should not be treated
+         as institutionally accurate until that's confirmed. -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_cbgp_overheads_research_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads"/>
+        <local:formula-expression>project_overheads * 0.05</local:formula-expression>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_cbgp_overheads_personnel_formula -->
+    <!-- DEMO / PLACEHOLDER percentage (8%) - deliberately different from the
+         Research formula above, to prove a shared question class can be
+         calculated differently per form. Not a confirmed rate - replace
+         once the Admin team decides Personnel Project's actual percentage
+         (or an entirely different formula/source field). -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_cbgp_overheads_personnel_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads"/>
+        <local:formula-expression>project_annual_income * 0.08</local:formula-expression>
+    </owl:Class>
+
+
+
+    <!-- SANDBOX / TEST formula-definition nodes for project_test_percentage
+         and project_test_subpercentage (see those question classes' own
+         comments above) - safe to delete once manual testing is done.
+         Deliberately different rates per form, same reason as the real
+         overheads formulas: proves the per-form lookup is genuinely
+         independent, not coincidentally identical. -->
+
+    <!-- https://w3id.org/CBGP-App#project_test_percentage_research_formula -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_percentage_research_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_percentage"/>
+        <local:formula-expression>project_test_amount * 0.10</local:formula-expression>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_subpercentage_research_formula -->
+    <!-- CHAINED: 20% of project_test_percentage's OWN result, not of
+         project_test_amount directly. -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_subpercentage_research_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_subpercentage"/>
+        <local:formula-expression>project_test_percentage * 0.20</local:formula-expression>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_percentage_personnel_formula -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_percentage_personnel_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_percentage"/>
+        <local:formula-expression>project_test_amount * 0.15</local:formula-expression>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_subpercentage_personnel_formula -->
+    <!-- CHAINED, and a deliberately different rate (30%) than the Research
+         form's 20% above, over the same shared project_test_subpercentage
+         field. -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_subpercentage_personnel_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_subpercentage"/>
+        <local:formula-expression>project_test_percentage * 0.30</local:formula-expression>
     </owl:Class>
 
 
@@ -4381,7 +4593,73 @@
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
     </owl:Class>
-    
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_amount -->
+    <!-- SANDBOX / TEST FIELD - added 2026-07-28 purely to give the
+         calculated-field mechanism a clean, disposable field set to poke
+         at, separate from the real (placeholder-rate) UPM/CBGP overheads
+         fields. Safe to delete once manual testing is done. -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_amount">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">Test amount</rdfs:label>
+        <rdfs:label xml:lang="es">Importe de prueba</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>test_amount</local:method>
+        <local:object-class>Currency</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_percentage -->
+    <!-- SANDBOX / TEST FIELD - calculated, single-step: a percentage of
+         project_test_amount. See each form's local:has-formulas for the
+         actual rate (deliberately different per form, like the real
+         overheads fields, to keep exercising per-form independence). -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_percentage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">Test percentage</rdfs:label>
+        <rdfs:label xml:lang="es">Porcentaje de prueba</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>test_percentage</local:method>
+        <local:object-class>Currency</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_subpercentage -->
+    <!-- SANDBOX / TEST FIELD - calculated, CHAINED: a percentage OF
+         project_test_percentage (a "% of a %"), not of project_test_amount
+         directly - the second link in the chain, same shape as CBGP
+         overheads being a % of UPM overheads. -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_subpercentage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">Test sub-percentage</rdfs:label>
+        <rdfs:label xml:lang="es">Subporcentaje de prueba</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>test_subpercentage</local:method>
+        <local:object-class>Currency</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
+    </owl:Class>
+
 
 
     <!-- https://w3id.org/CBGP-App#project_co_pi -->

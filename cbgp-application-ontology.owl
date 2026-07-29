@@ -3577,7 +3577,6 @@
         <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
-        <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#project_category_personnel_default"/>
         <!-- Annual income is required on the Personnel form - project_title
              is NOT, because (unlike Research) Personnel Project has no title
              field at all (it isn't in new-personnel-project-questions), so
@@ -4231,7 +4230,6 @@
         <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#project_category_research_default"/>
         <!-- Title is required here; Personnel Project requires a different
              field instead (Annual income - see cbgp:personnel_project),
              since it has no title field at all. -->
@@ -4262,79 +4260,30 @@
 
 
 
-    <!-- https://w3id.org/CBGP-App#project-category -->
+    <!-- project_category (and its answer-block project-category /
+         research-project / personnel-project, and its two per-form
+         local:has-defaults nodes) - REMOVED 2026-07-28.
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project-category">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <rdfs:label xml:lang="en">Project category</rdfs:label>
-        <rdfs:label xml:lang="es">Categoría de proyecto</rdfs:label>
-        <rdfs:comment xml:lang="en">Which of the two project forms (Research / Personnel) a record was created through. Hidden field, set automatically from a per-form default - not user-editable.</rdfs:comment>
-        <rdfs:comment xml:lang="es">A través de cuál de los dos formularios de proyecto (Investigación / Personal) se creó el registro. Campo oculto, establecido automáticamente mediante un valor predeterminado por formulario; no es editable por el usuario.</rdfs:comment>
-    </owl:Class>
+         Its only real purpose was as a hidden discriminator: telling which
+         of the two Project forms created a given record, since both share
+         the "project" dbname. That's now handled structurally instead -
+         every record, on EVERY form (not just these two), automatically
+         gets dcterms:type <form-class-uri> written directly onto its graph
+         at save time (see write_dataset_to_db_query in lib/queries.rb),
+         with zero ontology configuration required. A field that exists
+         purely to duplicate information the system already has (which form
+         wrote this) doesn't need to be modeled as a field at all - and
+         unlike project_category, the new mechanism can't be forgotten when
+         a THIRD form later shares a dbname, because there's no per-form
+         has-defaults declaration to remember to add.
 
-
-
-    <!-- https://w3id.org/CBGP-App#research-project -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#research-project">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-category"/>
-        <rdfs:label xml:lang="en">Research Project</rdfs:label>
-        <rdfs:label xml:lang="es">Proyecto de Investigación</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
-    </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#personnel-project -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#personnel-project">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-category"/>
-        <rdfs:label xml:lang="en">Personnel Project</rdfs:label>
-        <rdfs:label xml:lang="es">Proyecto Personal</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
-    </owl:Class>
+         local:has-defaults itself is NOT going away - it's still the right
+         mechanism for a real, human-meaningful field that genuinely needs a
+         different default value per form (see the cbgp:pre-populated-answer
+         class's rdfs:comment further up this file). There's just currently
+         no live example of it in this ontology, now that this was removed. -->
 
 
-
-    <!-- https://w3id.org/CBGP-App#project_category -->
-    <!-- Shared by both project forms (see rdfs:subClassOf below) so it's one
-         queryable predicate regardless of which form created the record; the
-         per-form default value is what actually differs, via
-         local:has-defaults on cbgp:project / cbgp:personnel_project. -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_category">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
-        <rdfs:label xml:lang="en">Project category</rdfs:label>
-        <rdfs:label xml:lang="es">Categoría de proyecto</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#project-category"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>category</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#HiddenField"/>
-    </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#project_category_research_default -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_category_research_default">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
-        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_category"/>
-        <local:default-value>research-project</local:default-value>
-    </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#project_category_personnel_default -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_category_personnel_default">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
-        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_category"/>
-        <local:default-value>personnel-project</local:default-value>
-    </owl:Class>
 
 
 

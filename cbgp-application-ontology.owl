@@ -3594,6 +3594,11 @@
              project_test_* question/formula-definition classes' comments. -->
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_percentage_personnel_formula"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_subpercentage_personnel_formula"/>
+        <!-- SANDBOX / TEST default - see project_test_default_field's own
+             comment. A different default-value than the Research form
+             below, over the SAME shared field, to prove the per-form
+             lookup is genuinely independent. -->
+        <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#project_test_default_field_personnel_default"/>
     </owl:Class>
     
 
@@ -4246,6 +4251,11 @@
              project_test_* question/formula-definition classes' comments. -->
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_percentage_research_formula"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_subpercentage_research_formula"/>
+        <!-- SANDBOX / TEST default - see project_test_default_field's own
+             comment. A different default-value than the Personnel form
+             above, over the SAME shared field, to prove the per-form
+             lookup is genuinely independent. -->
+        <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#project_test_default_field_research_default"/>
     </owl:Class>
 
 
@@ -4607,6 +4617,53 @@
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_default_field -->
+    <!-- SANDBOX / TEST FIELD - a plain, VISIBLE field (deliberately not
+         hidden, unlike the old project_category discriminator) so it's
+         obvious at a glance: open the Research form, see one pre-filled
+         value; open the Personnel form, see a different one. Exists
+         purely so there is a live, working example of local:has-defaults
+         in this ontology to look at - see the two
+         project_test_default_field_*_default nodes below, and
+         local:has-defaults on cbgp:project / cbgp:personnel_project.
+         Safe to delete once its job as a teaching example is done. -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_default_field">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="en">Test default field</rdfs:label>
+        <rdfs:label xml:lang="es">Campo de prueba con valor por defecto</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>test_default_field</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_default_field_research_default -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_default_field_research_default">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
+        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_default_field"/>
+        <local:default-value>This defaulted from the Research Project form</local:default-value>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_default_field_personnel_default -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_default_field_personnel_default">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
+        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_default_field"/>
+        <local:default-value>This defaulted from the Personnel Project form</local:default-value>
     </owl:Class>
 
 

@@ -5225,6 +5225,26 @@ PERSONNEL projects</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/CBGP-App#publication_cbgp_authors -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_cbgp_authors">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
+        <rdfs:label xml:lang="en">CBGP Author(s)</rdfs:label>
+        <rdfs:label xml:lang="es">Autor(es) del CBGP</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>cbgp_author_orcids</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</local:question-order>
+        <local:references rdf:resource="https://w3id.org/CBGP-App#member"/>
+        <local:references-label rdf:resource="https://w3id.org/CBGP-App#member_surnames"/>
+        <local:references-via rdf:resource="https://w3id.org/CBGP-App#member_orcid"/>
+        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+
+
+
     <!-- https://w3id.org/CBGP-App#publication_cbgp_corresponding_author -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_cbgp_corresponding_author">

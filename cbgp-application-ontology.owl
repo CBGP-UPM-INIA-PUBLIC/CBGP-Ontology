@@ -1561,37 +1561,14 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#european_private_research_project -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_private_research_project">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
-        <rdfs:label xml:lang="en">European Commision and Private Research Projects</rdfs:label>
-        <rdfs:label xml:lang="es">Proyectos de Investigación de la Comisión Europea y Privados</rdfs:label>
-        <local:dbname>project</local:dbname>
-        <local:form-category>Core</local:form-category>
-        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
-        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_cbgp_overheads_formula"/>
-        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_overheads_formula"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_funding_institution"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_code"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_call_for_proposal_title"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_dni_nie_pas"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_internal_code"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_pi_orcid"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_title"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#european_private_research_project_cbgp_overheads_formula -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#european_private_research_project_cbgp_overheads_formula">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of total overheads</rdfs:comment>
-        <rdfs:label xml:lang="en">Formula for the total CBGP overheads of European Commision and private research projects</rdfs:label>
+        <rdfs:label xml:lang="en">Formula for the CBGP overheads of European Commision and Private Research Projects</rdfs:label>
         <local:formula-expression>european_private_research_project_overheads * 0.6</local:formula-expression>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads"/>
     </owl:Class>
     
 
@@ -1599,7 +1576,8 @@
     <!-- https://w3id.org/CBGP-App#european_private_research_project_funding_institution -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#european_private_research_project_funding_institution">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="en">Funding institution</rdfs:label>
         <rdfs:label xml:lang="es">Institución financiadora</rdfs:label>
@@ -1614,22 +1592,11 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#european_private_research_project_overheads_formula -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_private_research_project_overheads_formula">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
-        <rdfs:comment xml:lang="en">25% of total funding</rdfs:comment>
-        <rdfs:label>Formula for the total overheads of European Commision and private research projects</rdfs:label>
-        <local:formula-expression>european_private_research_project_total_funding * 0.25</local:formula-expression>
-        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_total_overheads"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#european_private_research_project_total_funding -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#european_private_research_project_total_funding">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:label xml:lang="es">Financiación total</rdfs:label>
@@ -1645,10 +1612,46 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#european_private_research_project_total_overheads -->
+    <!-- https://w3id.org/CBGP-App#european_research_project -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_private_research_project_total_overheads">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_research_project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label xml:lang="en">European Commision Research Projects</rdfs:label>
+        <rdfs:label xml:lang="es">Proyectos de Investigación de la Comisión Europea</rdfs:label>
+        <local:dbname>project</local:dbname>
+        <local:form-category>Core</local:form-category>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_cbgp_overheads_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_research_project_overheads_formula"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_funding_institution"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_code"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_call_for_proposal_title"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_dni_nie_pas"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_internal_code"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_pi_orcid"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_title"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#european_research_project_overheads_formula -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_research_project_overheads_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <rdfs:comment xml:lang="en">25% of total funding</rdfs:comment>
+        <rdfs:label xml:lang="en">Formula for the total overheads of European Commision research projects</rdfs:label>
+        <local:formula-expression>european_research_project_total_funding * 0.25</local:formula-expression>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#european_research_project_total_overheads"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#european_research_project_total_overheads -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_research_project_total_overheads">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="es">Total de costes indirectos</rdfs:label>
         <rdfs:label xml:lang="en">Total overheads</rdfs:label>
@@ -3510,7 +3513,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_research_project_year1_cbgp_overheads_formula">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of overheads for year 1</rdfs:comment>
-        <rdfs:label xml:lang="en">Formula for the CBGP overheads of year 1 of national and regional research projects</rdfs:label>
+        <rdfs:label xml:lang="en">Formula for the CBGP overheads of year 1 of National and Regional Research Projects</rdfs:label>
         <local:formula-expression>national_regional_research_project_year1_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#year1_cbgp_overheads"/>
     </owl:Class>
@@ -3522,7 +3525,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_research_project_year2_cbgp_overheads">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of overheads for year 2</rdfs:comment>
-        <rdfs:label xml:lang="en">Formula for the CBGP overheads of year 2 of national and regional research projects</rdfs:label>
+        <rdfs:label xml:lang="en">Formula for the CBGP overheads of year 2 of National and Regional Research Projects</rdfs:label>
         <local:formula-expression>national_regional_research_project_year2_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#year2_cbgp_overheads"/>
     </owl:Class>
@@ -3534,7 +3537,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_research_project_year3_cbgp_overheads">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of overheads for year 3</rdfs:comment>
-        <rdfs:label xml:lang="en">Formula for the CBGP overheads of year 3 of national and regional research projects</rdfs:label>
+        <rdfs:label xml:lang="en">Formula for the CBGP overheads of year 3 of National and Regional Research Projects</rdfs:label>
         <local:formula-expression>national_regional_research_project_year3_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#year3_cbgp_overheads"/>
     </owl:Class>
@@ -3546,7 +3549,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_research_project_year4_cbgp_overheads">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of the overheads for year 4</rdfs:comment>
-        <rdfs:label xml:lang="en">Formula for the CBPG overheads of year 4 of national and regional research projects</rdfs:label>
+        <rdfs:label xml:lang="en">Formula for the CBPG overheads of year 4 of National and Regional Research Projects</rdfs:label>
         <local:formula-expression>national_regional_research_project_year4_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#year4_cbgp_overheads"/>
     </owl:Class>
@@ -3586,12 +3589,12 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#new-european-private-research-project-questions -->
+    <!-- https://w3id.org/CBGP-App#new-european-research-project-questions -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#new-european-private-research-project-questions">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#new-european-research-project-questions">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
-        <rdfs:label xml:lang="es">Campos de Proyecto de Investigación de la Comisión Europea y Privados</rdfs:label>
-        <rdfs:label xml:lang="en">European Commision and Private Research Project Fields</rdfs:label>
+        <rdfs:label xml:lang="es">Campos de Proyecto de Investigación de la Comisión Europea</rdfs:label>
+        <rdfs:label xml:lang="en">European Commision Research Project Fields</rdfs:label>
     </owl:Class>
     
 
@@ -3622,6 +3625,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
         <rdfs:label xml:lang="es">Campos de Proyecto Personal</rdfs:label>
         <rdfs:label xml:lang="en">Personnel Project Fields</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#new-private-research-project-questions -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#new-private-research-project-questions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#fields"/>
+        <rdfs:label xml:lang="en">Private Research Project Fields</rdfs:label>
+        <rdfs:label xml:lang="es">Proyectos de Investigación Privados</rdfs:label>
     </owl:Class>
     
 
@@ -4541,6 +4554,47 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#private_research_project -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#private_research_project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:label xml:lang="en">Private Research Projects</rdfs:label>
+        <rdfs:label xml:lang="es">Proyectos de Investigación Privados</rdfs:label>
+        <local:dbname>project</local:dbname>
+        <local:form-category>Core</local:form-category>
+        <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_cbgp_overheads_formula"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#national_regional_research_funding_institution"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_code"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_call_for_proposal_title"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_dni_nie_pas"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_internal_code"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_pi_orcid"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_title"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#private_research_project_total_overheads -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#private_research_project_total_overheads">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Total de costes indirectos</rdfs:label>
+        <rdfs:label xml:lang="en">Total overheads</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>total_overheads</local:method>
+        <local:object-class>Currency</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#programmes -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#programmes">
@@ -4619,9 +4673,10 @@
     <!-- https://w3id.org/CBGP-App#project_affiliation -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_affiliation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="en">Affiliation</rdfs:label>
         <rdfs:label xml:lang="es">Afiliación</rdfs:label>
@@ -4677,9 +4732,10 @@
     <!-- https://w3id.org/CBGP-App#project_application_code -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_application_code">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:comment xml:lang="en">For private projects, external code = internal code</rdfs:comment>
@@ -4700,8 +4756,9 @@
     <!-- https://w3id.org/CBGP-App#project_call_for_proposal_title -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_call_for_proposal_title">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:comment xml:lang="es">El nombre del convocatoria (e.g. European Innovation Ecosystems (EIE))</rdfs:comment>
@@ -4722,9 +4779,10 @@
     <!-- https://w3id.org/CBGP-App#project_cbgp_overheads -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_cbgp_overheads">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:comment>NOT IN LAURA&apos;S EXCEL</rdfs:comment>
         <rdfs:label xml:lang="en">CBGP overheads</rdfs:label>
         <rdfs:label xml:lang="es">Costes indirectos CBGP</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
@@ -4741,9 +4799,10 @@
     <!-- https://w3id.org/CBGP-App#project_dni_nie_pas -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_dni_nie_pas">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="en">DNI/NIE/PAS</rdfs:label>
         <rdfs:label xml:lang="es">DNI/NIE/PAS</rdfs:label>
@@ -4760,9 +4819,10 @@
     <!-- https://w3id.org/CBGP-App#project_end_date -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_end_date">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:comment xml:lang="en">For the personnel projects, this date is the end date of the member&apos;s contract</rdfs:comment>
         <rdfs:label xml:lang="en">End date</rdfs:label>
@@ -4781,8 +4841,9 @@
     <!-- https://w3id.org/CBGP-App#project_end_date_extension -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_end_date_extension">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="en">End date of the extension</rdfs:label>
         <rdfs:label xml:lang="es">Fecha de fin de la prórroga</rdfs:label>
@@ -4845,9 +4906,10 @@ PERSONNEL projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#project_internal_code -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_internal_code">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="es">Código interno</rdfs:label>
         <rdfs:label xml:lang="en">Internal code</rdfs:label>
@@ -4865,8 +4927,9 @@ PERSONNEL projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#project_main_copi_orcid -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_main_copi_orcid">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:comment xml:lang="es">No es obligatorio</rdfs:comment>
@@ -4889,8 +4952,9 @@ PERSONNEL projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#project_pi_orcid -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_pi_orcid">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:label xml:lang="es">ORCiD del IP</rdfs:label>
@@ -4912,9 +4976,10 @@ PERSONNEL projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#project_start_date -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_start_date">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:comment xml:lang="en">For the personnel projects, this date is the start date of the member&apos;s contract</rdfs:comment>
         <rdfs:label xml:lang="es">Fecha de inicio</rdfs:label>
@@ -5065,9 +5130,10 @@ PERSONNEL projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#project_title -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_title">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <rdfs:label xml:lang="en">Title of the project</rdfs:label>
@@ -5086,8 +5152,9 @@ PERSONNEL projects</rdfs:comment>
     <!-- https://w3id.org/CBGP-App#project_total_direct_costs -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_total_direct_costs">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:label xml:lang="es">Total de costes directos</rdfs:label>
         <rdfs:label xml:lang="en">Total direct costs</rdfs:label>
@@ -5229,8 +5296,8 @@ PERSONNEL projects</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#publication_cbgp_authors">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-publication-questions"/>
-        <rdfs:label xml:lang="en">CBGP Author(s)</rdfs:label>
         <rdfs:label xml:lang="es">Autor(es) del CBGP</rdfs:label>
+        <rdfs:label xml:lang="en">CBGP Author(s)</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>cbgp_author_orcids</local:method>
@@ -5242,7 +5309,7 @@ PERSONNEL projects</rdfs:comment>
         <local:widget-cardinality>Multiple</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/CBGP-App#publication_cbgp_corresponding_author -->

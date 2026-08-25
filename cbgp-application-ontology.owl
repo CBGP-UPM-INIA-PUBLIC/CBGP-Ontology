@@ -1561,16 +1561,28 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#european_private_research_project_cbgp_overheads_formula -->
+    <!-- https://w3id.org/CBGP-App#european_research_project_cbgp_overheads_formula -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_private_research_project_cbgp_overheads_formula">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_research_project_cbgp_overheads_formula">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of total overheads</rdfs:comment>
-        <rdfs:label xml:lang="en">Formula for the CBGP overheads of European Commision and Private Research Projects</rdfs:label>
-        <local:formula-expression>european_private_research_project_overheads * 0.6</local:formula-expression>
+        <rdfs:label xml:lang="en">Formula for the CBGP overheads of European Commision Research Projects</rdfs:label>
+        <local:formula-expression>european_research_project_total_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads"/>
     </owl:Class>
-    
+
+
+
+    <!-- https://w3id.org/CBGP-App#private_research_project_cbgp_overheads_formula -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#private_research_project_cbgp_overheads_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <rdfs:comment xml:lang="en">60% of total overheads</rdfs:comment>
+        <rdfs:label xml:lang="en">Formula for the CBGP overheads of Private Research Projects</rdfs:label>
+        <local:formula-expression>private_research_project_total_overheads * 0.6</local:formula-expression>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads"/>
+    </owl:Class>
+
 
 
     <!-- https://w3id.org/CBGP-App#european_private_research_project_funding_institution -->
@@ -1621,7 +1633,7 @@
         <local:dbname>project</local:dbname>
         <local:form-category>Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
-        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_cbgp_overheads_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_research_project_cbgp_overheads_formula"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_research_project_overheads_formula"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_funding_institution"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_code"/>
@@ -1642,7 +1654,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">25% of total funding</rdfs:comment>
         <rdfs:label xml:lang="en">Formula for the total overheads of European Commision research projects</rdfs:label>
-        <local:formula-expression>european_research_project_total_funding * 0.25</local:formula-expression>
+        <local:formula-expression>european_private_research_project_total_funding * 0.25</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#european_research_project_total_overheads"/>
     </owl:Class>
     
@@ -3509,7 +3521,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of overheads for year 1</rdfs:comment>
         <rdfs:label xml:lang="en">Formula for the CBGP overheads of year 1 of National and Regional Research Projects</rdfs:label>
-        <local:formula-expression>national_regional_research_project_year1_overheads * 0.6</local:formula-expression>
+        <local:formula-expression>year1_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#year1_cbgp_overheads"/>
     </owl:Class>
     
@@ -3521,7 +3533,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of overheads for year 2</rdfs:comment>
         <rdfs:label xml:lang="en">Formula for the CBGP overheads of year 2 of National and Regional Research Projects</rdfs:label>
-        <local:formula-expression>national_regional_research_project_year2_overheads * 0.6</local:formula-expression>
+        <local:formula-expression>year2_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#year2_cbgp_overheads"/>
     </owl:Class>
     
@@ -3533,7 +3545,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of overheads for year 3</rdfs:comment>
         <rdfs:label xml:lang="en">Formula for the CBGP overheads of year 3 of National and Regional Research Projects</rdfs:label>
-        <local:formula-expression>national_regional_research_project_year3_overheads * 0.6</local:formula-expression>
+        <local:formula-expression>year3_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#year3_cbgp_overheads"/>
     </owl:Class>
     
@@ -3545,7 +3557,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of the overheads for year 4</rdfs:comment>
         <rdfs:label xml:lang="en">Formula for the CBPG overheads of year 4 of National and Regional Research Projects</rdfs:label>
-        <local:formula-expression>national_regional_research_project_year4_overheads * 0.6</local:formula-expression>
+        <local:formula-expression>year4_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#year4_cbgp_overheads"/>
     </owl:Class>
     
@@ -4554,7 +4566,7 @@
         <local:dbname>project</local:dbname>
         <local:form-category>Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
-        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_cbgp_overheads_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#private_research_project_cbgp_overheads_formula"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_funding_institution"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_code"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_call_for_proposal_title"/>

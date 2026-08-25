@@ -3457,6 +3457,10 @@
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#national_regional_research_project_year2_cbgp_overheads"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#national_regional_research_project_year3_cbgp_overheads"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#national_regional_research_project_year4_cbgp_overheads"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads_research_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_overheads_research_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_percentage_research_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_subpercentage_research_formula"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#national_regional_research_funding_institution"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_code"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_call_for_proposal_title"/>
@@ -3906,6 +3910,8 @@
         <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#project_test_default_field_personnel_default"/>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads_personnel_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_percentage_personnel_formula"/>
+        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_test_subpercentage_personnel_formula"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#beneficiary_orcid"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#personnel_project_responsible_pi_orcid"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#personnel_project_total_funding"/>
@@ -4806,7 +4812,6 @@
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -4990,10 +4995,47 @@ PERSONNEL projects</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/CBGP-App#project_test_amount -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_amount">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Importe de prueba</rdfs:label>
+        <rdfs:label xml:lang="en">Test amount</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>test_amount</local:method>
+        <local:object-class>Currency</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_default_field -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_default_field">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Campo de prueba con valor por defecto</rdfs:label>
+        <rdfs:label xml:lang="en">Test default field</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>test_default_field</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#project_test_default_field_personnel_default -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_default_field_personnel_default">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
+        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_default_field"/>
         <local:default-value>This defaulted from the Personnel Project form</local:default-value>
     </owl:Class>
     
@@ -5003,7 +5045,84 @@ PERSONNEL projects</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_default_field_research_default">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
+        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_default_field"/>
         <local:default-value>This defaulted from the Research Project form</local:default-value>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_percentage -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_percentage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Porcentaje de prueba</rdfs:label>
+        <rdfs:label xml:lang="en">Test percentage</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>test_percentage</local:method>
+        <local:object-class>Currency</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_percentage_personnel_formula -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_percentage_personnel_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-expression>project_test_amount * 0.15</local:formula-expression>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_percentage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_percentage_research_formula -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_percentage_research_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-expression>project_test_amount * 0.10</local:formula-expression>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_percentage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_subpercentage -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_subpercentage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:label xml:lang="es">Subporcentaje de prueba</rdfs:label>
+        <rdfs:label xml:lang="en">Test sub-percentage</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>test_subpercentage</local:method>
+        <local:object-class>Currency</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_subpercentage_personnel_formula -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_subpercentage_personnel_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-expression>project_test_percentage * 0.30</local:formula-expression>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_subpercentage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_test_subpercentage_research_formula -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_test_subpercentage_research_formula">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
+        <local:formula-expression>project_test_percentage * 0.20</local:formula-expression>
+        <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_test_subpercentage"/>
     </owl:Class>
     
 

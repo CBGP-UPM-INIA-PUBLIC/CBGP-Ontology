@@ -3451,7 +3451,6 @@
         <rdfs:label xml:lang="es">Proyectos de Investigacion Nacionales y Regionales</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
-        <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#project_test_default_field_research_default"/>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#national_regional_research_project_year1_cbgp_overheads_formula"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#national_regional_research_project_year2_cbgp_overheads"/>
@@ -3903,9 +3902,7 @@
         <rdfs:label xml:lang="es">Proyecto Personal</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
-        <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#project_test_default_field_personnel_default"/>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
-        <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads_personnel_formula"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#beneficiary_orcid"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#personnel_project_responsible_pi_orcid"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#personnel_project_total_funding"/>
@@ -6789,7 +6786,7 @@ PERSONNEL projects</rdfs:comment>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>annual_direct_costs</local:method>
-        <local:object-class rdf:resource="https://w3id.org/CBGP-App#currency"/>
+        <local:object-class>Currency</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>

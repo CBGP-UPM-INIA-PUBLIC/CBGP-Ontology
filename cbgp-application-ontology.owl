@@ -4555,7 +4555,7 @@
         <local:form-category>Core</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_cbgp_overheads_formula"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#national_regional_research_funding_institution"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_funding_institution"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_code"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_call_for_proposal_title"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_dni_nie_pas"/>
@@ -4889,10 +4889,11 @@ PERSONNEL projects</rdfs:comment>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>funding_entity</local:method>
         <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/CBGP-App#project_internal_code -->

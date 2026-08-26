@@ -3555,7 +3555,7 @@
     <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_research_project_year4_cbgp_overheads">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#formula-definition"/>
         <rdfs:comment xml:lang="en">60% of the overheads for year 4</rdfs:comment>
-        <rdfs:label xml:lang="en">Formula for the CBPG overheads of year 4 of National and Regional Research Projects</rdfs:label>
+        <rdfs:label xml:lang="en">Formula for the CBGP overheads of year 4 of National and Regional Research Projects</rdfs:label>
         <rdfs:label xml:lang="es">Fórmula para los costes indirectos del CBGP del año 4 de Proyectos de Investigación Nacionales y Regionales</rdfs:label>
         <local:formula-expression>year4_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#year4_cbgp_overheads"/>

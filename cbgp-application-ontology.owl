@@ -2083,23 +2083,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#honorific_title -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#honorific_title">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
-        <rdfs:label xml:lang="en">Honorific title</rdfs:label>
-        <rdfs:label xml:lang="es">Título de honor</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>honor_title</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#hungary -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#hungary">
@@ -2875,6 +2858,23 @@
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_honorific_title -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_honorific_title">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="en">Honorific title</rdfs:label>
+        <rdfs:label xml:lang="es">Título de honor</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>honor_title</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
     </owl:Class>
     
 

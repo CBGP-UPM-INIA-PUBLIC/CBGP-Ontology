@@ -880,6 +880,17 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#category_none -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#category_none">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
+        <rdfs:label xml:lang="es">Ninguna</rdfs:label>
+        <rdfs:label xml:lang="en">None</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#cbgp_corresponding -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#cbgp_corresponding">
@@ -1008,6 +1019,28 @@
         <rdfs:label xml:lang="es">Sí</rdfs:label>
         <rdfs:label xml:lang="en">Yes</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#code10_none -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#code10_none">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#code_10"/>
+        <rdfs:label xml:lang="es">NInguno</rdfs:label>
+        <rdfs:label xml:lang="en">None</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#code5_none -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#code5_none">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#code_5"/>
+        <rdfs:label xml:lang="es">NInguno</rdfs:label>
+        <rdfs:label xml:lang="en">None</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</local:answer-order>
     </owl:Class>
     
 

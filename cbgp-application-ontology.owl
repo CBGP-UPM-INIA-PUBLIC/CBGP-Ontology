@@ -368,6 +368,14 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#administration_and_management -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#administration_and_management">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#affiliation -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#affiliation">
@@ -536,6 +544,22 @@
         <rdfs:label xml:lang="en">Associate professor</rdfs:label>
         <rdfs:label xml:lang="es">Profesor titular de universidad</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#atraccion_de_talento_1 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#atraccion_de_talento_1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#atraccion_de_talento_2 -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#atraccion_de_talento_2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
     </owl:Class>
     
 
@@ -1087,6 +1111,14 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#communications -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#communications">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#community_of_madrid -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#community_of_madrid">
@@ -1464,6 +1496,16 @@
         <rdfs:label xml:lang="en">Denmark</rdfs:label>
         <rdfs:label xml:lang="es">Dinamarca</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#deprecated_categories -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#deprecated_categories">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
+        <rdfs:label xml:lang="en">Deprecated</rdfs:label>
+        <rdfs:label xml:lang="es">Obsoleto</rdfs:label>
     </owl:Class>
     
 
@@ -2171,6 +2213,14 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#inia_technical_staff -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#inia_technical_staff">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#inphinit -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#inphinit">
@@ -2263,6 +2313,14 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#programmes_senior_researcher"/>
         <rdfs:label xml:lang="en">Isaac Peral</rdfs:label>
         <rdfs:label xml:lang="es">Isaac Peral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#isaac_peral_postdoctoral -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#isaac_peral_postdoctoral">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
     </owl:Class>
     
 
@@ -2632,6 +2690,30 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#management_secretary -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#management_secretary">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#margarita_salas_researcher -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#margarita_salas_researcher">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#maria_zambrano_researcher -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#maria_zambrano_researcher">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#marshallislands -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#marshallislands">
@@ -2857,6 +2939,23 @@
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_funding_comments -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_funding_comments">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
+        <rdfs:label xml:lang="es">Comentarios sobre financiación</rdfs:label>
+        <rdfs:label xml:lang="en">Funding comments</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>funding_comments</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -3821,6 +3920,30 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#other_institutions_researcher -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#other_institutions_researcher">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#other_postdoctoral -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#other_postdoctoral">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#other_predoctoral -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#other_predoctoral">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#pakistan -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#pakistan">
@@ -4031,6 +4154,14 @@
         <rdfs:label xml:lang="en">Peru</rdfs:label>
         <rdfs:label xml:lang="es">Perú</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">138</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#phd_candidate -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#phd_candidate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
     </owl:Class>
     
 
@@ -4564,6 +4695,14 @@
         <rdfs:comment xml:lang="en">A default value a form assigns to one of its fields via local:has-defaults, using local:default-for-field (the question class) and local:default-value (the answer). Each instance belongs to exactly one form, so the same shared question class can default differently per form.</rdfs:comment>
         <rdfs:label xml:lang="en">Pre-populated answer</rdfs:label>
         <rdfs:label xml:lang="es">Respuesta prellenada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#predoctoral_affiliated_through_agreement -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#predoctoral_affiliated_through_agreement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
     </owl:Class>
     
 
@@ -6162,6 +6301,22 @@ PERSONNEL projects</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/CBGP-App#technician -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#technician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#technician_not_funded_or_other -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#technician_not_funded_or_other">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#technologist -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#technologist">
@@ -7081,3 +7236,4 @@ PERSONNEL projects</rdfs:comment>
 
 
 <!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

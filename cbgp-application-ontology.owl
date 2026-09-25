@@ -199,6 +199,16 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#CBGP -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#CBGP">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_institution"/>
+        <rdfs:label xml:lang="en">CBGP</rdfs:label>
+        <rdfs:label xml:lang="es">CBGP</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#CSIC -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#CSIC">

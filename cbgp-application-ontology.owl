@@ -372,6 +372,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#administration_and_management">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="es">Administración y Gestión</rdfs:label>
+        <rdfs:label xml:lang="en">Administration and Management</rdfs:label>
     </owl:Class>
     
 
@@ -552,6 +554,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#atraccion_de_talento_1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="es">Atraccion de Talento Comunidad de Madrid modalidad 1</rdfs:label>
+        <rdfs:label xml:lang="en">Atraccion de Talento Comunidad de Madrid modality 1</rdfs:label>
     </owl:Class>
     
 
@@ -560,6 +564,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#atraccion_de_talento_2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="es">Atraccion de Talento Comunidad de Madrid modalidad 2</rdfs:label>
+        <rdfs:label xml:lang="en">Atraccion de Talento Comunidad de Madrid modality 2</rdfs:label>
     </owl:Class>
     
 
@@ -1003,6 +1009,17 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#chloroplast_biogenesis_tamara -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#chloroplast_biogenesis_tamara">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_research_areas_groups"/>
+        <rdfs:label xml:lang="en">Molecular regulation and tissular specificity of chloroplast biogenesis</rdfs:label>
+        <rdfs:label xml:lang="es">Regulación molecular y especificidad de tejidos en la biogénesis de cloroplastosesees</rdfs:label>
+        <local:group-pi>Tamara Hernández Verdeja</local:group-pi>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#civil_servant -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#civil_servant">
@@ -1115,6 +1132,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#communications">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="en">Communications</rdfs:label>
+        <rdfs:label xml:lang="es">Comunicación</rdfs:label>
     </owl:Class>
     
 
@@ -1506,6 +1525,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#categories"/>
         <rdfs:label xml:lang="en">Deprecated</rdfs:label>
         <rdfs:label xml:lang="es">Obsoleto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#deprecated_research_areas_groups -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#deprecated_research_areas_groups">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
+        <rdfs:label xml:lang="en">Deprecated</rdfs:label>
+        <rdfs:label xml:lang="es">Obsoleto</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
     </owl:Class>
     
 
@@ -2217,6 +2247,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#inia_technical_staff">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="en">Technical Staff INIA</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico Plantilla INIA</rdfs:label>
     </owl:Class>
     
 
@@ -2321,6 +2353,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#isaac_peral_postdoctoral">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="es">Postdoctoral Programa Isaac Peral</rdfs:label>
+        <rdfs:label xml:lang="en">Postdoctoral with Isaac Peral Programme</rdfs:label>
     </owl:Class>
     
 
@@ -2694,6 +2728,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#management_secretary">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="en">Management Secretary</rdfs:label>
+        <rdfs:label xml:lang="es">Secretaría de Dirección</rdfs:label>
     </owl:Class>
     
 
@@ -2702,6 +2738,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#margarita_salas_researcher">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="en">Margarita Salas researcher</rdfs:label>
+        <rdfs:label xml:lang="es">Postdoctoral Margarita Salas</rdfs:label>
     </owl:Class>
     
 
@@ -2710,6 +2748,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#maria_zambrano_researcher">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="en">María Zambrano researcher</rdfs:label>
+        <rdfs:label xml:lang="es">Postdoctoral María Zambrano</rdfs:label>
     </owl:Class>
     
 
@@ -3844,6 +3884,17 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#no_group -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#no_group">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
+        <rdfs:label xml:lang="en">No group</rdfs:label>
+        <rdfs:label xml:lang="es">Sin grupo</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#northkorea -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#northkorea">
@@ -3924,6 +3975,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#other_institutions_researcher">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="es">Investigador de Otras Instituciones - CSIC</rdfs:label>
+        <rdfs:label xml:lang="en">Researcher from Other institutions - CSIC</rdfs:label>
     </owl:Class>
     
 
@@ -3932,6 +3985,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#other_postdoctoral">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="en">Other Predoctorals/Postdoctorals (No funding or other sources of funding) - Postdoctoral</rdfs:label>
+        <rdfs:label xml:lang="es">Otros Predoctorales/Postdoctorales (Sin financiacion u otras fuentes de financiacion) - Postdoctoral</rdfs:label>
     </owl:Class>
     
 
@@ -3940,6 +3995,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#other_predoctoral">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="en">Other Predoctorals/Postdoctorals (No funding or other sources of funding) - Predoctoral</rdfs:label>
+        <rdfs:label xml:lang="es">Otros Predoctorales/Postdoctorales (Sin Finanaciacion u Otras Fuentes de Financiacion) - Predoctoral</rdfs:label>
     </owl:Class>
     
 
@@ -4162,6 +4219,9 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#phd_candidate">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:comment xml:lang="en">No specification</rdfs:comment>
+        <rdfs:label xml:lang="es">Estudiante de Doctorado</rdfs:label>
+        <rdfs:label xml:lang="en">PhD candidate</rdfs:label>
     </owl:Class>
     
 
@@ -4703,6 +4763,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#predoctoral_affiliated_through_agreement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="es">Predoctoral adscrito mediante Convenio</rdfs:label>
+        <rdfs:label xml:lang="en">Predoctoral affiliated through an Agreement</rdfs:label>
     </owl:Class>
     
 
@@ -5592,13 +5654,13 @@ PERSONNEL projects</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/CBGP-App#ra-ninguno -->
+    <!-- https://w3id.org/CBGP-App#ra-none -->
 
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#ra-ninguno">
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ra-none">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#research_areas_groups"/>
         <rdfs:label xml:lang="es">Ninguno</rdfs:label>
         <rdfs:label xml:lang="en">None</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</local:answer-order>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</local:answer-order>
     </owl:Class>
     
 
@@ -6305,6 +6367,9 @@ PERSONNEL projects</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#technician">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:comment xml:lang="en">No specification</rdfs:comment>
+        <rdfs:label xml:lang="en">Technician</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico</rdfs:label>
     </owl:Class>
     
 
@@ -6313,6 +6378,8 @@ PERSONNEL projects</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#technician_not_funded_or_other">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_categories"/>
+        <rdfs:label xml:lang="en">Technician (No Funding or Other Sources of Funding)</rdfs:label>
+        <rdfs:label xml:lang="es">Técnico (Sin Financiación u Otras Fuentes de Financiación)</rdfs:label>
     </owl:Class>
     
 

@@ -188,6 +188,27 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#Awarded -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#Awarded">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-status"/>
+        <rdfs:label xml:lang="en">Awarded</rdfs:label>
+        <rdfs:label xml:lang="es">Concedido</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#CSIC -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#CSIC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_institution"/>
+        <rdfs:label xml:lang="en">CSIC</rdfs:label>
+        <rdfs:label xml:lang="es">CSIC</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#CSIC-INIA -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#CSIC-INIA">
@@ -261,6 +282,16 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#INIA -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#INIA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_institution"/>
+        <rdfs:label xml:lang="en">INIA</rdfs:label>
+        <rdfs:label xml:lang="es">INIA</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#NUM -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#NUM">
@@ -303,6 +334,17 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#Proposed -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#Proposed">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-status"/>
+        <rdfs:label xml:lang="en">Proposed</rdfs:label>
+        <rdfs:label xml:lang="es">Propuesto</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#Regional -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#Regional">
@@ -310,6 +352,17 @@
         <rdfs:label xml:lang="en">Regional</rdfs:label>
         <rdfs:label xml:lang="es">Regional</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#Rejected -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#Rejected">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-status"/>
+        <rdfs:label xml:lang="es">Rechazado</rdfs:label>
+        <rdfs:label xml:lang="en">Rejected</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
     </owl:Class>
     
 
@@ -342,6 +395,17 @@
         <rdfs:label xml:lang="en">UPM/CSIC</rdfs:label>
         <rdfs:label xml:lang="es">UPM/CSIC</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#Withdrawn -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#Withdrawn">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-status"/>
+        <rdfs:label xml:lang="es">Retirado</rdfs:label>
+        <rdfs:label xml:lang="en">Withdrawn</rdfs:label>
+        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
     </owl:Class>
     
 
@@ -1529,6 +1593,16 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#deprecated_institution -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#deprecated_institution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#institution"/>
+        <rdfs:label xml:lang="en">Deprecated</rdfs:label>
+        <rdfs:label xml:lang="es">Obsoleto</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#deprecated_research_areas_groups -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#deprecated_research_areas_groups">
@@ -1758,6 +1832,23 @@
         <rdfs:label xml:lang="es">Fórmula para los costes totales de Proyectos de Investigación de la Comisión Europea</rdfs:label>
         <local:formula-expression>european_private_research_project_total_funding * 0.25</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#european_research_project_total_overheads"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#european_research_project_status_default -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_research_project_status_default">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
+        <rdfs:comment xml:lang="en">Added 2026-09-25. Both the public submission form and the admin
+edit form render this field identically (no per-interface visibility
+mechanism exists yet) - defaulting to &quot;Proposed&quot; here is trusted, not
+enforced, same as every other field a public submitter fills in; the
+admin&apos;s review of every submitted record is what keeps it honest.</rdfs:comment>
+        <rdfs:label xml:lang="es">Estado por defecto de proyecto de investigación europeo</rdfs:label>
+        <rdfs:label xml:lang="en">European research project status default</rdfs:label>
+        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+        <local:default-value>Proposed</local:default-value>
     </owl:Class>
     
 
@@ -2270,6 +2361,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="es">Institución</rdfs:label>
         <rdfs:label xml:lang="en">Institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#institution_other -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#institution_other">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_institution"/>
+        <rdfs:label xml:lang="en">Other</rdfs:label>
+        <rdfs:label xml:lang="es">Otro</rdfs:label>
     </owl:Class>
     
 
@@ -3651,6 +3752,18 @@
     
 
 
+    <!-- https://w3id.org/CBGP-App#national_regional_research_project_status_default -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_research_project_status_default">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
+        <rdfs:label xml:lang="es">Estado por defecto de proyecto de investigación nacional/regional</rdfs:label>
+        <rdfs:label xml:lang="en">National/regional research project status default</rdfs:label>
+        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+        <local:default-value>Proposed</local:default-value>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#national_regional_research_project_total_funding -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_research_project_total_funding">
@@ -4183,6 +4296,18 @@
         <local:references-via rdf:resource="https://w3id.org/CBGP-App#member_orcid"/>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#personnel_project_status_default -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#personnel_project_status_default">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
+        <rdfs:label xml:lang="es">Estado por defecto de proyecto de personal</rdfs:label>
+        <rdfs:label xml:lang="en">Personnel project status default</rdfs:label>
+        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+        <local:default-value>Proposed</local:default-value>
     </owl:Class>
     
 
@@ -4758,60 +4883,7 @@
         <rdfs:label xml:lang="en">Pre-populated answer</rdfs:label>
         <rdfs:label xml:lang="es">Respuesta prellenada</rdfs:label>
     </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#european_research_project_status_default -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_research_project_status_default">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
-        <rdfs:comment xml:lang="en">Added 2026-09-25. Both the public submission form and the admin
-edit form render this field identically (no per-interface visibility
-mechanism exists yet) - defaulting to "Proposed" here is trusted, not
-enforced, same as every other field a public submitter fills in; the
-admin's review of every submitted record is what keeps it honest.</rdfs:comment>
-        <rdfs:label xml:lang="en">European research project status default</rdfs:label>
-        <rdfs:label xml:lang="es">Estado por defecto de proyecto de investigación europeo</rdfs:label>
-        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
-        <local:default-value>Proposed</local:default-value>
-    </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#national_regional_research_project_status_default -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_research_project_status_default">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
-        <rdfs:label xml:lang="en">National/regional research project status default</rdfs:label>
-        <rdfs:label xml:lang="es">Estado por defecto de proyecto de investigación nacional/regional</rdfs:label>
-        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
-        <local:default-value>Proposed</local:default-value>
-    </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#private_research_project_status_default -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#private_research_project_status_default">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
-        <rdfs:label xml:lang="en">Private research project status default</rdfs:label>
-        <rdfs:label xml:lang="es">Estado por defecto de proyecto de investigación privado</rdfs:label>
-        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
-        <local:default-value>Proposed</local:default-value>
-    </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#personnel_project_status_default -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#personnel_project_status_default">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
-        <rdfs:label xml:lang="en">Personnel project status default</rdfs:label>
-        <rdfs:label xml:lang="es">Estado por defecto de proyecto de personal</rdfs:label>
-        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
-        <local:default-value>Proposed</local:default-value>
-    </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/CBGP-App#predoctoral_affiliated_through_agreement -->
@@ -4881,6 +4953,18 @@ admin's review of every submitted record is what keeps it honest.</rdfs:comment>
         <rdfs:label xml:lang="es">Fórmula para los costes indirectos del CBGP de Proyectos de Investigación Privados</rdfs:label>
         <local:formula-expression>private_research_project_total_overheads * 0.6</local:formula-expression>
         <local:formula-for-field rdf:resource="https://w3id.org/CBGP-App#project_cbgp_overheads"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#private_research_project_status_default -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#private_research_project_status_default">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#pre-populated-answer"/>
+        <rdfs:label xml:lang="es">Estado por defecto de proyecto de investigación privado</rdfs:label>
+        <rdfs:label xml:lang="en">Private research project status default</rdfs:label>
+        <local:default-for-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+        <local:default-value>Proposed</local:default-value>
     </owl:Class>
     
 
@@ -4968,6 +5052,16 @@ admin's review of every submitted record is what keeps it honest.</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/CBGP-App#project-status -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project-status">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
+        <rdfs:label xml:lang="es">Estado de financiación</rdfs:label>
+        <rdfs:label xml:lang="en">Funding status</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#project-type -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project-type">
@@ -4975,61 +5069,7 @@ admin's review of every submitted record is what keeps it honest.</rdfs:comment>
         <rdfs:label xml:lang="en">Project type</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de proyecto</rdfs:label>
     </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#project-status -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project-status">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <rdfs:label xml:lang="en">Funding status</rdfs:label>
-        <rdfs:label xml:lang="es">Estado de financiación</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#Proposed -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#Proposed">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-status"/>
-        <rdfs:label xml:lang="en">Proposed</rdfs:label>
-        <rdfs:label xml:lang="es">Propuesto</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</local:answer-order>
-    </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#Awarded -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#Awarded">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-status"/>
-        <rdfs:label xml:lang="en">Awarded</rdfs:label>
-        <rdfs:label xml:lang="es">Concedido</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#Rejected -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#Rejected">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-status"/>
-        <rdfs:label xml:lang="en">Rejected</rdfs:label>
-        <rdfs:label xml:lang="es">Rechazado</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</local:answer-order>
-    </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#Withdrawn -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#Withdrawn">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-status"/>
-        <rdfs:label xml:lang="en">Withdrawn</rdfs:label>
-        <rdfs:label xml:lang="es">Retirado</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</local:answer-order>
-    </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/CBGP-App#project_affiliation -->
@@ -5264,46 +5304,7 @@ PERSONNEL projects</rdfs:comment>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#project_status -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_status">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:comment>Added 2026-09-25 at Mark's request. Tracks whether this record is
-a submitted proposal not yet decided, or a finalized outcome - distinct
-from the funding-amount field, whose absence doesn't reliably tell "still
-pending" apart from "rejected" apart from "not yet entered". Needed to
-answer proposal-success-rate questions, which a funding amount alone
-cannot. subClassOf every project-family section, same membership as
-project_title, so it's reachable from every Research/Personnel project
-form (European/national-regional/private/personnel) - see
-project_funding_entity's comment for why fields shared across forms don't
-get a "personnel_"-prefixed duplicate name.
-
-Defaults to "Proposed" on every project form via local:has-defaults (see
-each form's own declaration) - trusted, not enforced: the public-facing
-submission form and the admin edit form render the identical field today
-(no per-interface visibility mechanism exists in this app yet), so the
-admin's own review of every submitted record is what actually keeps this
-honest, same as it already is for every other field on that form.</rdfs:comment>
-        <rdfs:label xml:lang="en">Funding status</rdfs:label>
-        <rdfs:label xml:lang="es">Estado de financiación</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#project-status"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>status</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
-    </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/CBGP-App#project_internal_code -->
@@ -5394,6 +5395,45 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#project_status -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_status">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
+        <rdfs:comment>Added 2026-09-25 at Mark&apos;s request. Tracks whether this record is
+a submitted proposal not yet decided, or a finalized outcome - distinct
+from the funding-amount field, whose absence doesn&apos;t reliably tell &quot;still
+pending&quot; apart from &quot;rejected&quot; apart from &quot;not yet entered&quot;. Needed to
+answer proposal-success-rate questions, which a funding amount alone
+cannot. subClassOf every project-family section, same membership as
+project_title, so it&apos;s reachable from every Research/Personnel project
+form (European/national-regional/private/personnel) - see
+project_funding_entity&apos;s comment for why fields shared across forms don&apos;t
+get a &quot;personnel_&quot;-prefixed duplicate name.
+
+Defaults to &quot;Proposed&quot; on every project form via local:has-defaults (see
+each form&apos;s own declaration) - trusted, not enforced: the public-facing
+submission form and the admin edit form render the identical field today
+(no per-interface visibility mechanism exists in this app yet), so the
+admin&apos;s own review of every submitted record is what actually keeps this
+honest, same as it already is for every other field on that form.</rdfs:comment>
+        <rdfs:label xml:lang="es">Estado de financiación</rdfs:label>
+        <rdfs:label xml:lang="en">Funding status</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#project-status"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>status</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 

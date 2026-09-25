@@ -1824,7 +1824,6 @@
     <!-- https://w3id.org/CBGP-App#forms -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#forms">
-        <rdfs:label xml:lang="en">Data entry</rdfs:label>
         <rdfs:label xml:lang="es">Entrada de datos</rdfs:label>
         <rdfs:label xml:lang="en">Forms</rdfs:label>
     </owl:Class>

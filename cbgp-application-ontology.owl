@@ -92,41 +92,13 @@
     <!-- urn:local:has-formulas -->
 
     <owl:AnnotationProperty rdf:about="urn:local:has-formulas"/>
-
+    
 
 
     <!-- urn:local:has-triggers -->
-    <!--
-      Declares that selecting a specific ANSWER, or creating a new record of
-      a specific FORM, should fire a side effect (an email today; other
-      trigger types can be registered in the app later). Points at a small
-      reified node carrying local:trigger-type + local:trigger-recipient-key
-      - same two-piece-of-data shape as local:has-formulas/has-defaults, so
-      it needs the same indirection, not a direct property.
-
-      On an ANSWER (fires once per record, the first time that answer is
-      selected - never again for the same record unless it's later changed
-      away and back):
-        cbgp:member_approved_yes local:has-triggers cbgp:member_approved_yes_photo_trigger .
-        cbgp:member_approved_yes_photo_trigger
-            local:trigger-type            "email" ;
-            local:trigger-recipient-key   "photo_id_scheduler" .
-
-      On a FORM (fires once, when a new record of that form is created):
-        cbgp:member local:has-triggers cbgp:member_new_submission_trigger .
-        cbgp:member_new_submission_trigger
-            local:trigger-type            "email" ;
-            local:trigger-recipient-key   "new_member_reviewer" .
-
-      local:trigger-recipient-key is a SYMBOLIC key only, never a literal
-      email address - this ontology is synced publicly (w3id.org, GitHub
-      Pages), so real addresses live only in the application's own
-      TRIGGER_RECIPIENTS config, resolved by this key at dispatch time. See
-      CBGP-Databases' lib/triggers.rb.
-    -->
 
     <owl:AnnotationProperty rdf:about="urn:local:has-triggers"/>
-
+    
 
 
     <!-- urn:local:is-primary-id -->
@@ -174,24 +146,19 @@
     <!-- urn:local:requires-field -->
 
     <owl:AnnotationProperty rdf:about="urn:local:requires-field"/>
-
+    
 
 
     <!-- urn:local:trigger-recipient-key -->
-    <!-- Symbolic key (e.g. "photo_id_scheduler") the application resolves
-         to a real email address in its own TRIGGER_RECIPIENTS config -
-         never a literal address here. See local:has-triggers above. -->
 
     <owl:AnnotationProperty rdf:about="urn:local:trigger-recipient-key"/>
-
+    
 
 
     <!-- urn:local:trigger-type -->
-    <!-- Which kind of side effect to fire - "email" today. See
-         local:has-triggers above. -->
 
     <owl:AnnotationProperty rdf:about="urn:local:trigger-type"/>
-
+    
 
 
     <!-- urn:local:widget-cardinality -->
@@ -2973,22 +2940,7 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-member-questions"/>
         <local:has-triggers rdf:resource="https://w3id.org/CBGP-App#member_new_submission_trigger"/>
     </owl:Class>
-
-
-
-    <!-- https://w3id.org/CBGP-App#member_new_submission_trigger -->
-    <!-- Example/first real use of local:has-triggers (see its declaration
-         above): fires when a new member record is created through the
-         User-facing new-hire form - the app falls back to its existing
-         admin-broadcast email if this is ever removed, so this is additive
-         config, not a required one. "new_member_reviewer" is resolved to a
-         real address in the app's own TRIGGER_RECIPIENTS config, never here. -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_new_submission_trigger">
-        <local:trigger-type>email</local:trigger-type>
-        <local:trigger-recipient-key>new_member_reviewer</local:trigger-recipient-key>
-    </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/CBGP-App#member_birth_date -->
@@ -3328,6 +3280,15 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#member_new_submission_trigger -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#member_new_submission_trigger">
+        <local:trigger-recipient-key>new_member_reviewer</local:trigger-recipient-key>
+        <local:trigger-type>email</local:trigger-type>
     </owl:Class>
     
 
@@ -4438,6 +4399,18 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <rdfs:label xml:lang="es">Filipinas</rdfs:label>
         <rdfs:label xml:lang="en">Philippines</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">139</local:answer-order>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#phytopathogenic_bacteria_pablo_emilia -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#phytopathogenic_bacteria_pablo_emilia">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#deprecated_research_areas_groups"/>
+        <rdfs:label xml:lang="es">Bacterias fitopatógenase</rdfs:label>
+        <rdfs:label xml:lang="en">Phytipathogenic bacteria</rdfs:label>
+        <local:group-pi>Emilia López Solanilla</local:group-pi>
+        <local:group-pi>Pablo Rodríguez Palenzuela</local:group-pi>
     </owl:Class>
     
 

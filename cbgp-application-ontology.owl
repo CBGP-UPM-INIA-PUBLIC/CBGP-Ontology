@@ -7967,6 +7967,60 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
         <rdfs:label xml:lang="en">NOT (exclude matches)</rdfs:label>
     </owl:Class>
 
+    <!-- https://w3id.org/CBGP-App#ui_search_show_all -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_show_all">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Link on every search page that lists every record, with no search terms.</rdfs:comment>
+        <rdfs:label xml:lang="es">Mostrar todos los registros</rdfs:label>
+        <rdfs:label xml:lang="en">Show all records</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_search_no_terms -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_no_terms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Shown when a search form is submitted with every box empty; followed by the Show all records link.</rdfs:comment>
+        <rdfs:label xml:lang="es">No se ha introducido nada que buscar.</rdfs:label>
+        <rdfs:label xml:lang="en">Nothing was entered to search for.</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_search_all_shown -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_all_shown">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Shown above the results of Show all records. %{count} is the number of records.</rdfs:comment>
+        <rdfs:label xml:lang="es">Se muestran todos los registros (%{count}).</rdfs:label>
+        <rdfs:label xml:lang="en">Showing all records (%{count}).</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_search_or_empty -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_or_empty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Caption of the tick box that widens a search condition to also match records that have no value at all in that field (e.g. a project with no end date).</rdfs:comment>
+        <rdfs:label xml:lang="es">o sin valor</rdfs:label>
+        <rdfs:label xml:lang="en">or no value</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_dbname_all_types -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_dbname_all_types">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Generic name of the all-forms search entry for a storage name several forms share, used when no specific ui_dbname_ text exists for it. %{name} is the storage name.</rdfs:comment>
+        <rdfs:label xml:lang="es">%{name} (todos los tipos)</rdfs:label>
+        <rdfs:label xml:lang="en">%{name} (all types)</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_dbname_project -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_dbname_project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Name, in the Query list, of the search that covers every kind of project form (they all store under the name project).</rdfs:comment>
+        <rdfs:label xml:lang="es">Proyectos (todos los tipos)</rdfs:label>
+        <rdfs:label xml:lang="en">Projects (all types)</rdfs:label>
+    </owl:Class>
+
     <!-- https://w3id.org/CBGP-App#ui_typeahead_hint_plain -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_typeahead_hint_plain">

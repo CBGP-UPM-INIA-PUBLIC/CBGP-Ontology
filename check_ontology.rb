@@ -28,6 +28,13 @@
 #                         application would show a raw %{name} to the user
 #   ui_text_characters    an interface text containing a back-tick, quote, < > or backslash (they
 #                         would break the page the text is printed into)
+#   conditional_requirement_incomplete
+#                         a conditional requirement (a subclass of cbgp:conditional-requirement)
+#                         missing its local:conditional-requirement-field, -when-field or
+#                         -when-answer - the application could not apply it
+#   conditional_requirement_unknown
+#                         a conditional requirement, or a form's local:has-conditional-requirements,
+#                         that points at a class that does not exist (typo in a field or answer name)
 #   untagged_annotation   local:form-category / local:dbname written without
 #                         xml:lang="en", unlike every other form. (This is what
 #                         once made the European and Private project forms vanish
@@ -133,6 +140,8 @@ module OntologyCheck
       end
     end
 
+    findings.concat(check_conditional_requirements(classes))
+
     classes.each do |k|
       k.labels.each do |l|
         findings << finding(:error, :empty_label, k.name, 'has a blank label') if l[:text].strip.empty?
@@ -189,6 +198,45 @@ module OntologyCheck
     end
 
     findings.sort_by { |f| [f.severity == :error ? 0 : 1, f.code.to_s, f.subject.to_s] }
+  end
+
+  CONDITIONAL_PARTS = { 'conditional-requirement-field' => 'the field that becomes required',
+                        'conditional-requirement-when-field' => 'the field whose answer decides',
+                        'conditional-requirement-when-answer' => 'the answer(s) that make it required' }.freeze
+
+  # A conditional requirement ("this field is required when that field has one
+  # of these answers") must name all three parts, and everything it names -
+  # and every rule a form lists - must exist, or the rule would silently never
+  # apply.
+  def self.check_conditional_requirements(classes)
+    findings = []
+    by_name = classes.to_h { |k| [k.name, k] }
+
+    classes.select { |k| k.supers.include?('conditional-requirement') }.each do |rule|
+      CONDITIONAL_PARTS.each do |prop, meaning|
+        if rule.props[prop].empty?
+          findings << finding(:error, :conditional_requirement_incomplete, rule.name, "has no local:#{prop} (#{meaning})")
+        end
+        rule.props[prop].each do |p|
+          target = fragment(p[:resource])
+          next if p[:resource] && by_name.key?(target)
+
+          findings << finding(:error, :conditional_requirement_unknown, rule.name,
+                              "local:#{prop} points at #{target.inspect}, which is not a class in the ontology")
+        end
+      end
+    end
+
+    classes.each do |form|
+      form.props['has-conditional-requirements'].each do |p|
+        target = fragment(p[:resource])
+        next if p[:resource] && by_name[target]&.supers&.include?('conditional-requirement')
+
+        findings << finding(:error, :conditional_requirement_unknown, form.name,
+                            "local:has-conditional-requirements points at #{target.inspect}, which is not a conditional requirement")
+      end
+    end
+    findings
   end
 
   def self.fragment(uri)

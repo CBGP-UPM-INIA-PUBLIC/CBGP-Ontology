@@ -59,6 +59,30 @@
     
 
 
+    <!-- urn:local:conditional-requirement-field -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:conditional-requirement-field"/>
+    
+
+
+    <!-- urn:local:conditional-requirement-when-answer -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:conditional-requirement-when-answer"/>
+    
+
+
+    <!-- urn:local:conditional-requirement-when-field -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:conditional-requirement-when-field"/>
+    
+
+
+    <!-- urn:local:has-conditional-requirements -->
+
+    <owl:AnnotationProperty rdf:about="urn:local:has-conditional-requirements"/>
+    
+
+
     <!-- urn:local:formula-expression -->
 
     <owl:AnnotationProperty rdf:about="urn:local:formula-expression"/>
@@ -244,28 +268,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#Articulo-60 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#Articulo-60">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
-        <rdfs:label xml:lang="en">Article 60</rdfs:label>
-        <rdfs:label xml:lang="es">Artículo-60</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#Articulo-83 -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#Articulo-83">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
-        <rdfs:label xml:lang="en">Article 83</rdfs:label>
-        <rdfs:label xml:lang="es">Artículo-83</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#Awarded -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#Awarded">
@@ -314,17 +316,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
         <rdfs:label xml:lang="en">DATE</rdfs:label>
         <rdfs:label xml:lang="es">FECHA</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#European -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#European">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
-        <rdfs:label xml:lang="en">European</rdfs:label>
-        <rdfs:label xml:lang="es">Europeo</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</local:answer-order>
     </owl:Class>
     
 
@@ -390,17 +381,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#National -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#National">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
-        <rdfs:label xml:lang="es">Nacional</rdfs:label>
-        <rdfs:label xml:lang="en">National</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#OBJECT -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#OBJECT">
@@ -433,17 +413,6 @@
     
 
 
-    <!-- https://w3id.org/CBGP-App#Regional -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#Regional">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
-        <rdfs:label xml:lang="en">Regional</rdfs:label>
-        <rdfs:label xml:lang="es">Regional</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</local:answer-order>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#Rejected -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#Rejected">
@@ -472,17 +441,6 @@
         <rdfs:label xml:lang="en">UPM</rdfs:label>
         <rdfs:label xml:lang="es">UPM</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</local:answer-order>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#UPM-CSIC -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#UPM-CSIC">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#project-type"/>
-        <rdfs:label xml:lang="en">UPM/CSIC</rdfs:label>
-        <rdfs:label xml:lang="es">UPM/CSIC</rdfs:label>
-        <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</local:answer-order>
     </owl:Class>
     
 
@@ -2060,6 +2018,8 @@
         <rdfs:label xml:lang="es">Proyectos de Investigación de la Comisión Europea</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
+        <local:has-conditional-requirements rdf:resource="https://w3id.org/CBGP-App#european_project_end_date_when_awarded"/>
+        <local:has-conditional-requirements rdf:resource="https://w3id.org/CBGP-App#european_project_start_date_when_awarded"/>
         <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#european_research_project_status_default"/>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#european_research_project_cbgp_overheads_formula"/>
@@ -2068,11 +2028,8 @@
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_funding_institution"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_url"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_call_for_proposal_title"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_dni_nie_pas"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_internal_code"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_pi_nie"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_title"/>
     </owl:Class>
     
@@ -2235,6 +2192,120 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:related-column rdf:resource="https://w3id.org/CBGP-App#commitment_start_date"/>
         <local:related-form rdf:resource="https://w3id.org/CBGP-App#funding_commitment"/>
         <local:related-via rdf:resource="https://w3id.org/CBGP-App#commitment_project"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#conditional-requirement -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#conditional-requirement">
+        <rdfs:comment xml:lang="en">A rule a form lists via local:has-conditional-requirements: a field that is required only when another field has one of certain answers (e.g. the dates of a project are required only once it is Awarded). Each instance names local:conditional-requirement-field (the field that becomes required), local:conditional-requirement-when-field (the field whose answer decides) and one or more local:conditional-requirement-when-answer (the answer classes that make it required). Each instance belongs to one form. Enforced when a record is saved; the form shows a small note beside the field. check_ontology.rb verifies that every part is present and every class named exists.</rdfs:comment>
+        <rdfs:label xml:lang="es">Requisito condicional</rdfs:label>
+        <rdfs:label xml:lang="en">Conditional requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#european_project_start_date_when_awarded -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_project_start_date_when_awarded">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#conditional-requirement"/>
+        <rdfs:label xml:lang="en">The start date of a european research project is required once it is Awarded</rdfs:label>
+        <rdfs:label xml:lang="es">La fecha de inicio de european research project es obligatoria una vez concedido</rdfs:label>
+        <local:conditional-requirement-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
+        <local:conditional-requirement-when-answer rdf:resource="https://w3id.org/CBGP-App#Awarded"/>
+        <local:conditional-requirement-when-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#european_project_end_date_when_awarded -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#european_project_end_date_when_awarded">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#conditional-requirement"/>
+        <rdfs:label xml:lang="en">The end date of a european research project is required once it is Awarded</rdfs:label>
+        <rdfs:label xml:lang="es">La fecha de fin de european research project es obligatoria una vez concedido</rdfs:label>
+        <local:conditional-requirement-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
+        <local:conditional-requirement-when-answer rdf:resource="https://w3id.org/CBGP-App#Awarded"/>
+        <local:conditional-requirement-when-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#national_regional_project_start_date_when_awarded -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_project_start_date_when_awarded">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#conditional-requirement"/>
+        <rdfs:label xml:lang="en">The start date of a national regional research project is required once it is Awarded</rdfs:label>
+        <rdfs:label xml:lang="es">La fecha de inicio de national regional research project es obligatoria una vez concedido</rdfs:label>
+        <local:conditional-requirement-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
+        <local:conditional-requirement-when-answer rdf:resource="https://w3id.org/CBGP-App#Awarded"/>
+        <local:conditional-requirement-when-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#national_regional_project_end_date_when_awarded -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_project_end_date_when_awarded">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#conditional-requirement"/>
+        <rdfs:label xml:lang="en">The end date of a national regional research project is required once it is Awarded</rdfs:label>
+        <rdfs:label xml:lang="es">La fecha de fin de national regional research project es obligatoria una vez concedido</rdfs:label>
+        <local:conditional-requirement-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
+        <local:conditional-requirement-when-answer rdf:resource="https://w3id.org/CBGP-App#Awarded"/>
+        <local:conditional-requirement-when-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#private_project_start_date_when_awarded -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#private_project_start_date_when_awarded">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#conditional-requirement"/>
+        <rdfs:label xml:lang="en">The start date of a private research project is required once it is Awarded</rdfs:label>
+        <rdfs:label xml:lang="es">La fecha de inicio de private research project es obligatoria una vez concedido</rdfs:label>
+        <local:conditional-requirement-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
+        <local:conditional-requirement-when-answer rdf:resource="https://w3id.org/CBGP-App#Awarded"/>
+        <local:conditional-requirement-when-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#private_project_end_date_when_awarded -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#private_project_end_date_when_awarded">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#conditional-requirement"/>
+        <rdfs:label xml:lang="en">The end date of a private research project is required once it is Awarded</rdfs:label>
+        <rdfs:label xml:lang="es">La fecha de fin de private research project es obligatoria una vez concedido</rdfs:label>
+        <local:conditional-requirement-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
+        <local:conditional-requirement-when-answer rdf:resource="https://w3id.org/CBGP-App#Awarded"/>
+        <local:conditional-requirement-when-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#personnel_project_start_date_when_awarded -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#personnel_project_start_date_when_awarded">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#conditional-requirement"/>
+        <rdfs:label xml:lang="en">The start date of a personnel project is required once it is Awarded</rdfs:label>
+        <rdfs:label xml:lang="es">La fecha de inicio de personnel project es obligatoria una vez concedido</rdfs:label>
+        <local:conditional-requirement-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
+        <local:conditional-requirement-when-answer rdf:resource="https://w3id.org/CBGP-App#Awarded"/>
+        <local:conditional-requirement-when-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/CBGP-App#personnel_project_end_date_when_awarded -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#personnel_project_end_date_when_awarded">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#conditional-requirement"/>
+        <rdfs:label xml:lang="en">The end date of a personnel project is required once it is Awarded</rdfs:label>
+        <rdfs:label xml:lang="es">La fecha de fin de personnel project es obligatoria una vez concedido</rdfs:label>
+        <local:conditional-requirement-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
+        <local:conditional-requirement-when-answer rdf:resource="https://w3id.org/CBGP-App#Awarded"/>
+        <local:conditional-requirement-when-field rdf:resource="https://w3id.org/CBGP-App#project_status"/>
     </owl:Class>
     
 
@@ -4044,6 +4115,8 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <rdfs:label xml:lang="es">Proyectos de Investigacion Nacionales y Regionales</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
+        <local:has-conditional-requirements rdf:resource="https://w3id.org/CBGP-App#national_regional_project_end_date_when_awarded"/>
+        <local:has-conditional-requirements rdf:resource="https://w3id.org/CBGP-App#national_regional_project_start_date_when_awarded"/>
         <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#national_regional_research_project_status_default"/>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#national_regional_research_project_year1_cbgp_overheads_formula"/>
@@ -4054,11 +4127,8 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#national_regional_research_funding_institution"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_url"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_call_for_proposal_title"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_dni_nie_pas"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_internal_code"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_pi_nie"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_title"/>
     </owl:Class>
     
@@ -4555,19 +4625,18 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <rdfs:label xml:lang="es">Proyecto Personal</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
+        <local:has-conditional-requirements rdf:resource="https://w3id.org/CBGP-App#personnel_project_end_date_when_awarded"/>
+        <local:has-conditional-requirements rdf:resource="https://w3id.org/CBGP-App#personnel_project_start_date_when_awarded"/>
         <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#personnel_project_status_default"/>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
         <local:has-related-records rdf:resource="https://w3id.org/CBGP-App#project_commitments_panel"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#beneficiary_nie"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#personnel_project_responsible_pi_nie"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_pi_nie"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#personnel_project_total_funding"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_affiliation"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_url"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_dni_nie_pas"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_funding_entity"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_internal_code"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_title"/>
     </owl:Class>
     
@@ -4585,28 +4654,6 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:method>research_fellowship</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#personnel_project_responsible_pi_nie -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#personnel_project_responsible_pi_nie">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:label xml:lang="es">DNI/NIE/PAS del IP responsable</rdfs:label>
-        <rdfs:label xml:lang="en">Responsible PI DNI/NIE/PAS</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>responsible_pi_nie</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:question-order>
-        <local:references rdf:resource="https://w3id.org/CBGP-App#member"/>
-        <local:references-label rdf:resource="https://w3id.org/CBGP-App#member_surnames"/>
-        <local:references-via rdf:resource="https://w3id.org/CBGP-App#member_dni_nie_pas"/>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
@@ -5253,6 +5300,8 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <rdfs:label xml:lang="es">Proyectos de Investigación Privados</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
         <local:form-category xml:lang="en">Core</local:form-category>
+        <local:has-conditional-requirements rdf:resource="https://w3id.org/CBGP-App#private_project_end_date_when_awarded"/>
+        <local:has-conditional-requirements rdf:resource="https://w3id.org/CBGP-App#private_project_start_date_when_awarded"/>
         <local:has-defaults rdf:resource="https://w3id.org/CBGP-App#private_research_project_status_default"/>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <local:has-formulas rdf:resource="https://w3id.org/CBGP-App#private_research_project_cbgp_overheads_formula"/>
@@ -5260,11 +5309,8 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#european_private_research_project_funding_institution"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_url"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_call_for_proposal_title"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_dni_nie_pas"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_end_date"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_internal_code"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_pi_nie"/>
-        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_start_date"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_title"/>
     </owl:Class>
     
@@ -5388,16 +5434,6 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
     
 
 
-    <!-- https://w3id.org/CBGP-App#project-type -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project-type">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#answers"/>
-        <rdfs:label xml:lang="en">Project type</rdfs:label>
-        <rdfs:label xml:lang="es">Tipo de proyecto</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/CBGP-App#project_affiliation -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_affiliation">
@@ -5481,6 +5517,30 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
     
 
 
+    <!-- https://w3id.org/CBGP-App#project_comments -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_comments">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
+        <rdfs:comment xml:lang="es">Cualquier información adicional sobre este proyecto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Any additional information about this project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Comments</rdfs:label>
+        <rdfs:label xml:lang="es">Comentarios</rdfs:label>
+        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
+        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
+        <local:method>comments</local:method>
+        <local:object-class>String</local:object-class>
+        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</local:question-order>
+        <local:widget-cardinality>Single</local:widget-cardinality>
+        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#textfield"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/CBGP-App#project_call_for_proposal_title -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_call_for_proposal_title">
@@ -5520,30 +5580,6 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#project_dni_nie_pas -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_dni_nie_pas">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:label xml:lang="en">DNI/NIE/PAS</rdfs:label>
-        <rdfs:label xml:lang="es">DNI/NIE/PAS</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#FREE"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>dni_nie_pas</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</local:question-order>
-        <local:references rdf:resource="https://w3id.org/CBGP-App#member"/>
-        <local:references-label rdf:resource="https://w3id.org/CBGP-App#member_surnames"/>
-        <local:references-via rdf:resource="https://w3id.org/CBGP-App#member_dni_nie_pas"/>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
 
@@ -5687,6 +5723,7 @@ PERSONNEL projects</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/CBGP-App#project_pi_nie">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-european-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-national-regional-research-project-questions"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-personnel-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
@@ -5827,25 +5864,6 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#currency"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/CBGP-App#project_type -->
-
-    <owl:Class rdf:about="https://w3id.org/CBGP-App#project_type">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:comment>NOT NEEDED ANYMORE. WHETHER IT IS EUROPEAN, NATIONAL, REGIONAL OR PRIVATE IS CAPTURED BY &quot;funding institution&quot; FOR RESEARCH PROJECTS.</rdfs:comment>
-        <rdfs:label xml:lang="en">Project type</rdfs:label>
-        <rdfs:label xml:lang="es">Tipo de proyecto</rdfs:label>
-        <local:answer-block rdf:resource="https://w3id.org/CBGP-App#project-type"/>
-        <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
-        <local:method>project_type</local:method>
-        <local:object-class>String</local:object-class>
-        <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</local:question-order>
-        <local:widget-cardinality>Single</local:widget-cardinality>
-        <local:widget-type rdf:resource="https://w3id.org/CBGP-App#radio"/>
     </owl:Class>
     
 
@@ -7274,6 +7292,7 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
         <local:form-category xml:lang="en">UserFacing</local:form-category>
         <local:has-fields rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
         <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_application_url"/>
+        <local:requires-field rdf:resource="https://w3id.org/CBGP-App#project_pi_nie"/>
     </owl:Class>
     
 
@@ -8019,6 +8038,69 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
         <rdfs:comment xml:lang="en">Name, in the Query list, of the search that covers every kind of project form (they all store under the name project).</rdfs:comment>
         <rdfs:label xml:lang="es">Proyectos (todos los tipos)</rdfs:label>
         <rdfs:label xml:lang="en">Projects (all types)</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_required_when -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_required_when">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Small note beside a field that is required only under a condition (e.g. dates only when the project is Awarded).</rdfs:comment>
+        <rdfs:label xml:lang="es">Obligatorio cuando %{when_field} es %{answer}</rdfs:label>
+        <rdfs:label xml:lang="en">Required when %{when_field} is %{answer}</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_required_when_error -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_required_when_error">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Error shown when a conditionally required field is left empty.</rdfs:comment>
+        <rdfs:label xml:lang="es">%{field} es obligatorio cuando %{when_field} es %{answer}</rdfs:label>
+        <rdfs:label xml:lang="en">%{field} is required when %{when_field} is %{answer}</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_curate_panel_title -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_curate_panel_title">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Heading of the panel an administrator sees above a record that is still on a user-facing (simplified) form, before choosing which full form to curate it under.</rdfs:comment>
+        <rdfs:label xml:lang="es">Este registro se envió mediante un formulario simplificado y aún no está clasificado.</rdfs:label>
+        <rdfs:label xml:lang="en">This record was submitted through a simplified form and has not been classified yet.</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_curate_panel_body -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_curate_panel_body">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Followed by one link per full form the record can be curated under.</rdfs:comment>
+        <rdfs:label xml:lang="es">Revise lo introducido más abajo y después clasifíquelo como:</rdfs:label>
+        <rdfs:label xml:lang="en">Review what was entered below, then curate it as:</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_curate_notice -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_curate_notice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Shown on the full form that a submitted record is being curated under. %{form} is that form name.</rdfs:comment>
+        <rdfs:label xml:lang="es">Está clasificando este registro enviado como %{form}. No se cambia nada hasta que guarde.</rdfs:label>
+        <rdfs:label xml:lang="en">Curating this submitted record as %{form}. Nothing changes until you save.</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_curate_back -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_curate_back">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Link back to the record as it was submitted, from the page where it is being curated under a full form.</rdfs:comment>
+        <rdfs:label xml:lang="es">Volver a la vista enviada</rdfs:label>
+        <rdfs:label xml:lang="en">Back to the submitted view</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_curate_not_kept -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_curate_not_kept">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Warning listing the values a submitted record holds that the form it is being curated under has no field for; followed by the list.</rdfs:comment>
+        <rdfs:label xml:lang="es">Introducido por quien lo envió pero no está en este formulario: no se conservará al guardar (la versión anterior permanece en el historial):</rdfs:label>
+        <rdfs:label xml:lang="en">Entered by the submitter but not on this form - these will not be kept when you save (the earlier version stays in the history):</rdfs:label>
     </owl:Class>
 
     <!-- https://w3id.org/CBGP-App#ui_typeahead_hint_plain -->

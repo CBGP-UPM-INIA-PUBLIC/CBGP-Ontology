@@ -190,6 +190,44 @@ class TestCheckOntology < Minitest::Test
     assert_empty check(klass('ent', labels(en: 'Funding &amp; Tenders', es: 'Financiación &lt;y&gt; licitaciones – ñ 日本')))
   end
 
+  # ---- conditional requirements
+  def rule(name, field: 'f', when_field: 'w', answers: ['a'], extra: '')
+    parts = +%(<rdfs:subClassOf rdf:resource="#{APP}conditional-requirement"/>\n)
+    parts << %(<local:conditional-requirement-field rdf:resource="#{APP}#{field}"/>\n) if field
+    parts << %(<local:conditional-requirement-when-field rdf:resource="#{APP}#{when_field}"/>\n) if when_field
+    answers.each { |a| parts << %(<local:conditional-requirement-when-answer rdf:resource="#{APP}#{a}"/>\n) }
+    klass(name, labels + parts + extra)
+  end
+
+  def simple_classes = %w[f w a].map { |n| klass(n, labels) }
+
+  def test_a_complete_conditional_requirement_is_fine
+    assert_empty check(klass('conditional-requirement', labels), rule('r1'), *simple_classes)
+  end
+
+  def test_flags_a_conditional_requirement_missing_a_part
+    f = check(klass('conditional-requirement', labels), rule('r1', answers: []), *simple_classes)
+    assert_includes codes(f), :conditional_requirement_incomplete
+    assert_equal 'r1', f.find { |x| x.code == :conditional_requirement_incomplete }.subject
+    assert_includes codes(check(klass('conditional-requirement', labels), rule('r2', field: nil), *simple_classes)), :conditional_requirement_incomplete
+  end
+
+  def test_flags_a_conditional_requirement_pointing_at_a_missing_class
+    f = check(klass('conditional-requirement', labels), rule('r1', answers: ['Awardd']), *simple_classes)
+    assert_includes codes(f), :conditional_requirement_unknown
+    assert_includes f.find { |x| x.code == :conditional_requirement_unknown }.detail, 'Awardd'
+  end
+
+  def test_flags_a_form_listing_a_rule_that_does_not_exist
+    form = klass('some_form', labels + %(<local:has-conditional-requirements rdf:resource="#{APP}nope"/>))
+    assert_includes codes(check(form)), :conditional_requirement_unknown
+  end
+
+  def test_a_form_listing_a_real_rule_is_fine
+    form = klass('some_form', labels + %(<local:has-conditional-requirements rdf:resource="#{APP}r1"/>))
+    assert_empty check(klass('conditional-requirement', labels), rule('r1'), form, *simple_classes)
+  end
+
   # ---- the real file
   def test_the_real_ontology_has_no_errors
     path = File.join(__dir__, 'cbgp-application-ontology.owl')

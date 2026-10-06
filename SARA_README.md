@@ -58,6 +58,8 @@ Each line gives the **line number**, the **class name**, and what's wrong. Open
 | `missing_language` | The class has labels but none in English, or none in Spanish | Add the missing label |
 | `empty_label` | A label is blank | Fill it in, or delete it |
 | `form_incomplete` | A form (a subclass of `forms`) is missing `form-category`, `dbname` or `has-fields` — it would never appear in a menu | Add the missing property, copying a similar form |
+| `ui_text_placeholders` | An interface text (a subclass of `ui-text`) uses different `%{...}` names in English and Spanish | The `%{target}`-style words are filled in by the application: write them identically in both languages (only translate the words around them) |
+| `ui_text_characters` | An interface text contains a back-tick, a double quote, `<`, `>`, a backslash or `${` | Remove it (use « » or typographic quotes instead) |
 | `untagged_annotation` | A form's `form-category` or `dbname` has no language tag (the other forms have `xml:lang="en"`) | Add `xml:lang="en"` |
 
 **Warnings** don't stop you; they're just worth a look:
@@ -89,4 +91,5 @@ Made on the Funding Commitments work — all of them are already in the file:
 - **`project_application_code` is now `project_application_url` ("Application URL")** and must be a full web address (`http://` or `https://`); the call identifier on its own is rejected. It is required on all project forms, **including the user-facing one**.
 - **Two new widget types** used by the above: `number` and `url`.
 - **European and Private research project forms** now have `xml:lang="en"` on their `form-category` and `dbname` (they were missing from the menus without it).
+- **New: interface texts (`ui-text`).** The small hints and captions the application prints around the data (for example "Type at least 2 characters to search…", the "remove" / "Add another" buttons, the search-form placeholders) are now ontology classes too, so they can be translated and corrected here: 15 subclasses of `ui-text`, each with an English and a Spanish `rdfs:label`, and a comment saying where it appears and which `%{...}` words it may contain. Edit the **labels**; **do not rename the classes** (the application finds each text by its class name). After editing, run the checker, and ask Mark to refresh the application. The Spanish is a first draft - please correct it. More of the application's text will move here over time.
 - **Reminder:** if you rename or delete a field, tell Mark — the application and its tests refer to fields by name.

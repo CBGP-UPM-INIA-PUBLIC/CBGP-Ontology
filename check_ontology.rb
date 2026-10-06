@@ -23,6 +23,11 @@
 #                         Spanish
 #   form_incomplete       a form (a subclass of cbgp:forms) with no local:form-category,
 #                         local:dbname or local:has-fields - it would never be listed
+#   ui_text_placeholders  an interface text (a subclass of cbgp:ui-text) whose labels
+#                         do not use the same %{names} in every language - the
+#                         application would show a raw %{name} to the user
+#   ui_text_characters    an interface text containing a back-tick, quote, < > or backslash (they
+#                         would break the page the text is printed into)
 #   untagged_annotation   local:form-category / local:dbname written without
 #                         xml:lang="en", unlike every other form. (This is what
 #                         once made the European and Private project forms vanish
@@ -158,6 +163,21 @@ module OntologyCheck
 
         findings << finding(:warning, :duplicate_label, k.name,
                             "has #{ls.size} labels in '#{lang}': #{ls.map { |l| l[:text].inspect }.join(' / ')}")
+      end
+
+      if k.supers.include?('ui-text')
+        names = by_lang.transform_values { |ls| ls.flat_map { |l| l[:text].scan(/%\{(\w+)\}/).flatten }.sort }
+        unless names.values.uniq.size <= 1
+          shown = names.map { |lang, ns| "#{lang}: #{ns.empty? ? '(none)' : ns.map { |n| "%{#{n}}" }.join(' ')}" }.join('; ')
+          findings << finding(:error, :ui_text_placeholders, k.name,
+                              "the %{...} names differ between languages (#{shown}) - keep them identical")
+        end
+        k.labels.each do |l|
+          next unless l[:text] =~ /[`"<>\\]|\$\{/
+
+          findings << finding(:error, :ui_text_characters, k.name,
+                              "label #{shorten(l[:text])} contains a character that is not allowed in interface text (` \" < > \\ or ${)")
+        end
       end
 
       TAGGED_BY_CONVENTION.each do |prop|

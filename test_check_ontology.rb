@@ -142,6 +142,38 @@ class TestCheckOntology < Minitest::Test
     assert_equal sev, sev.sort_by { |s| s == :error ? 0 : 1 }
   end
 
+  # ---- interface texts (subclasses of cbgp:ui-text)
+  def ui_text(name, en:, es:)
+    klass(name, %(<rdfs:subClassOf rdf:resource="#{APP}ui-text"/>\n) + labels(en: en, es: es))
+  end
+
+  def test_interface_text_with_matching_placeholders_is_fine
+    assert_empty check(ui_text('ui_hint', en: 'Search %{target}...', es: 'Buscar en %{target}...'))
+  end
+
+  def test_interface_text_whose_placeholders_differ_between_languages_is_an_error
+    f = check(ui_text('ui_hint', en: 'Search %{target}...', es: 'Buscar en %{objetivo}...')).find { |x| x.code == :ui_text_placeholders }
+    refute_nil f
+    assert_equal :error, f.severity
+    assert_equal 'ui_hint', f.subject
+    assert_includes f.detail, '%{target}'
+    assert_includes f.detail, '%{objetivo}'
+  end
+
+  def test_interface_text_missing_a_placeholder_in_one_language_is_an_error
+    assert_includes codes(check(ui_text('ui_hint', en: 'Search %{target}', es: 'Buscar'))), :ui_text_placeholders
+  end
+
+  def test_interface_text_with_characters_that_break_the_page_is_an_error
+    ['say "hi"', 'a &lt;b&gt;', 'back`tick', 'cost ${x}', 'a \\ b'].each do |bad|
+      assert_includes codes(check(ui_text('ui_hint', en: bad, es: 'ok'))), :ui_text_characters, bad
+    end
+  end
+
+  def test_placeholders_are_not_checked_on_ordinary_classes
+    refute_includes codes(check(klass('plain', labels(en: 'A %{x}', es: 'B')))), :ui_text_placeholders
+  end
+
   def test_finds_the_line_a_class_is_declared_on
     Dir.mktmpdir do |dir|
       path = File.join(dir, 'o.owl')

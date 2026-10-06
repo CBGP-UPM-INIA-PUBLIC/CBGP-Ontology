@@ -7829,6 +7829,162 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
         <rdfs:label xml:lang="es">G</rdfs:label>
         <local:answer-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</local:answer-order>
     </owl:Class>
+    <!-- https://w3id.org/CBGP-App#ui-text -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui-text">
+        <rdfs:comment xml:lang="en">Interface text the application shows around the data (hints inside boxes, captions of small buttons). Each subclass is ONE piece of text: its English and Spanish rdfs:label are what the user sees. A %{name} inside a label is filled in by the application (the comment on each text says which names exist); write it exactly the same, in every language, and run check_ontology.rb after editing. Do not rename these classes - the application finds each text by its class name.</rdfs:comment>
+        <rdfs:label xml:lang="es">Texto de la interfaz</rdfs:label>
+        <rdfs:label xml:lang="en">Interface text</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_typeahead_hint -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_typeahead_hint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Hint inside a cross-reference box that searches another kind of record. Placeholders: %{target} = the kind of record searched (e.g. member).</rdfs:comment>
+        <rdfs:label xml:lang="es">Escriba al menos 2 caracteres para buscar en «%{target}»...</rdfs:label>
+        <rdfs:label xml:lang="en">Type at least 2 characters to search existing %{target}...</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_typeahead_hint_field -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_typeahead_hint_field">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Same hint when the box searches by a named field. Placeholders: %{field} = the field typed into (e.g. Surname(s)), %{target} = the kind of record searched.</rdfs:comment>
+        <rdfs:label xml:lang="es">Escriba al menos 2 caracteres de «%{field}» para buscar en «%{target}»...</rdfs:label>
+        <rdfs:label xml:lang="en">Type at least 2 characters of the %{field} to search existing %{target}...</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_typeahead_remove -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_typeahead_remove">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Caption of the button that removes one row of a repeatable box (shown after a minus sign).</rdfs:comment>
+        <rdfs:label xml:lang="es">quitar</rdfs:label>
+        <rdfs:label xml:lang="en">remove</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_typeahead_add_another -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_typeahead_add_another">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Caption of the button that adds one more row to a repeatable box (shown after a plus sign).</rdfs:comment>
+        <rdfs:label xml:lang="es">Añadir otro</rdfs:label>
+        <rdfs:label xml:lang="en">Add another</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_typeahead_stored_value -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_typeahead_stored_value">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Small caption in front of the value a cross-reference box will actually store (e.g. the DNI/NIE/PAS).</rdfs:comment>
+        <rdfs:label xml:lang="es">Valor guardado</rdfs:label>
+        <rdfs:label xml:lang="en">Stored value</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_typeahead_clear -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_typeahead_clear">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Caption of the button that empties a chosen cross-reference value (shown after a cross sign).</rdfs:comment>
+        <rdfs:label xml:lang="es">borrar</rdfs:label>
+        <rdfs:label xml:lang="en">clear</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_search_enter_value -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_enter_value">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Hint inside a plain search box.</rdfs:comment>
+        <rdfs:label xml:lang="es">Introduzca un valor</rdfs:label>
+        <rdfs:label xml:lang="en">Enter value</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_search_enter_field_to_filter -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_enter_field_to_filter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Hint inside a text search box. Placeholder: %{field} = the field's label in lower case.</rdfs:comment>
+        <rdfs:label xml:lang="es">Introduzca %{field} para filtrar</rdfs:label>
+        <rdfs:label xml:lang="en">Enter %{field} to filter</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_search_enter_url_part -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_enter_url_part">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Hint inside the search box of a web-address field.</rdfs:comment>
+        <rdfs:label xml:lang="es">Introduzca parte de la dirección web para filtrar</rdfs:label>
+        <rdfs:label xml:lang="en">Enter part of the web address to filter</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_search_number_example -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_number_example">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Hint inside a number or amount search box. Placeholder: %{example} = an example number written the way the user's language writes it.</rdfs:comment>
+        <rdfs:label xml:lang="es">p. ej. %{example}</rdfs:label>
+        <rdfs:label xml:lang="en">e.g. %{example}</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_search_categories_type -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_categories_type">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Hint inside the search box of a category tree on the search form.</rdfs:comment>
+        <rdfs:label xml:lang="es">Escriba para buscar categorías...</rdfs:label>
+        <rdfs:label xml:lang="en">Type to search categories...</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_search_categories_search -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_categories_search">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Hint inside the search box above a category tree on a data entry form.</rdfs:comment>
+        <rdfs:label xml:lang="es">Buscar categorías...</rdfs:label>
+        <rdfs:label xml:lang="en">Search categories...</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_search_not_exclude -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_not_exclude">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Caption of the tick box that turns a search condition around (find the records that do NOT match).</rdfs:comment>
+        <rdfs:label xml:lang="es">NO (excluir coincidencias)</rdfs:label>
+        <rdfs:label xml:lang="en">NOT (exclude matches)</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_typeahead_hint_plain -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_typeahead_hint_plain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Same as the first hint, for a box whose target kind of record has no name in the ontology. No placeholders.</rdfs:comment>
+        <rdfs:label xml:lang="es">Escriba al menos 2 caracteres para buscar...</rdfs:label>
+        <rdfs:label xml:lang="en">Type at least 2 characters to search...</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/CBGP-App#ui_typeahead_hint_field_plain -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_typeahead_hint_field_plain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Same as the field hint, for a box whose target kind of record has no name in the ontology. Placeholder: %{field} = the field typed into.</rdfs:comment>
+        <rdfs:label xml:lang="es">Escriba al menos 2 caracteres de «%{field}» para buscar...</rdfs:label>
+        <rdfs:label xml:lang="en">Type at least 2 characters of the %{field} to search...</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 

@@ -3378,7 +3378,7 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>end_date</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Date</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
@@ -3395,7 +3395,7 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>estimated_end_date</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Date</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
@@ -3744,7 +3744,7 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>start_date</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Date</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
@@ -5562,7 +5562,7 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>end_date</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Date</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
@@ -5582,7 +5582,7 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>end_date_extension</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Date</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
@@ -5720,7 +5720,7 @@ PERSONNEL projects</rdfs:comment>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>start_date</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Date</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>
@@ -6000,7 +6000,7 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#DATE"/>
         <local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</local:is-primary-id>
         <local:method>date</local:method>
-        <local:object-class>String</local:object-class>
+        <local:object-class>Date</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</local:question-order>
         <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#date"/>

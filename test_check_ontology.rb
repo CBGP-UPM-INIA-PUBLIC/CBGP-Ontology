@@ -250,6 +250,34 @@ class TestCheckOntology < Minitest::Test
     assert_includes f.detail, 'itself'
   end
 
+  # ---- primary ids must hold one value
+  def primary(name, flag: 'true', cardinality: 'Single')
+    body = labels + %(<local:is-primary-id rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">#{flag}</local:is-primary-id>\n)
+    body << %(<local:widget-cardinality>#{cardinality}</local:widget-cardinality>\n) if cardinality
+    klass(name, body)
+  end
+
+  def test_a_single_valued_primary_id_is_fine
+    assert_empty check(primary('dni'))
+  end
+
+  def test_flags_a_repeatable_primary_id
+    f = check(primary('project_internal_code', cardinality: 'Multiple')).find { |x| x.code == :primary_id_repeatable }
+    refute_nil f
+    assert_equal :error, f.severity
+    assert_equal 'project_internal_code', f.subject
+    assert_includes f.detail, 'Single'
+  end
+
+  def test_a_repeatable_field_that_is_not_a_primary_id_is_fine
+    assert_empty check(primary('keywords', flag: 'false', cardinality: 'Multiple'))
+    assert_empty check(klass('notes', labels + '<local:widget-cardinality>Multiple</local:widget-cardinality>'))
+  end
+
+  def test_a_primary_id_with_no_stated_cardinality_is_not_flagged
+    assert_empty check(primary('dni', cardinality: nil))
+  end
+
   # ---- the real file
   def test_the_real_ontology_has_no_errors
     path = File.join(__dir__, 'cbgp-application-ontology.owl')

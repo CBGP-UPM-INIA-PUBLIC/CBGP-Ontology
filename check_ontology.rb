@@ -38,6 +38,10 @@
 #   label_companion_unknown
 #                         a local:label-companion pointing at a class that does not exist (or at
 #                         the field itself) - the extra name would never be shown
+#   primary_id_repeatable
+#                         a field marked local:is-primary-id true whose local:widget-cardinality is
+#                         Multiple - an identifier that decides which record a save overwrites must
+#                         hold exactly one value
 #   untagged_annotation   local:form-category / local:dbname written without
 #                         xml:lang="en", unlike every other form. (This is what
 #                         once made the European and Private project forms vanish
@@ -145,6 +149,7 @@ module OntologyCheck
 
     findings.concat(check_conditional_requirements(classes))
     findings.concat(check_label_companions(classes))
+    findings.concat(check_primary_id_cardinality(classes))
 
     classes.each do |k|
       k.labels.each do |l|
@@ -256,6 +261,20 @@ module OntologyCheck
         finding(:error, :label_companion_unknown, k.name,
                 "local:label-companion points at #{target.inspect}, which is #{target == k.name ? 'the field itself' : 'not a class in the ontology'}")
       end
+    end
+  end
+
+  # A field marked local:is-primary-id is the record's external identifier (a DNI,
+  # a DOI, a project code): saving a record whose identifier already exists
+  # overwrites that record. An identifier cannot sensibly have several values, so
+  # such a field must not be repeatable.
+  def self.check_primary_id_cardinality(classes)
+    classes.filter_map do |k|
+      next unless k.props['is-primary-id'].any? { |p| p[:text].strip.downcase == 'true' }
+      next unless k.props['widget-cardinality'].any? { |p| p[:text].strip.casecmp('multiple').zero? }
+
+      finding(:error, :primary_id_repeatable, k.name,
+              'is a primary id (local:is-primary-id true) but its local:widget-cardinality is Multiple - set it to Single')
     end
   end
 

@@ -60,6 +60,10 @@ Each line gives the **line number**, the **class name**, and what's wrong. Open
 | `form_incomplete` | A form (a subclass of `forms`) is missing `form-category`, `dbname` or `has-fields` — it would never appear in a menu | Add the missing property, copying a similar form |
 | `ui_text_placeholders` | An interface text (a subclass of `ui-text`) uses different `%{...}` names in English and Spanish | The `%{target}`-style words are filled in by the application: write them identically in both languages (only translate the words around them) |
 | `ui_text_characters` | An interface text contains a back-tick, a double quote, `<`, `>`, a backslash or `${` | Remove it (use « » or typographic quotes instead) |
+| `conditional_requirement_incomplete` | A conditional requirement (a rule such as "start date is required when status is Awarded") is missing its `conditional-requirement-field`, `-when-field` or `-when-answer` | Add the missing part, copying a similar rule |
+| `conditional_requirement_unknown` | A conditional requirement, or a form's `has-conditional-requirements`, points at a class that does not exist — usually a typo in a field or answer name | Correct the name |
+| `label_companion_unknown` | A `label-companion` (the extra field shown after a cross-reference label, e.g. the first name after the surname) points at a class that does not exist, or at the field itself | Correct the name |
+| `primary_id_repeatable` | A field marked `is-primary-id true` has `widget-cardinality` **Multiple**. An identifier decides which record a save overwrites, so it must hold exactly one value | Set `widget-cardinality` to **Single** (or, if the field is not really an identifier, set `is-primary-id` to false) |
 | `untagged_annotation` | A form's `form-category` or `dbname` has no language tag (the other forms have `xml:lang="en"`) | Add `xml:lang="en"` |
 
 **Warnings** don't stop you; they're just worth a look:

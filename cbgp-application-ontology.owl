@@ -5694,7 +5694,7 @@ PERSONNEL projects</rdfs:comment>
         <local:method>int_project_code</local:method>
         <local:object-class>String</local:object-class>
         <local:question-order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</local:question-order>
-        <local:widget-cardinality>Multiple</local:widget-cardinality>
+        <local:widget-cardinality>Single</local:widget-cardinality>
         <local:widget-type rdf:resource="https://w3id.org/CBGP-App#text"/>
     </owl:Class>
     
@@ -7908,9 +7908,9 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_typeahead_stored_value">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
-        <rdfs:comment xml:lang="en">Small caption in front of the value a cross-reference box will actually store (e.g. the DNI/NIE/PAS).</rdfs:comment>
-        <rdfs:label xml:lang="es">Valor guardado</rdfs:label>
-        <rdfs:label xml:lang="en">Stored value</rdfs:label>
+        <rdfs:comment xml:lang="en">Caption in front of the value a cross-reference box currently holds and will store (e.g. the DNI/NIE/PAS).</rdfs:comment>
+        <rdfs:label xml:lang="es">Valor seleccionado actualmente</rdfs:label>
+        <rdfs:label xml:lang="en">Currently selected value</rdfs:label>
     </owl:Class>
 
 
@@ -7991,6 +7991,33 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
         <rdfs:comment xml:lang="en">Caption of the tick box that turns a search condition around (find the records that do NOT match).</rdfs:comment>
         <rdfs:label xml:lang="es">NO (excluir coincidencias)</rdfs:label>
         <rdfs:label xml:lang="en">NOT (exclude matches)</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_entry_today -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_entry_today">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Caption of the button beside each date box of a data-entry form: fills the box with today's date (the date itself is saved).</rdfs:comment>
+        <rdfs:label xml:lang="es">Hoy</rdfs:label>
+        <rdfs:label xml:lang="en">Today</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_search_today -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_today">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Caption of the tick box beside each date box of a search: use the day the search is run instead of a fixed date.</rdfs:comment>
+        <rdfs:label xml:lang="es">Hoy (cambia cada día)</rdfs:label>
+        <rdfs:label xml:lang="en">Today (changes daily)</rdfs:label>
+    </owl:Class>
+
+    <!-- https://w3id.org/CBGP-App#ui_search_today_note -->
+
+    <owl:Class rdf:about="https://w3id.org/CBGP-App#ui_search_today_note">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#ui-text"/>
+        <rdfs:comment xml:lang="en">Notice on a results page whose search used today instead of a date; %{date} is the day it was read as.</rdfs:comment>
+        <rdfs:label xml:lang="es">En esta búsqueda, “hoy” significa %{date}. No es una fecha fija: la misma búsqueda ejecutada mañana usará la fecha de mañana.</rdfs:label>
+        <rdfs:label xml:lang="en">In this search, “today” means %{date}. It is not a fixed date: the same search run tomorrow will use tomorrow’s date.</rdfs:label>
     </owl:Class>
 
     <!-- https://w3id.org/CBGP-App#ui_search_show_all -->

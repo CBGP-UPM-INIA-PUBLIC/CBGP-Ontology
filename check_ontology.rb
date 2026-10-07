@@ -35,6 +35,9 @@
 #   conditional_requirement_unknown
 #                         a conditional requirement, or a form's local:has-conditional-requirements,
 #                         that points at a class that does not exist (typo in a field or answer name)
+#   label_companion_unknown
+#                         a local:label-companion pointing at a class that does not exist (or at
+#                         the field itself) - the extra name would never be shown
 #   untagged_annotation   local:form-category / local:dbname written without
 #                         xml:lang="en", unlike every other form. (This is what
 #                         once made the European and Private project forms vanish
@@ -141,6 +144,7 @@ module OntologyCheck
     end
 
     findings.concat(check_conditional_requirements(classes))
+    findings.concat(check_label_companions(classes))
 
     classes.each do |k|
       k.labels.each do |l|
@@ -237,6 +241,22 @@ module OntologyCheck
       end
     end
     findings
+  end
+
+  # local:label-companion names another field shown with this one when it is
+  # used as a cross-reference label (a surname with the first name). It must
+  # point at a real class other than itself.
+  def self.check_label_companions(classes)
+    names = classes.map(&:name)
+    classes.flat_map do |k|
+      k.props['label-companion'].filter_map do |p|
+        target = fragment(p[:resource])
+        next if p[:resource] && names.include?(target) && target != k.name
+
+        finding(:error, :label_companion_unknown, k.name,
+                "local:label-companion points at #{target.inspect}, which is #{target == k.name ? 'the field itself' : 'not a class in the ontology'}")
+      end
+    end
   end
 
   def self.fragment(uri)

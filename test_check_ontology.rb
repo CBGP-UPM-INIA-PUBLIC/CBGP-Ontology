@@ -228,6 +228,28 @@ class TestCheckOntology < Minitest::Test
     assert_empty check(klass('conditional-requirement', labels), rule('r1'), form, *simple_classes)
   end
 
+  # ---- label companions
+  def companion(name, to)
+    klass(name, labels + %(<local:label-companion rdf:resource="#{APP}#{to}"/>))
+  end
+
+  def test_a_label_companion_pointing_at_a_real_class_is_fine
+    assert_empty check(companion('surnames', 'given_name'), klass('given_name', labels))
+  end
+
+  def test_flags_a_label_companion_pointing_at_a_missing_class
+    f = check(companion('surnames', 'giv_name'), klass('given_name', labels)).find { |x| x.code == :label_companion_unknown }
+    refute_nil f
+    assert_equal 'surnames', f.subject
+    assert_includes f.detail, 'giv_name'
+  end
+
+  def test_flags_a_label_companion_pointing_at_the_field_itself
+    f = check(companion('surnames', 'surnames')).find { |x| x.code == :label_companion_unknown }
+    refute_nil f
+    assert_includes f.detail, 'itself'
+  end
+
   # ---- the real file
   def test_the_real_ontology_has_no_errors
     path = File.join(__dir__, 'cbgp-application-ontology.owl')

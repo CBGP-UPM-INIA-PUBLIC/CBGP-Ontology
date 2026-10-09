@@ -49,6 +49,15 @@
 #
 # WARNINGS - worth a look, do not fail:
 #   duplicate_label       two labels in the same language on one class
+#   form_without_description
+#                         a form (a subclass of cbgp:forms), or the cbgp:forms class itself, with
+#                         no rdfs:comment in some required language. That comment is what an AI
+#                         agent reads to learn what the form's records ARE (and which words, such
+#                         as "employees", mean them) - without it the agent only sees the form's
+#                         name. Write one or two sentences, in each language. The FIRST sentence is
+#                         what appears in the agent's one-line list of forms, so let it stand alone:
+#                         say what the records are and which everyday words mean them ("employees",
+#                         "staff"); put the detail after it.
 #   untagged_comment      an rdfs:comment with no language tag. The application
 #                         only shows comments in the user's language, so an
 #                         untagged one is NOT shown to users - fine for an editor
@@ -144,6 +153,15 @@ module OntologyCheck
         next unless form.props[prop].empty?
 
         findings << finding(:error, :form_incomplete, form.name, "form has no #{shown} - it would never be listed in a menu")
+      end
+    end
+
+    classes.select { |k| k.supers.include?('forms') || k.name == 'forms' }.each do |form|
+      have = form.comments.filter_map { |c| c[:lang] && !c[:text].strip.empty? ? c[:lang].downcase.split('-').first : nil }
+      (languages - have).each do |lang|
+        what = form.name == 'forms' ? 'the dataset as a whole' : 'the form'
+        findings << finding(:warning, :form_without_description, form.name,
+                            "no rdfs:comment in #{lang} describing #{what} - an AI agent would only see its name")
       end
     end
 

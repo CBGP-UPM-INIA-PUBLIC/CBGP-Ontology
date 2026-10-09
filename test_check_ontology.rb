@@ -102,8 +102,12 @@ class TestCheckOntology < Minitest::Test
   end
 
   # ---- the original bug
-  def form(name, category:)
-    klass(name, labels + <<~XML)
+  def described(en: 'What it is.', es: 'Qué es.')
+    %(<rdfs:comment xml:lang="en">#{en}</rdfs:comment>\n<rdfs:comment xml:lang="es">#{es}</rdfs:comment>\n)
+  end
+
+  def form(name, category:, description: described)
+    klass(name, labels + description + <<~XML)
       <rdfs:subClassOf rdf:resource="#{APP}forms"/>
       <local:dbname xml:lang="en">project</local:dbname>
       #{category}
@@ -120,6 +124,52 @@ class TestCheckOntology < Minitest::Test
 
   def test_tagged_form_is_fine
     assert_empty check(form('national', category: '<local:form-category xml:lang="en">Core</local:form-category>'))
+  end
+
+  # ---- form descriptions (read by the AI agent interface)
+  def test_form_without_any_description_warns_once_per_language
+    found = check(form('bare', category: '<local:form-category xml:lang="en">Core</local:form-category>', description: ''))
+            .select { |x| x.code == :form_without_description }
+    assert_equal 2, found.size
+    assert(found.all? { |f| f.severity == :warning && f.subject == 'bare' })
+    assert_match(/in en/, found.map(&:detail).join)
+    assert_match(/in es/, found.map(&:detail).join)
+  end
+
+  def test_form_described_in_only_one_language_warns_for_the_other
+    found = check(form('half', category: '<local:form-category xml:lang="en">Core</local:form-category>',
+                               description: described(es: '').sub(%(<rdfs:comment xml:lang="es"></rdfs:comment>\n), '')))
+            .select { |x| x.code == :form_without_description }
+    assert_equal 1, found.size
+    assert_match(/in es/, found.first.detail)
+  end
+
+  def test_a_blank_or_untagged_comment_is_not_a_description
+    found = check(form('hollow', category: '<local:form-category xml:lang="en">Core</local:form-category>',
+                                 description: '<rdfs:comment xml:lang="en"> </rdfs:comment><rdfs:comment>Untagged</rdfs:comment>'))
+            .select { |x| x.code == :form_without_description }
+    assert_equal 2, found.size
+  end
+
+  def test_a_fully_described_form_is_fine
+    assert_empty check(form('good', category: '<local:form-category xml:lang="en">Core</local:form-category>'))
+  end
+
+  def test_the_forms_root_class_wants_a_description_too
+    found = check(klass('forms', labels)).select { |x| x.code == :form_without_description }
+    assert_equal 2, found.size
+    assert_match(/dataset as a whole/, found.first.detail)
+    assert_empty check(klass('forms', labels + described))
+  end
+
+  def test_other_classes_do_not_need_a_description
+    assert_empty check(klass('field', labels))
+  end
+
+  def test_the_real_ontology_describes_every_form
+    path = File.join(__dir__, 'cbgp-application-ontology.owl')
+    missing = OntologyCheck.check_file(path).select { |f| f.code == :form_without_description }
+    assert_empty missing, "forms without a description:\n" + missing.map { |f| "  #{f}" }.join("\n")
   end
 
   def test_form_missing_category_dbname_and_fields

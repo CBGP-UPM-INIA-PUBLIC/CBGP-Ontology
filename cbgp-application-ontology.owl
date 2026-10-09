@@ -2020,6 +2020,8 @@
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#european_research_project">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:comment xml:lang="es">Proyectos de investigación financiados por la Comisión Europea. Cada uno tiene título, investigador principal y co-IP (vinculados a registros de miembros), convocatoria, financiación y costes indirectos por año, fechas y estado (Propuesto, Concedido, Rechazado o Retirado). Se almacenan junto con los demás formularios de proyecto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Research projects funded by the European Commission. Each has a title, principal investigator and co-PI (linked to member records), call, funding and overheads per year, dates and status (Proposed, Awarded, Rejected or Withdrawn). Stored together with the other project forms.</rdfs:comment>
         <rdfs:label xml:lang="en">European Commision Research Projects</rdfs:label>
         <rdfs:label xml:lang="es">Proyectos de Investigación de la Comisión Europea</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
@@ -2147,6 +2149,8 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
     <!-- https://w3id.org/CBGP-App#forms -->
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#forms">
+        <rdfs:comment xml:lang="es">Los registros administrativos del instituto CBGP (Centro de Biotecnología y Genómica de Plantas, UPM-INIA/CSIC): sus miembros (empleados, investigadores, estudiantes y visitantes), los proyectos de investigación y su financiación, los compromisos de financiación (qué parte del coste salarial de cada persona paga cada proyecto) y las publicaciones.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The administrative records of the CBGP institute (Centre for Plant Biotechnology and Genomics, UPM-INIA/CSIC): its members (employees, researchers, students and visitors), research projects and their funding, funding commitments (which share of a person's salary each project pays) and publications.</rdfs:comment>
         <rdfs:label xml:lang="es">Entrada de datos</rdfs:label>
         <rdfs:label xml:lang="en">Forms</rdfs:label>
     </owl:Class>
@@ -3298,6 +3302,8 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#member">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:comment xml:lang="es">Personas que trabajan o estudian en el instituto: empleados, personal, investigadores, estudiantes y visitantes, un registro por persona (datos de contacto, categoría, grupo de investigación, fechas de inicio y fin). El campo estado indica si una persona está Activa, Inactiva o es Histórica; el personal actual es el que tiene estado Activo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">People who work or study at the institute: employees, staff, researchers, students and visitors, one record per person (contact details, category, research group, start and end dates). The status field says whether a person is currently Active, Inactive or Historical; the current staff are those with status Active.</rdfs:comment>
         <rdfs:label xml:lang="en">Member</rdfs:label>
         <rdfs:label xml:lang="es">Miembro</rdfs:label>
         <local:dbname xml:lang="en">member</local:dbname>
@@ -4118,6 +4124,8 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#national_regional_research_project">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:comment xml:lang="es">Proyectos de investigación financiados por organismos nacionales o regionales. Cada uno tiene título, investigador principal y co-IP (vinculados a registros de miembros), convocatoria, financiación y costes indirectos por año, fechas y estado (Propuesto, Concedido, Rechazado o Retirado). Se almacenan junto con los demás formularios de proyecto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Research projects funded by national or regional bodies. Each has a title, principal investigator and co-PI (linked to member records), call, funding and overheads per year, dates and status (Proposed, Awarded, Rejected or Withdrawn). Stored together with the other project forms.</rdfs:comment>
         <rdfs:label xml:lang="en">National and Regional Research Projects</rdfs:label>
         <rdfs:label xml:lang="es">Proyectos de Investigacion Nacionales y Regionales</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
@@ -4628,6 +4636,8 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#personnel_project">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:comment xml:lang="es">Proyectos o ayudas que financian el salario de una persona, la beneficiaria. Cada uno indica beneficiario e investigador principal (vinculados a registros de miembros), financiación total, fechas y estado. Se almacenan junto con los demás formularios de proyecto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Projects or fellowships that pay the salary of one person, the beneficiary. Each has the beneficiary and principal investigator (linked to member records), total funding, dates and status. Stored together with the other project forms.</rdfs:comment>
         <rdfs:label xml:lang="en">Personnel Project</rdfs:label>
         <rdfs:label xml:lang="es">Proyecto Personal</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
@@ -5303,6 +5313,8 @@ admin&apos;s review of every submitted record is what keeps it honest.</rdfs:com
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#private_research_project">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:comment xml:lang="es">Proyectos de investigación financiados por organizaciones privadas. Cada uno tiene título, investigador principal y co-IP (vinculados a registros de miembros), financiación y costes indirectos por año, fechas y estado (Propuesto, Concedido, Rechazado o Retirado). Se almacenan junto con los demás formularios de proyecto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Research projects funded by private organisations. Each has a title, principal investigator and co-PI (linked to member records), funding and overheads per year, dates and status (Proposed, Awarded, Rejected or Withdrawn). Stored together with the other project forms.</rdfs:comment>
         <rdfs:label xml:lang="en">Private Research Projects</rdfs:label>
         <rdfs:label xml:lang="es">Proyectos de Investigación Privados</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>
@@ -5926,6 +5938,8 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#publication">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:comment xml:lang="es">Publicaciones científicas de los miembros del instituto: título, autores, revista, DOI, fecha de publicación, tipo, acceso abierto y cuartil Scopus. Los autores del instituto se vinculan con su registro de miembro mediante el ORCID.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Scientific publications by the institute's members: title, authors, journal, DOI, publication date, type, open-access status and Scopus quartile. The institute's authors are linked to their member records by ORCID.</rdfs:comment>
         <rdfs:label xml:lang="es">Publicación</rdfs:label>
         <rdfs:label xml:lang="en">Publication</rdfs:label>
         <local:dbname xml:lang="en">publication</local:dbname>
@@ -7293,6 +7307,8 @@ honest, same as it already is for every other field on that form.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/CBGP-App#userproject">
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#forms"/>
+        <rdfs:comment xml:lang="es">Una solicitud de proyecto comunicada por un miembro mediante el formulario de usuario, antes de que la administración la clasifique en uno de los formularios de proyecto. Incluye título, investigador principal, co-IP, financiación, convocatoria y estado. Se almacena junto con los formularios de proyecto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A project application announced by a member through the user-facing form, before the administrators curate it into one of the project forms. Each has a title, principal investigator, co-PI, funding, call and status. Stored together with the project forms.</rdfs:comment>
         <rdfs:label xml:lang="en">User Project</rdfs:label>
         <rdfs:label xml:lang="es">User Project</rdfs:label>
         <local:dbname xml:lang="en">project</local:dbname>

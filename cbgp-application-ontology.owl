@@ -1984,7 +1984,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-private-research-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#new-project-questions"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/CBGP-App#user-project-fields"/>
-        <rdfs:label xml:lang="es">FInanciación total</rdfs:label>
         <rdfs:label xml:lang="es">Financiación total</rdfs:label>
         <rdfs:label xml:lang="en">Total funding</rdfs:label>
         <local:answer-block rdf:resource="https://w3id.org/CBGP-App#NUM"/>
